@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+ <title>Publicsite.org - J05HYYY</title>
+ <description>Publicsite.org J05HYYY RSS Feed</description>
+ <link>http://www.publicsite.org/J05HYYY</link>
+
+ <item>
+  <title>initial commit of industryos on publicsite's github</title>
+  <description>Industry OS is a customised version of Debian, designed for industry, with a focus on R&amp;D. It contains lots of science packages out of the box, and has access to the biolinux repositories. It has a real time kernel, and access to the LinuxCNC packages also. It uses LXDE for it's graphical environment, so should be fairly speedy and easy to use. Binaries though, are not yet availiable.</description>
+  <link>https://github.com/publicsite/industryos</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>decimal to plus one bijective binary</title>
+  <description>The following page converts a decimal into plus one, bijective binary ... and back again.</description>
+  <link>http://www.publicsite.org/J05HYYY/J05HY3RY.html</link>
+  <category>therest</category>
+ </item>
+
+ <item>
+  <title>aggregated opensearch plugins (webpage)</title>
+  <description>The following page was made from a load of open search plugins. You can type a search term, click on a link and search that page using the search term.</description>
+  <link>http://www.publicsite.org/search/</link>
+  <category>therest</category>
+ </item>
+
+ <item>
+  <title>insight generator</title>
+  <description>The following page finds dbpedia semantic suggestions (links) relating to the text you put in the box. They are sorted by frequency.</description>
+  <link>http://www.publicsite.org/J05HYYY/insight-generator.html</link>
+  <category>therest</category>
+ </item>
+
+ <item>
+  <title>we experienced some down time.</title>
+  <description>We experienced some down time. Sorry! Server is now back online and running OK.</description>
+ </item>
+
+ <item>
+  <title>flightgear scripts on publicsite's github</title>
+  <description>Two new flightgear scripts (one modified) can be found at publicsite's github. The first has the intention of converting BTG to AC3D with textures. The other has the intention of reading all objects in an STG file and outputting a single AC3D.</description>
+  <link>https://github.com/publicsite/flightgear_export_scripts</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>initial commit of msva-busybox on publicsite's github</title>
+  <description>the monkeysphere project helps eliminate hierarchical trust on public key infrastructures. Some of the project is already written in POSIX shell, and it would require fewer dependencies (perl) if the validation agent, msva, was also written in shell.</description>
+  <link>https://github.com/publicsite/msva-busybox</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>initial commit of dpkg-architecture on publicsite's github</title>
+  <description>I have forked dpkg with the intention of rewriting dpkg-architecture in busybox shell. Whilst perl is used in gcc, it can be removed from the linux build-system, and opkg can be used in replacement of the majority of the rest of dpkg's primary function(s). Hence, by replacing dpkg-architecture with a busybox script to do the same job, a minimalist bootstrappable deb-based system could potentially be smaller, notably by removing perl.</description>
+  <link>https://github.com/publicsite/dpkg-architecture</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>initial commit of qemu on publicsite's github</title>
+  <description>I have forked qemu with the intention of removing python from the build system. Qemu is often used to cross-compile software, and python adds another dependency to a minimalist bootstrappable system.</description>
+  <link>https://github.com/publicsite/qemu</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>publicsite's github</title>
+  <description>publicsite now has a github account (intended to be used for hosting collaborative code).</description>
+  <link>https://github.com/publicsite</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>magicmirror</title>
+  <description>magicmirror was a HTML5 test to see if human perception can build an image out of randomness. Click on the image when the dots appear and they stay, click the image when the dots disappear and you get a new set of dots. This has been updated.</description>
+  <link>http://www.publicsite.org/J05HYYY/magicmirror.html</link>
+  <category>therest</category>
+ </item>
+
+ <item>
+  <title>assignment-problem</title>
+  <description>assignment-problem Is a solution to the assignment problem. This has been updated to version 2.</description>
+  <link>http://www.publicsite.org/J05HYYY/software_downloads/assignmentProblem_v2.tar.gz</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>travelling-salesman</title>
+  <description>travelling-salesman Is a solution to the travelling salesman problem.</description>
+  <link>http://www.publicsite.org/J05HYYY/software_downloads/TSP_3.tar.gz</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>crosstool-ng-libre</title>
+  <description>crosstool-ng-libre gets crosstool-ng and patches it to use the linux-libre kernel instead of vanilla linux kernel, which contains blobs. </description>
+  <link>http://www.publicsite.org/J05HYYY/software_downloads/crosstool-ng-libre_0.2.tar.gz</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>x-base-converter</title>
+  <description>x-base-converter converts a number from one base into several other variable bases. </description>
+  <link>http://www.publicsite.org/J05HYYY/software_downloads/x-base-converter.tar.gz</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>prime-factors</title>
+  <description>prime-factors finds the prime factors of numbers up to a certain point. </description>
+  <link>http://www.publicsite.org/J05HYYY/software_downloads/prime-factors.tar.gz</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>primes</title>
+  <description>primes finds the prime numbers up to a certain point. </description>
+  <link>http://www.publicsite.org/J05HYYY/software_downloads/primes.c</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>smoke-reducer</title>
+  <description>smoke-reducer has it's own page.</description>
+  <link>http://www.publicsite.org/J05HYYY/smoke_reducer.html</link>
+  <image>http://www.publicsite.org/J05HYYY/images/smoke_reducer_image.png</image>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>permute-and-combinations</title>
+  <description>permute-and-combinations are a set of two programs. The first generates permutations. The second, combinations.</description>
+  <link>http://www.publicsite.org/J05HYYY/software_downloads/permuteAndCombinations.tar.gz</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>pretty-pictures</title>
+  <description>pretty-pictures has it's own page.</description>
+  <link>http://www.publicsite.org/J05HYYY/prettypictures.html</link>
+  <image>http://www.publicsite.org/J05HYYY/images/prettypictures.png</image>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>phatftp</title>
+  <description>phatftp is a recursive download script that I got working on BSDs and Interix. </description>
+  <link>http://www.publicsite.org/J05HYYY/software_downloads/phatftp.tar.gz</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>libzrtp-vlc-module</title>
+  <description>libzrtp-vlc-module is a module for VLC Video Player, which uses encryption to send streams. </description>
+  <link>http://www.publicsite.org/J05HYYY/software_downloads/libzrtp-vlc-module.tar.gz</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>betting-system</title>
+  <description>betting-system was meant to predict randomness, it uses an algorithm similar to RBF networks. </description>
+  <link>http://www.publicsite.org/J05HYYY/software_downloads/bettingsystem.tar.gz</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>olinuxinolime-archlinux</title>
+  <description>olinuxinolime-archlinux was a successful attempt to put Arch Linux ARM on the A10 OLinuXino Lime. The Arch Linux ARM have now integrated support independently from this, so it's pretty much obsoleted. </description>
+  <link>http://www.publicsite.org/J05HYYY/software_downloads/olinuxinolime-archlinux.tar.gz</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>Ionian</title>
+  <description>Ionian has it's own page. </description>
+  <link>http://www.publicsite.org/J05HYYY/Ionian.html</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>robovision</title>
+  <description>robovision was an attempt at robot vision using delaunay triangulation. I never did find an elegant way to compare the arrays afterwards though. </description>
+  <link>http://www.publicsite.org/J05HYYY/software_downloads/vision.tar.gz</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>merge-string</title>
+  <description>merge-string is a 'fun' program to merge to strings together. </description>
+  <link>http://www.publicsite.org/J05HYYY/software_downloads/merge-string.tar.gz</link>
+  <category>software</category>
+ </item>
+
+ <item>
+  <title>sequence-analyser</title>
+  <description>sequence-analyser is another 'fun' program to see how similar two sequences of numbers are. </description>
+  <link>http://www.publicsite.org/J05HYYY/software_downloads/sequence-analyser.tar.gz</link>
+  <category>software</category> 
+</item>
+
+ <item>
+  <title>Picking Majors Lock - I to V</title>
+  <link>http://www.publicsite.org/J05HYYY/music_downloads/PickingTheMajorsLockDtoF140bpmnormalised.mp3</link>
+   <category>music</category>
+ </item>
+
+ <item>
+  <title>Picking Majors Lock - I to VIIb</title>
+  <link>http://www.publicsite.org/J05HYYY/music_downloads/PickingtheMajorsLockCtoBb2.mp3</link>
+  <category>music</category>
+ </item>
+
+ <item>
+  <title>Picking Majors Lock - I to IIIb</title>
+  <link>http://www.publicsite.org/J05HYYY/music_downloads/PickingTheMajorsLockCtoG-normalisedandcompressedeffects.mp3</link>
+  <category>music</category>
+ </item>
+
+ <item>
+  <title>Picking Majors Lock - I to IV</title>
+  <link>http://www.publicsite.org/J05HYYY/music_downloads/PickingtheMajorsLockDtoG.mp3</link>
+  <category>music</category>
+ </item>
+
+ <item>
+  <title>Flash.mp4</title>
+  <link>http://www.publicsite.org/J05HYYY/video_downloads/Flash.mp4</link>
+  <category>videos</category>
+ </item>
+
+ <item>
+  <title>One_Five_Nine.mp4</title>
+  <link>http://www.publicsite.org/J05HYYY/video_downloads/One_Five_Nine.mp4</link>
+  <category>videos</category>
+ </item>
+
+ <item>
+  <title>Crazy.mp4</title>
+  <link>http://www.publicsite.org/J05HYYY/video_downloads/Crazy.mp4</link>
+  <category>videos</category>
+ </item>
+
+ <item>
+  <title>Dancing_Feet.mp4</title>
+  <link>http://www.publicsite.org/J05HYYY/video_downloads/Dancing_Feet.mp4</link>
+  <category>videos</category>
+ </item>
+
+ <item>
+  <title>Plinky_Plonky.mp4</title>
+  <link>http://www.publicsite.org/J05HYYY/video_downloads/Plinky_Plonky.mp4</link>
+  <category>videos</category>
+ </item>
+
+ <item>
+  <title>dRuMnbaSs.mp4</title>
+  <description>CC-BY-ND</description>
+  <link>http://www.publicsite.org/J05HYYY/video_downloads/dRuMnbaSs.mp4</link>
+  <category>videos</category>
+ </item>
+
+ <item>
+  <title>My_first_attempt_at_using_LMMS.mp4</title>
+  <link>http://www.publicsite.org/J05HYYY/video_downloads/My_first_attempt_at_using_LMMS.mp4</link>
+  <category>videos</category>
+ </item>
+
+ <item>
+  <title>New_linux_sampler_I_wrote.mp4</title>
+  <link>http://www.publicsite.org/J05HYYY/video_downloads/New_linux_sampler_I_wrote.mp4</link>
+  <category>videos</category>
+ </item>
+
+ <item>
+  <title>Grooves_n__Tracks_-_Sequencer_Window.mp4</title>
+  <link>http://www.publicsite.org/J05HYYY/video_downloads/Grooves_n__Tracks_-_Sequencer_Window.mp4</link>
+  <category>videos</category>
+ </item>
+
+ <item>
+  <title>Zeitgeist TV</title>
+  <description>Zeitgeist TV plays youtube videos you suggest from the input box, press F11 to go fullscreen!</description>
+  <link>http://www.publicsite.org/J05HYYY/zeitgeist.php</link>
+  <category>videos</category>
+ </item>
+
+ <item>
+  <title>Chrooted Debian on Android with an X Server installed via F-Droid.</title>
+  <link>http://www.publicsite.org/J05HYYY/chrootdebianxserverfdroid.html</link>
+  <category>writings</category>
+ </item>
+
+ <item>
+  <title>Friendica On the Raspberry Pi</title>
+  <link>http://www.publicsite.org/J05HYYY/friendicainstructions.html</link>
+  <category>writings</category>
+ </item>
+
+ <item>
+  <title>gamespreadsheet</title>
+  <description>gamespreadsheet Is a spreadsheet, testing support for which libre, Debian (stretch) games [can] use an Xbox 360 controller and the xpad driver.</description>
+  <link>http://www.publicsite.org/J05HYYY/gamespreadsheet.csv</link>
+  <category>therest</category>
+ </item>
+
+ <item>
+  <title>magicmirror</title>
+  <description>magicmirror was a HTML5 test to see if human perception can build an image out of randomness. Click on the image when the dots appear and they stay, click the image when the dots disappear and you get a new set of dots.</description>
+  <link>http://www.publicsite.org/J05HYYY/magicmirror.html</link>
+  <category>therest</category>
+ </item>
+
+ <item>
+  <title>data-forecast</title>
+  <description>data-forecast Is a HTML page that creates a forecast based on data you give it.</description>
+  <link>http://www.publicsite.org/J05HYYY/forecast.html</link>
+  <category>therest</category>
+ </item>
+
+</channel>
+</rss>

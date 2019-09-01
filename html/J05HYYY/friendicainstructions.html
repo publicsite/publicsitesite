@@ -1,0 +1,102 @@
+<html>
+<TITLE>J05HYYY's site</TITLE>
+<center>
+<H1>Friendica on the Raspberry Pi</H1>
+<table>
+<tr><td>
+<center>
+<b><u>This is probably out of date and there are probably better single-board-computers to install on.</b></u>
+</center>
+<br><br>
+At first I tried using Friendica image on Raspberry Pi, this turned out to be <b>too slow</b>:
+Make sure you have xserver installed.
+<br>
+apt-get install qemu unzip
+<br>
+wget http://downloads.friendica.eu/Friendica.zip
+<br>
+unzip Friendica.zip
+<br>
+rmmod nbd #check if the nbd module is loaded
+<br>
+modprobe nbd max_part=16 #attach the nbd module if not with max 16 partitions
+<br>
+qemu-nbd -c /dev/nbd0 Friendica.vdi #mount the vdi at /dev/ndb0
+<br>
+qemu -m 256 -cpu 486 -hda /dev/ndb0 #run qemu
+<br>
+qemu-nbd -d /dev/nbd0 #unmount the vdi at /dev/ndb0
+<br><br>
+<b>So then I went about installing friendica natively on the Raspberry Pi</b>:
+<br><br>
+#download dependencies
+<br>
+sudo apt-get install php5 apache2 mysql-server php5-curl smarty3
+<br>
+#get friendica
+<br>
+wget https://github.com/friendica/friendica/archive/master.zip #note this
+<br>
+could probably be downloaded via git
+<br><br>
+#unzip
+<br>
+unzip master.zip
+<br><br>
+#copy to your server
+<br>
+cp -R friendica-master /var/www/friendica
+<br><br>
+#login to mysql
+<br>
+mysql -u username -p
+<br><br>
+#create a new database called friendica
+<br>
+create database friendica;
+<br><br>
+#At the MySQL prompt, set the permissions using the following command:
+<br>
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES ON friendica.* TO user@localhost IDENTIFIED BY ‘password’;
+<br><br>
+#use the new permissions
+<br>
+FLUSH PRIVILEGES;
+<br><br>
+#exit mysql cli
+<br>
+exit
+<br><br>
+#add allow www-data write access to /var/www/friendica/view/smarty3
+<br>
+chown user:www-data /var/www/friendica/view/smarty3
+<br>
+chmod g+w /var/www/friendica/view/smarty3
+<br><br>
+#make a new .htconfig.php file
+<br>
+touch /var/www/friendica/.htconfig.php
+<br><br>
+#allow read writing and execution for this file:
+<br>
+chown user:www-data /var/www/friendica/.htconfig.php
+<br>
+chmod g+rwx /var/www/friendica/.htconfig.php
+<br><br>
+#edit /etc/apache2/sites-enabled/000-default and change AllowOverride to All
+<br><br>
+#continue with the installation from your domain name, not from the local ip address.
+<br><br>
+#finally run
+<br>
+crontab -e
+<br><br>
+#and add following line to the file:
+<br>
+*/10 * * * * /usr/bin/php /var/www/friendica/include/poller.php
+<br><br>
+Job Done
+</td></tr>
+</table>
+</center>
+</html>

@@ -1,0 +1,115 @@
+<html>
+<title>DeepSearch Beta</title>
+<script type="text/javascript" id="categorysearchscript"></script>
+
+<script type="text/javascript">
+
+var firstrun=1;
+
+function search_change(){
+ var links = document.getElementById('categorysearchdiv').getElementsByTagName('a');
+ for (var i = 0; i < links.length; i++) {
+    if ( document.getElementById("searchbox").value != "" )
+    {
+    	links[i].href = links[i].id.replace("{searchTerms}",encodeURIComponent(document.getElementById("searchbox").value));;
+    }
+    else
+    {
+        links[i].href = "#"
+    }
+ }
+}
+
+function radio_click(){
+
+		if (firstrun == -1)
+		{
+			document.body.removeChild(document.body.lastChild);
+			delete UnusedReferencedObjects;
+		}
+
+		var script = document.createElement("script")
+		script.type  = "text/javascript";
+		script.onload =	script.onreadystatechange = function() {
+    			if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") {
+				search_change();
+			}
+		}
+
+		script.src = document.querySelector('input[name="categories"]:checked').value
+		document.body.appendChild(script);
+
+		firstrun=-1;
+
+}
+</script>
+
+    <body onload="radio_click();">
+		<center>
+		<input type="search" size="100" id="searchbox" onkeyup="search_change();"></input><br>
+<input type="radio" name="categories" value="Arts_&_Media_-_Animation.js" onclick="radio_click();">Arts & Media - Animation
+<input type="radio" name="categories" value="Arts_&_Media_-_Film,_TV_&_Video.js" onclick="radio_click();">Arts & Media - Film, TV & Video
+<input type="radio" name="categories" value="Arts_&_Media_-_Images.js" onclick="radio_click();">Arts & Media - Images
+<input type="radio" name="categories" value="Arts_&_Media_-_Literature.js" onclick="radio_click();">Arts & Media - Literature
+<input type="radio" name="categories" value="Arts_&_Media_-_Music.js" onclick="radio_click();">Arts & Media - Music
+<input type="radio" name="categories" value="Arts_&_Media.js" onclick="radio_click();">Arts & Media
+<input type="radio" name="categories" value="Business_-_Jobs.js" onclick="radio_click();">Business - Jobs
+<input type="radio" name="categories" value="Business.js" onclick="radio_click();">Business
+<input type="radio" name="categories" value="Computer_-_Linux.js" onclick="radio_click();">Computer - Linux
+<input type="radio" name="categories" value="Computer_-_Programming.js" onclick="radio_click();">Computer - Programming
+<input type="radio" name="categories" value="Computer_-_Software.js" onclick="radio_click();">Computer - Software
+<input type="radio" name="categories" value="Computer.js" onclick="radio_click();">Computer
+<input type="radio" name="categories" value="Dictionaries_-_Translation.js" onclick="radio_click();">Dictionaries - Translation
+<input type="radio" name="categories" value="Dictionaries.js" onclick="radio_click();">Dictionaries
+<input type="radio" name="categories" value="Directories_-_Address,Phone....js" onclick="radio_click();">Directories - Address,Phone...
+<input type="radio" name="categories" value="Education_-_Journals.js" onclick="radio_click();">Education - Journals
+<input type="radio" name="categories" value="Education.js" onclick="radio_click();">Education
+<input type="radio" name="categories" value="Education_-_Universities.js" onclick="radio_click();">Education - Universities
+<input type="radio" name="categories" value="File_Sharing.js" onclick="radio_click();">File Sharing
+<input type="radio" name="categories" value="Games_-_Roleplaying.js" onclick="radio_click();">Games - Roleplaying
+<input type="radio" name="categories" value="Games.js" onclick="radio_click();">Games
+<input type="radio" name="categories" value="Games_-_Video_Games.js" onclick="radio_click();">Games - Video Games
+<input type="radio" name="categories" value="Health.js" onclick="radio_click();">Health
+<input type="radio" name="categories" value="Internet_-_Mozilla.js" onclick="radio_click();">Internet - Mozilla
+<input type="radio" name="categories" value="Internet_-_Programming.js" onclick="radio_click();">Internet - Programming
+<input type="radio" name="categories" value="Internet_-_Tools.js" onclick="radio_click();">Internet - Tools
+<input type="radio" name="categories" value="Internet.js" onclick="radio_click();">Internet
+<input type="radio" name="categories" value="Kids_&_Teens.js" onclick="radio_click();">Kids & Teens
+<input type="radio" name="categories" value="Libraries.js" onclick="radio_click();">Libraries
+<input type="radio" name="categories" value="Major_Engines.js" onclick="radio_click();" checked="checked">Major Engines
+<input type="radio" name="categories" value="News_-_Technology.js" onclick="radio_click();">News - Technology
+<input type="radio" name="categories" value="News.js" onclick="radio_click();">News
+<input type="radio" name="categories" value="News_-_Weather.js" onclick="radio_click();">News - Weather
+<input type="radio" name="categories" value="Other_General_Engines_-_Charity.js" onclick="radio_click();">Other General Engines - Charity
+<input type="radio" name="categories" value="Other_General_Engines_-_Custom(ised).js" onclick="radio_click();">Other General Engines - Custom(ised)
+<input type="radio" name="categories" value="Other_General_Engines_-_Metasearch.js" onclick="radio_click();">Other General Engines - Metasearch
+<input type="radio" name="categories" value="Other_General_Engines.js" onclick="radio_click();">Other General Engines
+<input type="radio" name="categories" value="Recreation_-_Sport.js" onclick="radio_click();">Recreation - Sport
+<input type="radio" name="categories" value="Recreation_-_Travel.js" onclick="radio_click();">Recreation - Travel
+<input type="radio" name="categories" value="Recreation.js" onclick="radio_click();">Recreation
+<input type="radio" name="categories" value="Reference_-_Encyclopedias.js" onclick="radio_click();">Reference - Encyclopedias
+<input type="radio" name="categories" value="Reference_-_Maps.js" onclick="radio_click();">Reference - Maps
+<input type="radio" name="categories" value="Reference.js" onclick="radio_click();">Reference
+<input type="radio" name="categories" value="Shopping_-_Auction.js" onclick="radio_click();">Shopping - Auction
+<input type="radio" name="categories" value="Shopping_-_Books.js" onclick="radio_click();">Shopping - Books
+<input type="radio" name="categories" value="Shopping_-_Classifieds.js" onclick="radio_click();">Shopping - Classifieds
+<input type="radio" name="categories" value="Shopping_-_Computer.js" onclick="radio_click();">Shopping - Computer
+<input type="radio" name="categories" value="Shopping_-_DVD_&_Video.js" onclick="radio_click();">Shopping - DVD & Video
+<input type="radio" name="categories" value="Shopping_-_Electronics.js" onclick="radio_click();">Shopping - Electronics
+<input type="radio" name="categories" value="Shopping_-_Home_&_DIY.js" onclick="radio_click();">Shopping - Home & DIY
+<input type="radio" name="categories" value="Shopping_-_Music.js" onclick="radio_click();">Shopping - Music
+<input type="radio" name="categories" value="Shopping_-_Price_Comparison.js" onclick="radio_click();">Shopping - Price Comparison
+<input type="radio" name="categories" value="Shopping.js" onclick="radio_click();">Shopping
+<input type="radio" name="categories" value="Society_-_Blogs.js" onclick="radio_click();">Society - Blogs
+<input type="radio" name="categories" value="Society_-_Government.js" onclick="radio_click();">Society - Government
+<input type="radio" name="categories" value="Society_-_Religion.js" onclick="radio_click();">Society - Religion
+<input type="radio" name="categories" value="Society_-_Social_Network.js" onclick="radio_click();">Society - Social Network
+<input type="radio" name="categories" value="Society.js" onclick="radio_click();">Society
+<input type="radio" name="categories" value="Undefined.js" onclick="radio_click();">Undefined
+
+		<br><br>
+
+		<div id="categorysearchdiv"></div>
+		</center>
+    </body>
+</html>

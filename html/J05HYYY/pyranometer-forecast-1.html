@@ -1,0 +1,180 @@
+<HTML>
+<script type="text/javascript">
+function toDate(dateStr) {
+    var parts = dateStr.split("/");
+    return new Date(Date.UTC(parts[2], parts[1] - 1, parts[0]));
+}
+
+function buttonClick(){
+
+var linesIndex = 0;
+
+var data = [[]];
+
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       xhr.responseText;
+var dataLines = xhr.responseText.split('\n');
+var foundDate = 0;
+var oldDate = new Date(Date.UTC());
+var dataIndex = 0;
+var dataIndexIndex = 0;
+for(var i = 0;i < dataLines.length;++i){
+    var commaSplit = dataLines[i].split(',');
+    if (foundDate == 0)
+    {
+       	var dateAndTime = commaSplit[0].split(' ');
+	if (typeof dateAndTime[1] != 'undefined')
+	{
+		if (typeof dateAndTime[1] != 'undefined'){
+			if (isNaN(parseFloat(commaSplit[1])) == false)
+			{
+       				oldDate = toDate(dateAndTime[0]);
+				time = dateAndTime[1].split(':');
+				oldDate.setTime(oldDate.getTime() + (parseInt(time[0]) * 3600000) + (parseInt(time[1]) * 60000));
+
+				data[dataIndex][dataIndexIndex] = commaSplit[1];
+				dataIndexIndex++;
+				foundDate = 1;
+			}
+		}
+	}
+    }
+    else
+    {
+	var dateAndTime = commaSplit[0].split(' ');
+	if (typeof dateAndTime[1] != 'undefined')
+	{
+		if (isNaN(parseFloat(commaSplit[1])) == false)
+		{
+
+	       		var newDate = toDate(dateAndTime[0]);
+			var time = dateAndTime[1].split(':');
+
+       			newDate.setTime(newDate.getTime() + (parseInt(time[0]) * 3600000) + (parseInt(time[1]) * 60000));
+//if (i == 2159) alert((newDate.getTime() + (parseInt(time[0]) * 3600000) + (parseInt(time[1]) * 60000)));
+//if (i == 2160) alert((newDate.getTime() + (parseInt(time[0]) * 3600000) + (parseInt(time[1]) * 60000)));
+//if (test.getTime() == newDate.getTime()) alert(newDate.getTime());
+
+       			var upperRange = oldDate.getTime() + (1.5 * 3600000);
+	       		var lowerRange = oldDate.getTime() + (0.5 * 3600000);
+       				if (newDate.getTime() > lowerRange && newDate.getTime() < upperRange)
+       				{
+					data[dataIndex][dataIndexIndex] = commaSplit[1];
+					dataIndexIndex++;
+       				}
+				else
+				{
+					dataIndex++;
+					data[dataIndex] = [];
+					data[dataIndex][dataIndexIndex] = commaSplit[1];
+					dataIndexIndex++;
+				}
+					oldDate.setTime(newDate.getTime());
+		}
+	}
+    }
+}
+
+var output = "";
+/*
+for (a=0; a < data.length; ++a)
+{
+alert(data[a].length + "***" + data[a][data[a].length-1]);
+	//output = "NEW\n";
+	//for (b=0; b < data[a].length; ++b)
+	//{
+	//	output = output + data[a][b] + '\n';
+	//}
+}
+
+alert("done!");
+*/
+	//document.getElementById("outputText").value = output;
+	//document.getElementById("outputText").style.visibility = "visible";
+
+var lines = document.getElementById("inputText").value.split('\n');
+var outputSize = document.getElementById("howManyToPredict").value;
+var sample = [];
+b=0;
+for (a=0; a < lines.length; ++a)
+{
+	if (isNaN(parseFloat(lines[a])) == false) sample[b] = lines[a];
+	++b;
+}
+
+if (sample.length == 0)
+{
+alert("You didn't enter any values.");
+return -1;
+}
+
+	var output;
+
+	var output = [];
+	for (i=0; i < outputSize; i++)
+	{
+		output[i] = 0;
+	}
+
+	totalDifference = 0;
+for (a=0; a < data.length; ++a)
+{
+	for (i=sample.length; i < data[a].length - outputSize; i++)
+	{
+		cellDifference = 0;
+		for (j=i-sample.length; j < i; j++)
+		{
+			cellDifference += Math.pow((1/(Math.sqrt(Math.pow(data[a][j] - sample[j+sample.length-i], 2))+1)) * (sample.length-(i-j)+1),100);
+
+		}
+
+if (isNaN(cellDifference) == false)
+		totalDifference += cellDifference;
+
+		for (l=0; l < outputSize; l++)
+		{
+if (isNaN(data[a][i+l]*cellDifference) == false)
+				output[l] += data[a][i+l]*cellDifference;
+		}
+	}
+
+	document.getElementById("outputText").value = "";
+}
+	for (i=0; i < outputSize; i++)
+	{
+		document.getElementById("outputText").value = document.getElementById("outputText").value + output[i]/totalDifference + '\n';
+	}
+
+	document.getElementById("outputText").style.visibility = "visible";
+
+};//end of status = 200
+}//end of on state change
+xhr.open("GET", "pyranometer-forecast-data.csv", true);
+xhr.responseType = 'text';
+xhr.send(); 
+}//end of function button click
+</script>
+<body width="100%" height="100%">
+<center>
+<H1>Pyranometer Forecaster</H1>
+Enter your most recent hourly values (in chronological order and separated by new lines), here:
+<br>
+<textarea id="inputText" cols="100" rows="20"></textarea>
+<br>
+Predict the next
+<input type="text" id="howManyToPredict" value="12"></textarea>
+values.
+<br>
+<br>
+<button onclick="buttonClick();">Calculate!</button>
+<br>
+<br>
+<textarea style="visibility:hidden" id="outputText" cols="100" rows="7"></textarea>
+<br>
+Contains data supplied by Natural Environment Research Council.
+&copy; NERC (Centre for Ecology & Hydrology)
+</center>
+</body>
+</HTML>

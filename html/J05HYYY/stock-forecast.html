@@ -1,0 +1,144 @@
+<HTML>
+<title>Stock Forecaster</title>
+<script type="text/javascript">
+
+function isFloat(n) {
+    return n === +n && n !== (n|0);
+}
+
+function buttonClick(){
+
+  var xhr = new XMLHttpRequest();
+var url = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20csv%20where%20url%3D'http%3A%2F%2Fichart.finance.yahoo.com%2Ftable.csv%3Fs%3D" + document.getElementById("inputTicker").value + "%26g%3Dd'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
+
+  if (!xhr) {
+    alert('CORS not supported');
+    return;
+  }
+
+
+    xhr.open('GET', url, true);
+xhr.responseType = 'text';
+//xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+//xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+
+  // Response handlers.
+     xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+
+var response = JSON.parse(xhr.responseText);
+
+       // Typical action to be performed when the document is ready:
+
+	var data = [];
+b=0;
+last=response.query.results.row.length-2;
+found=-1;
+for (a=response.query.results.row.length-1; a > 0; a--)
+{
+
+		if (isNaN(parseFloat(response.query.results.row[a].col4)) == false && isNaN(parseFloat(response.query.results.row[last].col4)) == false)
+		{
+
+			if ( found == 1 )
+			{
+				data[b] = response.query.results.row[a].col4 - response.query.results.row[last].col4;
+				++b;
+			}
+			else
+			{
+				found = 1;
+			}
+			last=a;
+		}
+}
+newValue = parseFloat(response.query.results.row[last].col4);
+
+if (data.length <= 14)
+{
+	alert("ERROR: Based off the last is less than number of valid input values.");
+	return -1;
+}
+
+if (data.length <= 7 + 14)
+{
+	alert("ERROR: Number of valid input values is less than or plus one, based of the last plus how many to predict.");
+	return -1;
+}
+
+	var sample = [];
+	var outputSize = 7;
+	for (a=data.length-14; a < data.length; ++a)
+	{
+		sample[a-(data.length-14)] = data[a];
+	}
+
+	var output;
+
+	var output = [];
+	for (i=0; i < outputSize; i++)
+	{
+		output[i] = 0;
+	}
+
+	totalDifference = 0;
+
+	for (i=sample.length; i < data.length - outputSize; i++)
+	{
+
+		cellDifference = 0;
+		for (j=i-sample.length; j < i; j++)
+		{
+			cellDifference += Math.pow((1/(Math.sqrt(Math.pow(data[j] - sample[j+sample.length-i], 2))+1)) * (sample.length-(i-j)+1),100);
+
+		}
+
+		totalDifference += cellDifference;
+
+		for (l=0; l < outputSize; l++)
+		{
+
+				output[l] += data[i+l]*cellDifference;
+
+		}
+	}
+
+	document.getElementById("outputText").value = "Last close: " + newValue + '\n';
+
+	for (i=0; i < outputSize; i++)
+	{
+		newValue = newValue + (output[i]/totalDifference);
+		document.getElementById("outputText").value = document.getElementById("outputText").value + "Plus " + (i+1) + " trading day(s), close: " + newValue + '\n';
+	}
+
+	document.getElementById("outputText").style.visibility = "visible";
+	}
+
+  };
+
+  xhr.onerror = function() {
+    alert('Woops, there was an error making the request.');
+  };
+
+  xhr.send();
+}
+
+</script>
+<body width="100%" height="100%">
+<center>
+<H1>Stock Forecaster</H1>
+Enter the Yahoo ticker here:
+<br>
+<input id="inputTicker" value="YHOO"></textarea>
+<br>
+<button onclick="buttonClick();">Calculate!</button>
+<br>
+<br>
+<textarea style="visibility:hidden" id="outputText" cols="100" rows="8"></textarea>
+<br>
+<br>
+<br>
+*For informational and personal use only.
+</center>
+</body>
+</HTML>

@@ -1,0 +1,1097 @@
+0ad-data-common				not found							
+3dchess				not found							
+4digits				keyboard and mouse only							
+7kaa		uses mouse, could use gamepad emulation									
+7kaa-data				not found							
+a7xpg		gamepad!									
+a7xpg-data				not found							
+aajm				keyboard only							
+abe		keyboard, could use gamepad emulation									
+abe-data				not found							
+ace-of-penguins		mouse, could use gamepad emulation					command is different reading the man page				
+acm				not working, unknown controls							
+adanaxisgpl		says can use joystick, but couldn't get to work, otherwise uses keyboard but could not use gamepad emulation									
+adanaxisgpl-data				not found							
+adonthell				not working							
+adonthell-data				not found							
+airstrike		keyboard, could use gamepad emulation									
+airstrike-common				not found							
+aisleriot		mouse, could use gamepad emulation									
+alex4		keyboard, could use gamepad emulation									
+alex4-data				not found							
+alienblaster		gamepad works, need key mapping though									
+alienblaster-data				not found							
+amoebax		says can use joystick, but couldn't get to work, otherwise uses keyboard and could use gamepad emulation									
+amoebax-data				not found							
+amphetamine		uses keyboard, could use gamepad emulation									
+amphetamine-data				not found							
+an				text based							
+angband				keyboard and mouse only							
+angband-data				game only partially works with gamepad, is buggy, wont exit, some options wont select							
+angrydd											
+animals				text based, keyboard only							
+antigravitaattori		run with “antigrav”, uses keyboard, could use gamepad emulation									
+ardentryst		uses keyboard, could use gamepad emulation									
+armagetronad		uses keyboard, could use gamepad emulation									
+armagetronad-common											
+armagetronad-dedicated											
+asc		uses mouse, could use gamepad emulation									
+asc-data											
+asc-music											
+asciijump				text based, keyboard only							
+asylum		says can use joystick, but couldn't get to work, otherwise uses keyboard and could use gamepad emulation									
+asylum-data											
+atanks		keyboard and some mouse, could use gamepad emulation									
+atanks-data											
+atom4		mouse, could use gamepad emulation									
+atomix		keyboard and mouse, could use gamepad emulation									
+atomix-data											
+atris				only in wheezy							
+attal		start with “attal-client”, mouse only, could use gamepad emulation									
+attal-themes-medieval											
+auralquiz				requires music							
+balazar3				freezes							
+balazar3-2d		run with “balazar3 –2d”, uses keyboard, could use gamepad emulation									
+balazar3-3d											
+balazar3-common											
+balazarbrothers				looks interesting but freezes, couldn't work it out							
+balder2d		uses keyboard, could use gamepad emulation									
+balder2d-data											
+ballerburg		uses mouse, could use gamepad emulation									
+ballz		keyboard, could use gamepad emulation									
+ballz-data											
+ballz-dbg											
+bambam				weird, uses keyboard only							
+barrage		mouse, could use gamepad emulation									
+bastet		keyboard, could use gamepad emulation									
+bb		keyboard, could use gamepad emulation									
+bear-factory				looks like level editor for something							
+beneath-a-steel-sky		mouse, could use gamepad emulation									
+berusky		keyboard and mouse, could use gamepad emulation									
+berusky-data				not found							
+berusky2		keyboard and mouse, could use gamepad emulation									
+berusky2-data				not found							
+between		keyboard, could use gamepad emulation									
+billard-gl		keyboard and mouse, could use gamepad emulation									
+billard-gl-data				not found							
+biloba		keyboard and mouse, could use gamepad emulation									
+biloba-data				not found							
+biniax2		keyboard, could use gamepad emulation									
+biniax2-data				not found							
+black-box		mouse, could use gamepad emulation									
+blobandconquer		keyboard and mouse, could use gamepad emulation					possibly broken		runs with ”blobAndConquer”		
+blobandconquer-data				not found							
+blobby		keyboard and mouse, could use gamepad emulation									
+blobby-data				not found							
+blobby-server				not found							
+bloboats		keyboard, could use gamepad emulation									
+blobwars		says can use joystick, but couldn't get to work, otherwise uses keyboard and could use gamepad emulation									
+blobwars-data				not found							
+blockattack		keyboard and mouse, could use gamepad emulation									
+blockout2		says can use joystick, but couldn't get to work, otherwise uses keyboard and mouse and could use gamepad emulation									
+blocks-of-the-undead		keyboard, could use gamepad emulation									
+blocks-of-the-undead-data				not found							
+bombardier		keyboard, could use gamepad emulation					have to make the terminal big enough				
+bomber		keyboard, could use gamepad emulation									
+bomberclone		says can use joystick, but couldn't get to work, otherwise uses keyboard and could use gamepad emulation									
+bomberclone-data				not found							
+boswars		mouse, could use gamepad emulation									
+boswars-data				not found							
+bouncy		mouse, could use gamepad emulation									
+bovo		mouse, could use gamepad emulation									
+brainparty		mouse, could use gamepad emulation									
+brainparty-data				not found							
+briquolo		keyboard, could use gamepad emulation									
+briquolo-data				not found							
+brutalchess		mouse, could use gamepad emulation									
+bsdgames				not found							
+bsnes				not found							
+btanks		says can use joystick, but couldn't get to work, otherwise uses keyboard and could use gamepad emulation									note, menus work with controller, but game doesn't
+btanks-data				not found							
+bubbros		keyboard and mouse, could use gamepad emulation					requires browser as creates a server				
+bugsquish		mouse, could use gamepad emulation									
+bumprace		keyboard, could use gamepad emulation									
+bumprace-data				not found							
+burgerspace		keyboard, could use gamepad emulation									
+bygfoot		mouse, could use gamepad emulation									
+bygfoot-data				not found							
+bzflag		says can use joystick, but couldn't get to work, otherwise uses keyboard and could use gamepad emulation									note, actual game works with controller, but menus dont
+bzflag-client				not found							
+bzflag-data				not found							
+bzflag-server				not found							
+cappuccino		uses keyboard, could use gamepad emulation				dont know if it's a game or not. To quit ALT+F4					
+castle-combat		keyboard and mouse, could use gamepad emulation									
+cavezofphear				?							
+ceferino		uses keyboard, could use gamepad emulation									
+ceferino-data				not found							
+cgoban		mouse, could use gamepad emulation									
+chessx		mouse, could use gamepad emulation									
+childsplay		keyboard and mouse, could use gamepad emulation									
+childsplay-alphabet-sounds-bg				not found							
+childsplay-alphabet-sounds-ca				not found							
+childsplay-alphabet-sounds-de				not found							
+childsplay-alphabet-sounds-el				not found							
+childsplay-alphabet-sounds-en-gb				not found							
+childsplay-alphabet-sounds-es				not found							
+childsplay-alphabet-sounds-fr				not found							
+childsplay-alphabet-sounds-it				not found							
+childsplay-alphabet-sounds-nb				not found							
+childsplay-alphabet-sounds-nl				not found							
+childsplay-alphabet-sounds-pt				not found							
+childsplay-alphabet-sounds-ro				not found							
+childsplay-alphabet-sounds-ru				not found							
+childsplay-alphabet-sounds-sl				not found							
+childsplay-alphabet-sounds-sv				not found							
+chipw		mouse, could use gamepad emulation				level editor					
+chromium-bsu		keyboard, could use gamepad emulation									
+chromium-bsu-data				not found							
+circuslinux		mouse (optional keyboard), could use gamepad emulation									
+circuslinux-data				not found							
+colobot		says can use joystick, but couldn't get to work, otherwise uses keyboard and mouse and could use gamepad emulation									
+colobot-common				not found							
+colobot-common-sounds				not found							
+colobot-common-textures				not found							
+colorcode		keyboard and mouse, could use gamepad emulation									
+connectagram		mouse, could use gamepad emulation									
+cookietool				text based, keyboard only	?	don't know how to start					
+cowsay				don't know how to start							
+crack-attack		keyboard and mouse, could use gamepad emulation									
+crawl				text based, keyboard only							
+crawl-common				not found							
+crawl-tiles				not found							
+crawl-tiles-data				not found							
+crimson		mouse (optional keyboard), could use gamepad emulation									
+criticalmass		keyboard (optional mouse), could use gamepad emulation									
+criticalmass-data				not found							
+crossfire-client				keyboard and mouse only							
+crossfire-client-images				not found							
+crossfire-client-sounds				not found							
+crossfire-common				not found							
+crossfire-maps				not found							
+crossfire-maps-small				not found							
+crossfire-server				not found							
+crrcsim		keyboard and mouse, could use gamepad emulation									
+crrcsim-data				not found							
+csmash		keyboard (optional mouse), could use gamepad emulation									
+csmash-data				not found							
+csmash-demosong				not found							
+cultivation		mouse, could use gamepad emulation									
+curseofwar				text based							
+cutechess				not found							
+cuyo		keyboard (optional mouse), could use gamepad emulation									
+cuyo-data				not found							
+dangen		gamepad!									
+darkplaces				could not get it to work							
+darkplaces-server				not found							
+dds				not a game							
+deal		text based. No controls									
+dealer				text based, don't understand it							
+defendguin		gamepad!									
+defendguin-data				not found							
+desmume				could not get it to work							
+deutex				could not get it to work							
+dizzy		mouse, could use gamepad emulation									
+dodgindiamond2		gamepad! Needs setting in options			not sure about leaderboard						
+doomsday				keyboard and mouse only							
+dopewars				keyboard and mouse only							
+dopewars-data				not found							
+dossizola		mouse, could use gamepad emulation									
+dossizola-data				not found							
+drascula		keyboard and mouse, could use gamepad emulation									
+drascula-french				not found							
+drascula-german				not found							
+drascula-italian				not found							
+drascula-music				not found							
+drascula-spanish				not found							
+dreamchess		gamepad!									
+dreamchess-data				not found							
+dvorak7min				text based, keyboard only							
+eboard		mouse, could use gamepad emulation									
+eboard-extras-pack1				not found							
+efp				could not get it to work							
+einstein		mouse, could use gamepad emulation									
+emacs-chess				could not get it to work							
+ember-media				could not get it to work							
+empire				text based, keyboard only							
+empire-hub				not found							
+empire-lafe				not found							
+enemylines3		keyboard and mouse, could use gamepad emulation									
+enemylines7		keyboard (optional mouse), could use gamepad emulation									
+enigma		keyboard and mouse, could use gamepad emulation									
+enigma-data				not found							
+epiphany				could not get it to work							
+epiphany-data				not found							
+etw		says can use joystick, but couldn't get to work, otherwise uses keyboard and could use gamepad emulation									
+etw-data				not found							
+excellent-bifurcation		keyboard, could use gamepad emulation									
+extremetuxracer				could not get it to work							
+extremetuxracer-data				not found							
+extremetuxracer-dbg				not found							
+extremetuxracer-extras				not found							
+extremetuxracer-gimp-dev				not found							
+fairymax				text based, keyboard only							
+fb-music-high				not found							
+fceu				not found							
+ffrenzy		keyboard, could use gamepad emulation				multiplayer only					
+fgfs-aircraft-base				not found							
+fgfs-base				not found							
+fgfs-models-base				not found							
+fgfs-scenery-base				not found							
+fgo				could not get it to work		mouse only, flightgear launcher					
+fgrun				could not get it to work							
+filler		mouse, could use gamepad emulation									
+fillets-ng				not found							
+fillets-ng-data				not found							
+fillets-ng-data-cs				not found							
+fillets-ng-data-nl				not found							
+filters				text based, keyboard only		lol					
+five-or-more		mouse, could use gamepad emulation									
+fizmo				could not get it to work							
+fizmo-common				not found							
+fizmo-console				not found							
+fizmo-ncursesw				could not get it to work							
+flare		gamepad half works, with configuration, otherwise uses keyboard (mouse optional) and could use gamepad emulation									
+flare-data				not found							
+flight-of-the-amazon-queen				not found							
+flightgear				not found							
+flightgear-data-ai				not found							
+flightgear-data-aircrafts				not found							
+flightgear-data-all				not found							
+flightgear-data-base				not found							
+flightgear-data-models				not found							
+flobopuyo		gamepad works, need key mapping though									
+fltk1.1-games				not found							
+fltk1.3-games				not found							
+fofix				could not get it to work		needs tunes I think					
+foobillard				not found							
+foobillardplus		keyboard and mouse, could use gamepad emulation				buggy graphics					
+foobillardplus-data				not found							
+fortune-mod				not found							
+fortune-zh		text based. No controls									
+fortunes				not found		possibly “fortune” command, which is text based and has no controls					
+fortunes-bg				not found							
+fortunes-bofh-excuses				not found							
+fortunes-br				not found							
+fortunes-cs				not found							
+fortunes-de				not found							
+fortunes-debian-hints				not found							
+fortunes-eo				not found							
+fortunes-eo-ascii				not found							
+fortunes-eo-iso3				not found							
+fortunes-es				not found							
+fortunes-es-off				not found							
+fortunes-fr				not found							
+fortunes-ga				not found							
+fortunes-it				not found							
+fortunes-it-off				not found							
+fortunes-mario				not found							
+fortunes-min				not found							
+fortunes-off				not found							
+fortunes-pl				not found							
+fortunes-ru				not found							
+four-in-a-row		mouse, could use gamepad emulation									
+freealchemist		keyboard, could use gamepad emulation									
+freecell-solver-bin				not a game							
+freedink		gamepad!									
+freedink-data				not found							
+freedink-dfarc		mouse, could use gamepad emulation									
+freedink-engine				not found							
+freedink-engine-dbg				not found							
+freedm		says can use joystick, but couldn't get to work, otherwise uses keyboard (mouse optional) and could use gamepad emulation									
+freedoom				not found							
+freedroid		gamepad half works, otherwise uses keyboard (mouse optional) and could use gamepad emulation									
+freedroid-data				not found							
+freedroidrpg		keyboard and mouse, could use gamepad emulation				start with “freedroidRPG”					
+freedroidrpg-data				not found							
+freegish		gamepad half works, otherwise uses keyboard and could possibly use gamepad emulation									
+freegish-data				not found							
+freesweep				keyboard only		text based					
+freetennis		keyboard and mouse, could use gamepad emulation				breaks screen resolution after error			possibly due to perm_lock		
+freetennis-common				not found							
+freevial		keyboard, could use gamepad emulation									
+fretsonfire		keyboard, could use gamepad emulation									
+fretsonfire-game				not found							
+fretsonfire-songs-muldjord				not found							
+fretsonfire-songs-sectoid				not found							
+frotz				emulator							
+frozen-bubble		keyboard, could use gamepad emulation									
+frozen-bubble-data				not found							
+fruit				could not get it to work		text based?					
+funguloids		keyboard, could use gamepad emulation				bit jerky					
+funguloids-data				not found							
+funnyboat		gamepad half works, otherwise uses keyboard and could use gamepad emulation					thumbstick too sensitive		no escape button		
+gamazons		mouse, could use gamepad emulation									
+gameclock		mouse, could use gamepad emulation									
+gamine		keyboard and mouse, could use gamepad emulation									
+gamine-data				not found							
+garden-of-coloured-lights		says can use joystick, but couldn't get to work, otherwise uses keyboard and could use gamepad emulation							run with “garden”		
+garden-of-coloured-lights-data				not found							
+gargoyle-free				interactive fiction							
+gav		keyboard, could use gamepad emulation									
+gav-themes				not found							
+gbrainy				keyboard and mouse only							
+gcompris				keyboard and mouse only							
+gcompris-data				not found							
+gcompris-dbg				not found							
+gcompris-sound-af				not found							
+gcompris-sound-ar				not found							
+gcompris-sound-ast				not found							
+gcompris-sound-bg				not found							
+gcompris-sound-br				not found							
+gcompris-sound-cs				not found							
+gcompris-sound-da				not found							
+gcompris-sound-de				not found							
+gcompris-sound-el				not found							
+gcompris-sound-en				not found							
+gcompris-sound-eo				not found							
+gcompris-sound-es				not found							
+gcompris-sound-eu				not found							
+gcompris-sound-fi				not found							
+gcompris-sound-fr				not found							
+gcompris-sound-he				not found							
+gcompris-sound-hi				not found							
+gcompris-sound-hu				not found							
+gcompris-sound-id				not found							
+gcompris-sound-it				not found							
+gcompris-sound-mr				not found							
+gcompris-sound-nb				not found							
+gcompris-sound-nl				not found							
+gcompris-sound-nn				not found							
+gcompris-sound-pa				not found							
+gcompris-sound-pt				not found							
+gcompris-sound-ptbr				not found							
+gcompris-sound-ru				not found							
+gcompris-sound-sl				not found							
+gcompris-sound-so				not found							
+gcompris-sound-sr				not found							
+gcompris-sound-sv				not found							
+gcompris-sound-th				not found							
+gcompris-sound-tr				not found							
+gcompris-sound-ur				not found							
+gcompris-sound-zhcn				not found							
+gearhead				keyboard only		text based					
+gearhead-data				not found							
+gearhead2		keyboard, could use gamepad emulation									
+gearhead2-data				not found		text based					
+geekcode				keyboard only		text based					
+geki2		keyboard, could use gamepad emulation									
+geki3		keyboard, could use gamepad emulation									
+gemdropx		gamepad half works, otherwise uses keyboard and could use gamepad emulation					no escape button				
+gfpoken		mouse, could use gamepad emulation									
+gl-117		keyboard and mouse, could use gamepad emulation				note, also says can use joystick but I don't think menus will work with them					
+gl-117-data				not found							
+glaurung				could not get it to work		text based	chess engine to calculate moves				
+glchess				could not get it to work							
+glhack				broken		due to perm_lock					
+glines				not found							
+glob2		keyboard and mouse, could use gamepad emulation									
+glob2-data				not found							
+glpeces		mouse, could use gamepad emulation									
+glpeces-data				not found							
+gltron		gamepad half works, otherwise uses keyboard and could possibly use gamepad emulation									
+gmchess		mouse, could use gamepad emulation									
+gmult		mouse, could use gamepad emulation									
+gnect				not found							
+gnibbles				not found							
+gnobots2				not found							
+gnome-breakout		mouse, could use gamepad emulation									
+gnome-cards-data				not found							
+gnome-chess		mouse, could use gamepad emulation									
+gnome-hearts		mouse, could use gamepad emulation									
+gnome-klotski		mouse, could use gamepad emulation									
+gnome-mahjongg		mouse, could use gamepad emulation									
+gnome-mastermind		mouse, could use gamepad emulation									
+gnome-mines		mouse, could use gamepad emulation									
+gnome-nibbles		keyboard and mouse, could use gamepad emulation									
+gnome-robots		mouse, could use gamepad emulation									
+gnome-tetravex		mouse, could use gamepad emulation									
+gnomine				not found							
+gnotravex				not found							
+gnotski				not found							
+gnubg		mouse, could use gamepad emulation									
+gnubg-data				not found							
+gnubik		mouse, could use gamepad emulation									
+gnuchess				keyboard only		text based					
+gnuchess-book				not found							
+gnudoq		mouse, could use gamepad emulation									
+gnugo				keyboard only		text based					
+gnujump		keyboard, could use gamepad emulation									
+gnujump-data				not found							
+gnuminishogi				keyboard only		text based					
+gnurobbo		keyboard, could use gamepad emulation									
+gnurobots				keyboard only							
+gnushogi				keyboard only		text based					
+golly		mouse, could use gamepad emulation									
+gomoku.app				keyboard only		text based					
+gplanarity		mouse, could use gamepad emulation									
+gpsshogi				keyboard only		text based					
+gpsshogi-data				not found							
+granule		mouse, could use gamepad emulation									
+gravitation		gamepad half works, otherwise uses keyboard and could use gamepad emulation									
+gravitywars		gamepad half works, otherwise uses keyboard and could use gamepad emulation					too sensitive thumbstick				
+greed		keyboard, could use gamepad emulation				text based					
+grhino		mouse, could use gamepad emulation									
+grhino-data				not found							
+gridlock.app				could not get it to work							
+groundhog		mouse, could use gamepad emulation									
+gsalliere		mouse, could use gamepad emulation		could not get it to work							
+gtali				not found							
+gtans		mouse, could use gamepad emulation									
+gtkballs		mouse, could use gamepad emulation									
+gtkboard		keyboard and mouse, could use gamepad emulation									
+gtkpool		mouse, could use gamepad emulation									
+gunroar		Gamepad!						all works except quit game			
+gunroar-data				not found							
+gvrng				not found		programming language					
+gweled		mouse, could use gamepad emulation									
+hannah		keyboard, could use gamepad emulation									
+hannah-data				not found							
+hearse				not a game		exchange nethack bones files with other players					
+heroes-common				not found							
+heroes-data				not found							
+heroes-sdl		keyboard, could use gamepad emulation									
+heroes-sound-effects				not found							
+heroes-sound-tracks				not found							
+hex-a-hop		keyboard, could use gamepad emulation									
+hexalate		mouse, could use gamepad emulation									
+hexxagon		mouse, could use gamepad emulation									
+higan				emulator							
+hitori		mouse, could use gamepad emulation									
+hoichess				keyboard only		text based					
+holdingnuts		mouse (optional keyboard), could use gamepad emulation									
+holdingnuts-server				not found							
+holotz-castle		keyboard, could use gamepad emulation									
+holotz-castle-data				not found							
+holotz-castle-editor				not found							
+hyperrogue		keyboard, could use gamepad emulation									
+hyperrogue-music				not found							
+iagno		mouse, could use gamepad emulation									
+icebreaker		mouse, could use gamepad emulation									
+ii-esu		mouse, could use gamepad emulation									
+infon-devel				keyboard and mouse only		programming game					
+infon-server				keyboard and mouse only		programming game					
+infon-viewer				keyboard and mouse only		programming game					
+instead		keyboard and mouse, could use gamepad emulation				tutorial only					
+instead-data				not found							
+ioquake3				not found		game engine					
+ioquake3-server				not found		game engine					
+jester		mouse, could use gamepad emulation									
+jigzo		mouse, could use gamepad emulation									
+jigzo-data				not found							
+jmdlx		mouse, could use gamepad emulation									
+jumpnbump		gamepad!						all works except quit game			
+jumpnbump-levels				not found							
+jzip				infocom story interpreter							
+kanatest				keyboard and mouse only							
+kapman		keyboard (optional mouse), could use gamepad emulation						if only keyboard, needs quit game function			
+katomic		mouse (optional keyboard), could use gamepad emulation									
+kawari8				scripting language							
+kball		says can use joystick, but couldn't get to work, otherwise uses keyboard and could use gamepad emulation									
+kball-data				not found							
+kblackbox		mouse, could use gamepad emulation									
+kbounce		mouse, could use gamepad emulation									
+kbreakout		keyboard (optional mouse), could use gamepad emulation						if only keyboard, needs quit game function			
+kcheckers		mouse, could use gamepad emulation									
+ketm		keyboard, could use gamepad emulation									
+ketm-data				not found							
+kfourinline		mouse, could use gamepad emulation									
+kgoldrunner		mouse, could use gamepad emulation									
+kiki-the-nano-bot		keyboard, could use gamepad emulation									
+kiki-the-nano-bot-data				not found							
+kildclient				keyboard and mouse only							
+killbots		mouse, could use gamepad emulation									
+kjumpingcube		mouse, could use gamepad emulation									
+klickety		mouse, could use gamepad emulation									
+klines		mouse, could use gamepad emulation									
+knetwalk		mouse, could use gamepad emulation									
+knights		mouse, could use gamepad emulation									
+kobodeluxe		says can use joystick, but couldn't get to work, otherwise uses keyboard and could use gamepad emulation									
+kobodeluxe-data				not found							
+kollision		mouse, could use gamepad emulation									
+komi		keyboard (optional mouse), could use gamepad emulation									
+konquest				keyboard and mouse only							
+koules		keyboard (optional mouse), could use gamepad emulation									
+kpat		mouse, could use gamepad emulation									
+krank		gamepad half works, otherwise uses keyboard and mouse and could use gamepad emulation						needs escape and pause buttons			
+kraptor		says can use joystick, but couldn't get to work, otherwise uses keyboard and mouse and could possibly use gamepad emulation									
+kraptor-data				not found							
+kreversi		mouse, could use gamepad emulation									
+ksirk		mouse, could use gamepad emulation									
+kspaceduel		keyboard and mouse, could use gamepad emulation									
+ksquares		mouse, could use gamepad emulation									
+ktuberling		mouse, could use gamepad emulation									
+kubrick		mouse, could use gamepad emulation									
+laby				keyboard and mouse only							
+late		mouse, could use gamepad emulation									
+late-data				not found							
+lbreakout2		keyboard, could use gamepad emulation									
+lbreakout2-data				not found							
+lgc-pg				could not get it to work							
+lierolibre		keyboard, could use gamepad emulation				multiplayer only					
+lierolibre-data				not found							
+lightsoff		mouse, could use gamepad emulation									
+lightyears		mouse, could use gamepad emulation									
+lincity		keyboard and mouse, could use gamepad emulation									
+lincity-ng		mouse, could use gamepad emulation									
+lincity-ng-data				not found							
+linthesia				requires music							
+liquidwar		says can use joystick, but couldn't get to work, otherwise uses keyboard (mouse optional) and could use gamepad emulation									
+liquidwar-data				not found							
+liquidwar-server				not found							
+littlewizard				not found		programming game					
+littlewizard-data				not found							
+lletters				not found							
+lletters-media				not found							
+lmarbles		mouse (optional keyboard), could use gamepad emulation									
+lmemory		mouse, could use gamepad emulation									
+lolcat				broken							
+londonlaw				keyboard and mouse only, requires server							
+lordsawar		keyboard and mouse, could use gamepad emulation									
+lordsawar-data				not found							
+love				game framework							
+love-dbg				not found							
+ltris		keyboard, could use gamepad emulation									
+luola		gamepad half works, otherwise uses keyboard and could possibly use gamepad emulation									
+luola-data				not found							
+luola-levels				not found							
+luola-nostalgy				not found							
+lure-of-the-temptress		mouse, could use gamepad emulation				run with “lure”					
+macopix-gtk2				could not get it to work		run with “macopix”					
+madbomber		keyboard, could use gamepad emulation									
+madbomber-data				not found							
+magicmaze				broken							
+magicor		gamepad half works, otherwise uses keyboard and could use gamepad emulation									
+magicor-data				not found							
+mah-jong		mouse, could use gamepad emulation									
+mahjongg				not found							
+mana				not found							
+mana-data				not found							
+manaplus				broken		video mode test does not complete					
+manaplus-data				not found							
+mancala				keyboard only		text based					
+marsshooter		gamepad! (works with in-game keymapping)									
+marsshooter-data				not found							
+matanza				could not get it to work							
+mazeofgalious				not found							
+mazeofgalious-data				not found							
+mednafen				emulator							
+megaglest		keyboard and mouse, could use gamepad emulation									
+megaglest-data				not found							
+meritous		keyboard, could use gamepad emulation									
+meritous-data				not found							
+mgt				keyboard only		text based					
+miceamaze		keyboard and mouse, could use gamepad emulation									
+micropolis		mouse (optional keyboard), could use gamepad emulation									
+micropolis-data				not found							
+minetest				could not get it to work		requires map worlds					
+minetest-data				not found							
+minetest-mod-moreblocks				not found							
+minetest-mod-moreores				not found							
+minetest-mod-pipeworks				not found							
+minetest-mod-worldedit				not found							
+minetest-server				not found							
+mirrormagic		keyboard and mouse, could use gamepad emulation									
+mirrormagic-data				not found							
+mmpong-caca				could not get it to work		it's a server					
+mmpong-gl				broken		black screen					
+mmpong-gl-data				not found							
+mmpongd				could not get it to work							
+mokomaze		keyboard, could use gamepad emulation				cant exit game		wrecks resolution when ending process			
+monopd				not a game		monopoly game server					
+monster-masher		keyboard and mouse, could use gamepad emulation									
+monsterz		keyboard and mouse, could use gamepad emulation									
+monsterz-data				not found							
+moon-buggy		keyboard, could use gamepad emulation		text based							
+moon-buggy-esd				not found							
+moon-lander		keyboard, could use gamepad emulation									
+moon-lander-data				not found							
+moria				keyboard only		text based					
+morris		mouse, could use gamepad emulation									
+mousetrap		keyboard, could use gamepad emulation									
+mu-cade		gamepad half works, otherwise uses keyboard and could use gamepad emulation					just needs exit button				
+mu-cade-data				not found							
+mudlet				keyboard and mouse only		mud					
+mupen64plus				emulator							
+mupen64plus-audio-all				not found							
+mupen64plus-audio-sdl				not found							
+mupen64plus-data				not found							
+mupen64plus-input-all				not found							
+mupen64plus-input-sdl				not found							
+mupen64plus-rsp-all				not found							
+mupen64plus-rsp-hle				not found							
+mupen64plus-rsp-z64				not found							
+mupen64plus-ui-console				not found							
+mupen64plus-video-all				not found							
+mupen64plus-video-arachnoid				not found							
+mupen64plus-video-glide64				not found							
+mupen64plus-video-glide64mk2				not found							
+mupen64plus-video-rice				not found							
+mupen64plus-video-z64				not found							
+nestopia				emulator							
+nethack-common				keyboard only		text based					
+nethack-console				not found							
+nethack-el				not found							
+nethack-lisp				keyboard only		text based					
+nethack-x11				not found							
+netmaze		keyboard, could use gamepad emulation									
+netpanzer				could not get it to work		could not connect to a server.					
+netpanzer-data				not found							
+netpanzer-dbg				not found							
+netris		keyboard, could use gamepad emulation		text based		read man page for keyboard keys					
+nettoe				keyboard only							
+neverball		gamepad!									
+neverball-common				not found							
+neverball-data				not found							
+neverball-dbg				not found							
+neverputt		gamepad!									
+neverputt-data				not found							
+nexuiz		says can use joystick, but couldn't get to work, otherwise uses keyboard and mouse and could possibly use gamepad emulation									
+nexuiz-data				not found							
+nexuiz-music				not found							
+nexuiz-server				not found							
+nexuiz-textures				not found							
+nikwi		gamepad half works, otherwise uses keyboard and could possibly use gamepad emulation					no escape button				
+nikwi-data				not found							
+ninix-aya				not found							
+ninvaders		keyboard, could use gamepad emulation		text based							
+njam		keyboard, could use gamepad emulation									
+njam-data				not found							
+noiz2sa		gamepad!				could use exit/escape button, but not necessary					
+noiz2sa-data				not found							
+nsnake		keyboard, could use gamepad emulation		text based							
+numptyphysics		mouse, could use gamepad emulation									
+ogamesim				Ogame console simulator							
+ogamesim-www				Ogame console simulator							
+omega-rpg				keyboard only		text based					
+oneisenough		keyboard, could use gamepad emulation									
+oneko				mouse only							
+onscripter				could not get it to work		needs additional files					
+oolite		gamepad half works, otherwise uses keyboard and could possibly use gamepad emulation									
+oolite-data				not found							
+oolite-data-sounds				not found							
+open-invaders		keyboard, could use gamepad emulation									
+open-invaders-data				not found							
+openarena		says can use joystick, but couldn't get to work, otherwise uses keyboard and mouse and could possibly use gamepad emulation									
+openarena-081-maps				not found							
+openarena-081-misc				not found							
+openarena-081-players				not found							
+openarena-081-players-mature				not found							
+openarena-081-textures				not found							
+openarena-085-data				not found							
+openarena-088-data				not found							
+openarena-data				not found							
+openarena-server				not found							
+openbve				not found							
+openbve-data				not found							
+opencity		mouse, could use gamepad emulation									
+opencity-data				not found							
+openclonk		says can use joystick, but couldn't get to work, otherwise uses keyboard and mouse and could possibly use gamepad emulation									
+openclonk-data				not found							
+openpref		mouse, could use gamepad emulation									
+openssn		mouse (optional keyboard), could use gamepad emulation									
+openssn-data				not found							
+openttd		keyboard and mouse, could use gamepad emulation									
+openttd-data				not found							
+openttd-opengfx				not found							
+openttd-openmsx				not found							
+openyahtzee				keyboard and mouse only							
+orbital-eunuchs-sniper		keyboard and mouse, could use gamepad emulation									
+orbital-eunuchs-sniper-data				not found							
+overgod		keyboard, could use gamepad emulation									
+overgod-data				not found							
+pachi		gamepad half works, otherwise uses keyboard and could possibly use gamepad emulation					sensitivity too high on menu, no escape button				
+pachi-data				not found							
+pacman		keyboard, could use gamepad emulation									
+pacman4console				could not get it to work		have to change screen resolution to play					
+pangzero		gamepad! (works with in-game keymapping)				could use exit/escape button, but not necessary					
+parsec47		gamepad!				could use exit/escape button, but not necessary					
+parsec47-data				not found							
+passage		gamepad half works, otherwise uses keyboard and could use gamepad emulation					no escape button				
+pathogen		keyboard and mouse, could use gamepad emulation									
+pathological		keyboard and mouse, could use gamepad emulation			didn't understand the controls						
+pax-britannica		gamepad half works, otherwise uses keyboard and could possibly use gamepad emulation					no escape button				
+pax-britannica-data				not found							
+pcsxr				emulator							
+peg-e		mouse, could use gamepad emulation									
+peg-solitaire		mouse, could use gamepad emulation									
+pegsolitaire		mouse, could use gamepad emulation									
+penguin-command		keyboard and mouse, could use gamepad emulation									
+pennmush				could not get it to work							
+pennmush-common				not found							
+pennmush-i18n				not found							
+pennmush-mysql				not found							
+pente		mouse, could use gamepad emulation									
+pentobi		mouse, could use gamepad emulation									
+performous		keyboard, could use gamepad emulation									
+performous-dbg				not found							
+performous-tools				not found							
+pescetti				keyboard only		text based					
+petris		keyboard, could use gamepad emulation		text based		could use exit button, but not necessary					
+pgn-extract				portable game notation extractor							
+phalanx				keyboard only		text based					
+phlipple		keyboard (optional mouse), could use gamepad emulation									
+phlipple-data				not found							
+pianobooster				requires music							
+pinball		keyboard, could use gamepad emulation									
+pinball-data				not found							
+pinball-dev				not found							
+pingus		keyboard and mouse, could use gamepad emulation									
+pingus-data				not found							
+pink-pony		keyboard and mouse, could use gamepad emulation				(the best game of them all)					
+pink-pony-data				not found							
+pioneers				keyboard and mouse only							
+pioneers-console				not found							
+pioneers-console-data				not found							
+pioneers-data				not found							
+pioneers-meta-server				not found							
+pipenightdreams		keyboard, could use gamepad emulation									
+pipenightdreams-data				not found							
+pipewalker		mouse, could use gamepad emulation									
+pixbros				broken		no graphics					
+pixfrogger		keyboard, could use gamepad emulation									
+planetpenguin-racer				not found							
+planetpenguin-racer-extras				not found							
+planetpenguin-racer-gimp-dev				not found							
+plee-the-bear		gamepad! (works with in-game keymapping)									
+plee-the-bear-data				not found							
+polygen				generator of random sentences from grammar definitions							
+polygen-data				not found							
+polyglot				could not get it to work		cant open polyglot.ini					
+pong2				could not get it to work		stuck waiting for opponent (couldn't close)					
+powermanga		gamepad!									
+powermanga-data				not found							
+prboom		says can use joystick, but couldn't get to work, otherwise uses keyboard (mouse optional) and could use gamepad emulation									
+prboom-plus				not found							
+prboom-plus-game-server				not found							
+primrose		mouse, could use gamepad emulation									
+projectl		gamepad half works, otherwise uses keyboard and could possibly use gamepad emulation					no escape button				
+purity				keyboard only		text based					
+purity-ng				keyboard only		text based					
+purity-off				not found							
+pybik		mouse, could use gamepad emulation									
+pybik-bin				not found							
+pybridge				could not get it to work		needs to connect to a server					
+pybridge-common				not found							
+pybridge-server				not found							
+pykaraoke				requires music							
+pykaraoke-bin				not found							
+pynagram				keyboard only							
+pyracerz		keyboard, could use gamepad emulation									
+pyscrabble		keyboard and mouse, could use gamepad emulation			?	needs to connect to a server					
+pyscrabble-common				not found							
+pyscrabble-server				not found							
+pysiogame		keyboard and mouse, could use gamepad emulation				some games (minority) will not work with gamepad					
+pysolfc		mouse, could use gamepad emulation									
+pysolfc-cardsets				not found							
+pysycache		keyboard and mouse, could use gamepad emulation									
+pysycache-buttons-beerabbit				not found							
+pysycache-buttons-crapaud				not found							
+pysycache-buttons-ice				not found							
+pysycache-buttons-wolf				not found							
+pysycache-click-dinosaurs				not found							
+pysycache-click-sea				not found							
+pysycache-dblclick-appleandpear				not found							
+pysycache-dblclick-butterfly				not found							
+pysycache-i18n				not found							
+pysycache-images				not found							
+pysycache-move-animals				not found							
+pysycache-move-food				not found							
+pysycache-move-plants				not found							
+pysycache-move-sky				not found							
+pysycache-move-sports				not found							
+pysycache-puzzle-cartoons				not found							
+pysycache-puzzle-photos				not found							
+pysycache-sounds				not found							
+python-pykaraoke				requires music							
+python-renpy				game framework							
+qcake				not found							
+qcake-data				not found							
+qgo		mouse (optional keyboard), could use gamepad emulation									
+qonk		says can use joystick, but couldn't get to work, otherwise uses keyboard and could use gamepad emulation							controller mapping issues		
+qtads				could not get it to work		error upon startup					
+quadrapassel		keyboard and mouse, could use gamepad emulation									
+quakespasm				could not get it to work		error loading wad file					
+quarry		mouse, could use gamepad emulation									
+qxw				keyboard and mouse only							
+rafkill		keyboard, could use gamepad emulation									
+rafkill-data				not found							
+raincat		keyboard and mouse, could use gamepad emulation									
+raincat-data				not found							
+randtype				keyboard only							
+rapid-spring				content download tool							
+realtimebattle		mouse, could use gamepad emulation									
+realtimebattle-common				not found							
+renpy		keyboard and mouse, could use gamepad emulation									
+renpy-demo		keyboard and mouse, could use gamepad emulation									
+renpy-thequestion				not found							
+ri-li		keyboard (optional mouse), could use gamepad emulation									
+ri-li-data				not found							
+rlvm				realtime interpreter							
+robocode				keyboard and mouse only		programming game					
+robotfindskitten		keyboard, could use gamepad emulation		text based							
+rockdodger		keyboard, could use gamepad emulation									
+rolldice				keyboard only		text based					
+rrootage		gamepad!				could use exit button, but not necessary					
+rrootage-data				not found							
+salliere				keyboard only		bridge scorer					
+scid		mouse (optional keyboard), could use gamepad emulation									
+scid-data				not found							
+scid-rating-data				not found							
+scid-spell-data				not found							
+scorched3d		keyboard and mouse, could possibly use gamepad emulation									
+scorched3d-data				not found							
+scorched3d-dbg				not found							
+scottfree				not found							
+scribble				keyboard only		text based					
+scummvm				emulator							
+scummvm-data				not found							
+sdl-ball		gamepad half works, otherwise uses keyboard and mouse and could use gamepad emulation					too sensitive thumbstick		no escape button		
+sdl-ball-data				not found							
+seahorse-adventures		gamepad!					a little too sensitive but playable		no escape button		
+searchandrescue		gamepad half works, otherwise uses keyboard and mouse and could possibly use gamepad emulation									
+searchandrescue-common				not found							
+searchandrescue-data				not found		run with “SearchAndRescue”					
+sgt-puzzles		mouse, could use gamepad emulation				lots of games in this package					
+shisen.app				not found							
+singularity		mouse, could use gamepad emulation									
+singularity-music				not found							
+sjeng				keyboard only		text based					
+sl		keyboard, could use gamepad emulation									
+slashem				keyboard only		text based					
+slashem-common				not found							
+slashem-gtk		mouse (optional keyboard), could use gamepad emulation									
+slashem-sdl				keyboard only							
+slashem-x11		mouse (optional keyboard), could use gamepad emulation									
+slimevolley		keyboard, could use gamepad emulation									
+slimevolley-data				not found							
+slingshot				broken		could not find font					
+sludge-engine				runtime for sludge games		needs additional files					
+sm				keyboard only							
+snake4		keyboard (optional mouse), could use gamepad emulation									
+snowballz		keyboard and mouse, could possibly use gamepad emulation									
+solarwolf		gamepad!				could use exit button, but not necessary					
+sopwith		keyboard, could use gamepad emulation									
+spacearyarya		keyboard, could use gamepad emulation									
+spacezero		keyboard, could possibly use gamepad emulation									
+spout		keyboard and mouse, could possibly use gamepad emulation									
+spring				game engine							
+spring-common				not found							
+spring-javaai				not found							
+springlobby				not found							
+starfighter		keyboard and mouse, could possibly use gamepad emulation									
+starfighter-data				not found							
+starvoyager		keyboard, could possibly use gamepad emulation									
+starvoyager-data				not found							
+stax		says can use joystick, but couldn't get to work, otherwise uses keyboard and could use gamepad emulation									
+stepbill.app				not found							
+stockfish				keyboard only		text based					
+stormbaancoureur		keyboard, could use gamepad emulation									
+stormbaancoureur-data				not found							
+sudoku				keyboard only		text based					
+supertransball2		keyboard, could use gamepad emulation									
+supertransball2-data				not found							
+supertux		gamepad!									
+supertux-data				not found							
+swell-foop		mouse, could use gamepad emulation									
+tagua		mouse (optional keyboard), could use gamepad emulation									
+tagua-data				not found							
+tali		mouse, could use gamepad emulation									
+tanglet				keyboard and mouse only							
+tdfsb				file manager							
+tecnoballz		gamepad!									
+tecnoballz-data				not found							
+teeworlds		keyboard and mouse, could use gamepad emulation									
+teeworlds-data				not found							
+teeworlds-server				not found							
+tenace		mouse (optional keyboard), could use gamepad emulation									
+tenmado		keyboard, could use gamepad emulation									
+tennix		gamepad half works, otherwise uses keyboard and mouse and could use gamepad emulation									
+tetrinet-client				not found							
+tetrinet-server				not found							
+tetrinetx				tetrinet server							
+tetzle				requires images							
+tf				keyboard only		text based					
+tf5				keyboard only		text based					
+tictactoe-ng		mouse, could use gamepad emulation									
+tint		keyboard, could possibly use gamepad emulation				text based					
+tintin++				keyboard only		text based					
+tinymux				not found							
+titanion		gamepad half works, otherwise uses keyboard and could use gamepad emulation					no escape button				
+titanion-data				not found							
+tmw				not found							
+tmw-music				not found							
+toga2				keyboard only		text based					
+tomatoes		keyboard, could use gamepad emulation									
+tomatoes-data				not found							
+toppler		keyboard, could use gamepad emulation									
+torcs		says can use joystick, but couldn't get to work, otherwise uses keyboard (mouse optional) and could use gamepad emulation									note, menus might not work with controller
+torcs-data				not found							
+torcs-data-cars				not found							
+torcs-data-tracks				not found							
+torus-trooper		gamepad half works, otherwise uses keyboard and could use gamepad emulation					no escape button				
+torus-trooper-data				not found							
+tourney-manager				keyboard only		text based					
+trackballs				not found							
+trackballs-data				not found							
+trackballs-dbg				not found							
+trackballs-music				not found							
+transcend		keyboard and mouse, could possibly use gamepad emulation									
+treil				not found							
+trigger-rally		keyboard and mouse, could possibly use gamepad emulation									
+trigger-rally-data				not found							
+triplane		says can use joystick, but couldn't get to work, otherwise uses keyboard and mouse and could possibly use gamepad emulation									
+triplea		mouse, could use gamepad emulation									
+trophy		keyboard, could use gamepad emulation									
+trophy-data				not found							
+trophy-dbg				not found							
+tumiki-fighters		gamepad half works, otherwise uses keyboard and could possibly use gamepad emulation					no escape button				
+tumiki-fighters-data				not found							
+tuxfootball		keyboard, could possibly use gamepad emulation									
+tuxmath				keyboard only							
+tuxmath-data				not found							
+tuxpuck		keyboard and mouse, could use gamepad emulation									
+tuxtype				keyboard only							
+tuxtype-data				not found							
+tworld		keyboard, could possibly use gamepad emulation									
+tworld-data				not found							
+typespeed				keyboard only		text based					
+uligo		mouse, could use gamepad emulation									
+val-and-rick		gamepad half works, otherwise uses keyboard and could use gamepad emulation					no escape button				
+val-and-rick-data				not found							
+vavoom				not found							
+vectoroids		gamepad half works, otherwise uses keyboard and could use gamepad emulation					no escape button		thumbstick too sensitive		
+viruskiller		keyboard and mouse, could use gamepad emulation									
+visualboyadvance				emulator							
+visualboyadvance-gtk				emulator							
+vodovod		gamepad half works, otherwise uses keyboard and could use gamepad emulation					escape button?		thumbstick too sensitive		
+warmux		keyboard and mouse, could possibly use gamepad emulation									
+warmux-data				not found							
+warmux-servers				not found							
+warzone2100		mouse (optional keyboard), could possibly use gamepad emulation									
+warzone2100-data				not found							
+warzone2100-dbg				not found							
+warzone2100-music				not found							
+whichwayisup		gamepad half works, otherwise uses keyboard and could use gamepad emulation					no escape button				
+wing		keyboard and mouse, could possibly use gamepad emulation									
+wing-data				not found							
+wizznic		keyboard, could use gamepad emulation									
+wizznic-data				not found							
+wmpuzzle		mouse, could use gamepad emulation									
+wordplay				keyboard only		text based					
+wordwarvi		gamepad half works, otherwise uses keyboard and could use gamepad emulation					no escape button				
+wordwarvi-sound				not found							
+xabacus		mouse, could use gamepad emulation									
+xball		mouse, could use gamepad emulation									
+xbill		mouse, could use gamepad emulation									
+xblast				not found							
+xblast-tnt		gamepad!									
+xblast-tnt-images				not found							
+xblast-tnt-levels				not found							
+xblast-tnt-mini				not found							
+xblast-tnt-models				not found							
+xblast-tnt-musics				not found							
+xblast-tnt-sounds				not found							
+xboard		mouse, could use gamepad emulation									
+xbomb		mouse, could use gamepad emulation									
+xbubble		keyboard, could use gamepad emulation									
+xbubble-data				not found							
+xchain		mouse, could use gamepad emulation									
+xcowsay				keyboard only		text based					
+xdemineur		mouse, could use gamepad emulation									
+xdesktopwaves				could not get it to work							
+xevil		mouse, could use gamepad emulation									
+xfireworks				not a game							
+xfishtank				not a game							
+xflip				not a game							
+xfrisk				could not get it to work		needs to connect to a server					
+xgalaga		keyboard, could use gamepad emulation									
+xgalaga++		keyboard, could use gamepad emulation									
+xgammon		mouse, could use gamepad emulation									
+xinv3d		keyboard, could use gamepad emulation									
+xjig		mouse, could use gamepad emulation									
+xjokes		gamepad!		not a game		run with “mori1” or “mori2”					
+xjump		keyboard and mouse, could use gamepad emulation									
+xletters				keyboard only							
+xmabacus		mouse, could use gamepad emulation									
+xmahjongg		mouse, could use gamepad emulation									
+xmille		mouse, could use gamepad emulation									
+xmoto		keyboard (optional mouse), could use gamepad emulation									
+xmoto-data				not found							
+xmountains		keyboard, could use gamepad emulation									
+xmpuzzles		mouse, could use gamepad emulation									
+xonix		mouse, could use gamepad emulation									
+xpat2		mouse, could use gamepad emulation									
+xpenguins				not a game							
+xphoon				not a game							
+xpilot-extra				not found							
+xpilot-ng		keyboard and mouse, could possibly use gamepad emulation									
+xpilot-ng-client-sdl		keyboard and mouse, could possibly use gamepad emulation									
+xpilot-ng-client-x11		keyboard and mouse, could possibly use gamepad emulation									
+xpilot-ng-common				not found							
+xpilot-ng-server				not found							
+xpilot-ng-utils				not found							
+xpuzzles		mouse, could use gamepad emulation									
+xracer		says can use joystick, but couldn't get to work, otherwise uses keyboard and could use gamepad emulation									
+xracer-tools				not found							
+xscavenger		keyboard, could possibly use gamepad emulation									
+xscorch		mouse (optional keyboard), could possibly use gamepad emulation									
+xscreensaver-screensaver-dizzy				not a game							
+xshisen		mouse, could use gamepad emulation									
+xshogi		keyboard and mouse, could use gamepad emulation									
+xskat		mouse, could use gamepad emulation									
+xsok		keyboard and mouse, could use gamepad emulation									
+xsol		mouse, could use gamepad emulation									
+xsoldier		mouse, could use gamepad emulation									
+xstarfish				not a game							
+xsystem35				emulator							
+xteddy		keyboard, could use gamepad emulation						all works except quit game			
+xtron		keyboard and mouse, could use gamepad emulation									
+xvier		mouse, could use gamepad emulation									
+xwelltris		keyboard and mouse, could possibly use gamepad emulation									
+xword				could not get it to work		needs additional files					
+xye		keyboard and mouse, could use gamepad emulation									
+xye-data				not found							
+xzip				Z-code interpreter							
+yahtzeesharp		keyboard and mouse, could use gamepad emulation									
+yics				keyboard only		text based					
+zatacka				could not get it to work		segmentation fault					
+zaz		keyboard, could use gamepad emulation									
+zaz-data				not found							
+zec				could not get it to work		needs to connect to a server					
+zivot				keyboard only		text based					
+supertuxkart-data				not found							
+supertuxkart		gamepad!									
+ksnakeduel				not found							
+0ad-data				not found							
+0ad		keyboard and mouse, could possibly use gamepad emulation									
+freeciv-data				not found							
+freeciv-server				not found							
+freeciv-client-gtk		keyboard and mouse, could possibly use gamepad emulation									
+hedgewars-data				not found							
+hedgewars		says can use joystick, but couldn't get to work, otherwise uses keyboard and mouse and could possibly use gamepad emulation									note, actual game works with controller, but menus dont
+widelands-data				not found							
+widelands		keyboard and mouse, could use gamepad emulation									
+freeciv-sound-standard				not found							
+pokerth-data				not found							
+pokerth		mouse, could use gamepad emulation									
+freecol		keyboard and mouse, could possibly use gamepad emulation									
+freeciv-client-extras				not found							
+unknown-horizons		keyboard and mouse, could possibly use gamepad emulation									
+freeciv-client-sdl				not found							
+vor				not found							
+planarity				not found							
+freeciv-client-xaw3d				not found							
+pokerth-server				not found							
+cardstories				not found							
+widelands-dbg				not found							
+freedink-dfarc-dbg				not found							
+gfceu				not found							
+spring-maps-kernelpanic				not found							
+vbaexpress				not found							
+yofrankie				not found							
+anagramarama				not found							
+anagramarama-data				not found							
+bve-route-cross-city-south				not found							
+bve-train-br-class-323				not found							
+fortunes-spam				not found							
+spring-mods-kernelpanic				not found							

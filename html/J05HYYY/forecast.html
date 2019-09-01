@@ -1,0 +1,115 @@
+<HTML>
+<script type="text/javascript">
+function isFloat(n) {
+    return n === +n && n !== (n|0);
+}
+
+function buttonClick(){
+
+var lines = document.getElementById("inputText").value.split('\n');
+
+	var data = [];
+b=0;
+for (a=0; a < lines.length; ++a)
+{
+	if (isNaN(parseFloat(lines[a])) == false) data[b] = lines[a];
+	++b;
+}
+if (data.length <= parseInt(document.getElementById("basedOffTheLast").value))
+{
+	alert("ERROR: Based off the last is less than number of valid input values.");
+	return -1;
+}
+
+if (data.length <= parseInt(document.getElementById("howManyToPredict").value) + parseInt(document.getElementById("basedOffTheLast").value))
+{
+	alert("ERROR: Number of valid input values is less than or plus one, based of the last plus how many to predict.");
+	return -1;
+}
+
+	var sample = [];
+	var outputSize = document.getElementById("howManyToPredict").value;
+	for (a=data.length-document.getElementById("basedOffTheLast").value; a < data.length; ++a)
+	{
+		sample[a-(data.length-document.getElementById("basedOffTheLast").value)] = data[a];
+	}
+
+	var output;
+
+	var output = [];
+	for (i=0; i < outputSize; i++)
+	{
+		output[i] = 0;
+	}
+
+	totalDifference = 0;
+
+	for (i=sample.length; i < data.length - outputSize; i++)
+	{
+
+		cellDifference = 0;
+		for (j=i-sample.length; j < i; j++)
+		{
+			cellDifference += Math.pow((1/(Math.sqrt(Math.pow(data[j] - sample[j+sample.length-i], 2))+1)) * (sample.length-(i-j)+1),100);
+
+		}
+
+		totalDifference += cellDifference;
+
+		for (l=0; l < outputSize; l++)
+		{
+
+				output[l] += data[i+l]*cellDifference;
+
+		}
+	}
+
+	document.getElementById("outputText").value = "";
+
+	for (i=0; i < outputSize; i++)
+	{
+		document.getElementById("outputText").value = document.getElementById("outputText").value + output[i]/totalDifference + '\n';
+	}
+
+	document.getElementById("outputText").style.visibility = "visible";
+
+}
+</script>
+<body width="100%" height="100%">
+<center>
+Enter your values, separated by new lines, here:
+<br>
+(Note that you can have more values than specified in the comboboxes.)
+<br>
+<textarea id="inputText" cols="100" rows="20"></textarea>
+<br>
+Get a forecast based on the <i>last</i> 
+<select id="basedOffTheLast">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+</select>
+values, predict the next
+<select id="howManyToPredict">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+</select>
+values.
+<br>
+<br>
+<button onclick="buttonClick();">Calculate!</button>
+<br>
+<br>
+<textarea style="visibility:hidden" id="outputText" cols="100" rows="7"></textarea>
+</center>
+</body>
+</HTML>

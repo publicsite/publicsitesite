@@ -1,0 +1,124 @@
+<script>
+bitsize=4;
+var snd1 = new Audio("1.wav");
+var snd2 = new Audio("2.wav");
+var snd3 = new Audio("3.wav");
+var snd4 = new Audio("4.wav");
+var snd5 = new Audio("5.wav");
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+async function playTune(checkArray){
+	for (i=0; i < checkArray.length; ++i )
+	{
+//alert(i % 4);
+		if (checkArray[i] == 0)
+{
+snd1.pause();
+snd1.currentTime = 0;
+snd1.play();
+}
+		else if (checkArray[i] == 1)
+{
+snd2.pause();
+snd2.currentTime = 0;
+snd2.play();
+}
+		else if (checkArray[i] == 2)
+{
+snd3.pause();
+snd3.currentTime = 0;
+snd3.play();
+}
+		else if (checkArray[i] == 3)
+{
+snd4.pause();
+snd4.currentTime = 0;
+snd4.play();
+}
+		else if (checkArray[i] == 4)
+{
+snd5.pause();
+snd5.currentTime = 0;
+snd5.play();
+}
+await sleep(1000);
+	}
+
+}
+
+function updateSteps(){
+playArray = [];
+
+var outputText = "";
+	var checkArray = Array.apply(null, Array(bitsize)).map(Number.prototype.valueOf,0);
+
+	var exitloop=false;
+
+i = bitsize+1;
+
+			checkString = checkArray.join('.');
+	for (x=0; x < bitsize; ++x ) playArray.push(checkArray[x]);
+			outputText = outputText + "<br>" + checkString;
+
+	while(1)
+	{
+
+
+			//checkArray[i-1]++;
+			//checkString = checkArray.join('.');
+			//outputText = outputText + "<br>" + checkString;
+
+		if (i-2 < 0) break;
+		else
+		{
+//alert(i-1);
+			//checkArray[i-1] = 0;
+			for (j=i-2; j > -1; j--)
+			{
+
+				checkArray[j]++;
+				checkString = checkArray.join('.');
+				if (checkArray[j] < 5)
+				{
+					break;
+				}
+				else
+				{
+					if (j == 0) 
+					{
+						exitloop=true;
+						break;
+					}
+					else
+					checkArray[j] = 0;
+				}
+			}
+
+
+			if (exitloop != true)
+			{
+	for (x=0; x < bitsize; ++x ) playArray.push(checkArray[x]);
+				outputText = outputText + "<br>" + checkString;
+			}
+		}
+
+		if (exitloop == true) break;
+	}
+
+document.getElementById("theDiv").innerHTML = outputText;
+playTune(playArray);
+}
+
+</script>
+<title>Pentatonic Bells 4-Beat Combinations</title>
+<html>
+
+<body onload="updateSteps();"></body>
+<center>
+<div id="theDiv"></div>
+</center>
+</html>b

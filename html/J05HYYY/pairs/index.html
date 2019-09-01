@@ -1,0 +1,274 @@
+<html>
+<script>
+var numRows=0;
+var numCols=0;
+var seconds=5;
+var numRandomWords=5;
+var selectedFirst = [-1,-1];
+var selectedSecond = [-1,-1];
+var correctCount = 0;
+var incorrectCount = 0;
+var totalCorrectCount = 0;
+var totalIncorrectCount = 0;
+var soundEnabled = 1;
+
+var snd1 = new Audio("ding.mp3");
+var snd2 = new Audio("level.wav");
+
+var allTheWords;
+/*
+function count(obj) {
+  var i = 0;
+  for (var x in obj)
+    if (obj.hasOwnProperty(x))
+      i++;
+  return i;
+}
+*/
+
+function getRandomWords(theDictionary){
+	wordArray= [];
+	var keys = Object.keys(theDictionary);
+	numberOfKeys=keys.length;
+	for (i=0; i < numRandomWords; ++i)
+	{
+		found=0;
+		testingWord = keys[Math.round(Math.random() * numberOfKeys)];
+		for (j=0; j < wordArray.length; ++j)
+		{
+			//alert(testingWord + " " + wordArray[j]);
+			if (testingWord == wordArray[j])
+			{
+				found=1;
+				--i;
+				break;
+			}
+		}
+		if ( found == 0)
+			wordArray[i] = testingWord;
+	}
+
+	numberOfPairs = wordArray.length;
+
+	for (i=0; i < numberOfPairs; ++i)
+	{
+		wordArray[i+numberOfPairs] = wordArray[i];
+	}
+
+	//alert(wordArray);
+
+	numberOfWords = wordArray.length;
+
+	shuffledWordArray=[];
+
+	while(numberOfWords > 0)
+	{
+		--numberOfWords;
+		indexToCopy=Math.round(Math.random() * numberOfWords);
+		shuffledWordArray[numberOfWords] = wordArray[indexToCopy];
+		wordArray.splice(indexToCopy, 1);
+	}
+
+	return shuffledWordArray;
+}
+
+function createTable(shuffledWordArray){
+
+	var table = document.getElementById("theTable");
+
+	table.innerHTML = '';
+
+	numCols=highestCommonFactor(shuffledWordArray.length);
+//alert(highestCommonFactor(shuffledWordArray.length));
+	numRows=shuffledWordArray.length/numCols;
+
+	var tableArray = new Array(numRows);
+
+	for (i = 0; i < numRows; i++) {
+
+		table.insertRow(i);
+
+		tableArray[i] = new Array(numCols);
+		for (j = 0; j < numCols; j++) {
+
+			table.rows[i].insertCell(j);
+			table.rows[i].cells[j].style.width = 100/numCols + "%";
+			table.rows[i].cells[j].style.height=100/numRows + "%";
+			tableArray[i][j] = shuffledWordArray[(i * numCols) + j];
+			table.rows[i].cells[j].innerHTML = tableArray[i][j];
+		}  
+
+	}
+
+	return tableArray;
+}
+
+function cellClick(tableArray, i, j){
+//alert("wibble");
+
+	var table = document.getElementById("theTable");
+
+	if (table.rows[i].cells[j].innerHTML == "")
+	{
+
+		if (selectedFirst[0] == -1)
+		{
+			table.rows[i].cells[j].innerHTML = tableArray[i][j];
+			selectedFirst[0] = i;
+			selectedFirst[1] = j;
+		}
+		else if (selectedSecond[0] == -1)
+		{
+			table.rows[i].cells[j].innerHTML = tableArray[i][j];
+
+
+			if (tableArray[i][j] == tableArray[selectedFirst[0]][selectedFirst[1]])
+			{
+				//we've found a pair
+				selectedFirst[0] = -1;
+				selectedFirst[1] = -1;
+				selectedSecond[0] = -1;
+				selectedSecond[1] = -1;
+				++correctCount;
+				++totalCorrectCount;
+				document.getElementById("scoreDiv").innerHTML = "Score: " + totalCorrectCount;
+
+				if (correctCount == numRandomWords)
+				{
+
+					if (soundEnabled == 1)
+					{
+						snd2.pause();
+						snd2.currentTime = 0;
+						snd2.play();
+					}
+
+					resetTable();
+
+				}
+				else
+				{
+					if (soundEnabled == 1)
+					{
+						snd1.pause();
+						snd1.currentTime = 0;
+						snd1.play();
+					}
+				}
+			}
+			else
+			{
+				selectedSecond[0] = i;
+				selectedSecond[1] = j;
+			}
+		}
+		else
+		{
+			//inccorrect so reset
+
+			table.rows[selectedFirst[0]].cells[selectedFirst[1]].innerHTML = "";
+			table.rows[selectedSecond[0]].cells[selectedSecond[1]].innerHTML = "";
+
+			selectedSecond[0] = -1;
+			selectedSecond[1] = -1;
+
+			table.rows[i].cells[j].innerHTML = tableArray[i][j];
+			selectedFirst[0] = i;
+			selectedFirst[1] = j;
+
+			++incorrectCount;
+			++totalIncorrectCount;
+		}
+	}
+
+	//table.rows[i].cells[j].style.backgroundColor="white";
+	//table.rows[i].cells[j].style.color="black";
+}
+
+function hideTable(tableArray){
+	var table = document.getElementById("theTable");
+	for (i = 0; i < numRows; i++) {
+		for (j = 0; j < numCols; j++) {
+			//table.rows[i].cells[j].style.backgroundColor="blue";
+			table.rows[i].cells[j].innerHTML = "";
+			table.rows[i].cells[j].onclick = function(self, tableArray,i,j) {
+				return function() {
+					cellClick(tableArray,i,j);
+				};
+			}(this, tableArray,i,j);
+
+		}  
+
+	}
+}
+
+function highestCommonFactor(theNumber){
+	highest = -1;
+	for(i=Math.ceil(theNumber/2)-1; i > 0; --i)
+		{
+			if (theNumber % i == 0)
+			{
+				highest = i;
+				break;
+			}
+		}
+
+	return highest;
+}
+
+function resetTable(){
+
+		correctCount = 0;
+		incorrectCount = 0;
+
+		if (document.getElementById("inputSoundEnabled1").checked == true)
+		{
+			soundEnabled = 1;
+		}
+		else
+		{
+			soundEnabled = 0;
+		}
+
+		seconds = document.getElementById("inputSeconds").value;
+		numRandomWords = document.getElementById("inputNumPairs").value;
+
+		shuffledWordArray = getRandomWords(allTheWords);
+		tableArray = createTable(shuffledWordArray);
+		setTimeout(function(){hideTable(tableArray);}, seconds*1000);
+
+}
+
+function getWordsJSON(){
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
+	allTheWords = JSON.parse(xhttp.responseText);
+      	resetTable();
+    }
+};
+xhttp.open("GET", "words_dictionary.json", true);
+xhttp.send(); 
+}
+</script>
+<body id="wibble" onload="getWordsJSON();">
+<center>
+<table id="theTable" border="1px" width="480px" height="480px"></table>
+<br>
+</center>
+<div align="right" style='position:absolute; bottom:0px; right:0px;'>
+Seconds To Show: <input type="text" id="inputSeconds" value="5" onsubmit></input>
+<br><br>
+Number Of Random Pairs: <input type="text" id="inputNumPairs" value="5"></input>
+<br><br>
+Sound<br>
+On<input type="radio" name="inputSoundEnabled" id="inputSoundEnabled1" value="1" checked="true">Off<input type="radio" name="inputSoundEnabled" id="inputSoundEnabled0" value="0">
+<br><br>
+<button onclick="resetTable();">Go!</button>
+</div>
+<div id="scoreDiv" align="left" style='position:absolute; bottom:0px; left:0px;'>
+Score = 0
+</div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><script type="text/javascript">
+
+var amountOfRandomness = 1;
+
+var clicked;
+
+function on_canvas_click(ev) {
+	clicked = true;
+}
+
+
+function setPixel(imageData, x, y, r, g, b, a) {
+    index = (x + y * imageData.width) * 4;
+    imageData.data[index+0] = r;
+    imageData.data[index+1] = g;
+    imageData.data[index+2] = b;
+    imageData.data[index+3] = a;
+}
+
+function addRandomness(imageData)
+{
+	for (widthIndex=0; widthIndex < imageData.width; ++widthIndex)
+	{
+		for (heightIndex=0; heightIndex < imageData.height; ++heightIndex)
+		{
+			//if a that pixel is to be displayed
+			if ( Math.floor(Math.random() * amountOfRandomness) === 0)
+			{
+
+				setPixel(imageData, widthIndex, heightIndex, Math.floor((Math.random() * 256)), Math.floor((Math.random() * 256)), Math.floor((Math.random() * 256)), Math.floor((Math.random() * 256)))
+			} 
+		}
+	}
+}
+
+function blankCanvas(imageDataDisplay, imageDataAdd, width, height)
+{
+	for (widthIndex=0; widthIndex < width; ++widthIndex)
+	{
+		for (heightIndex=0; heightIndex < height; ++heightIndex)
+		{
+			setPixel(imageDataDisplay, widthIndex, heightIndex, 0, 0, 0, 255)
+			setPixel(imageDataAdd, widthIndex, heightIndex, 0, 0, 0, 255)
+		}
+	}
+}
+
+/*
+function copyImageData(imageData1, imageData2, width, height)
+{
+	for (widthIndex=0; widthIndex < width; ++widthIndex)
+	{
+		for (heightIndex=0; heightIndex < height; ++heightIndex)
+		{
+			index = (widthIndex + heightIndex * width) * 4;
+			imageData2.data[index+0] = imageData1.data[index+0];
+			imageData2.data[index+1] = imageData1.data[index+1];
+			imageData2.data[index+2] = imageData1.data[index+2];
+			imageData2.data[index+3] = 255;
+		}
+	}
+}
+*/
+
+function flickImages(ctx, imageDataDisplay, imageDataAdd, width, height)
+{
+continueExecution(ctx, imageDataDisplay, imageDataAdd, 1, width, height);
+setTimeout(function() { continueExecution(ctx, imageDataDisplay, imageDataAdd, 2, width, height); }, 2000);
+setTimeout(function() { flickImages(ctx, imageDataDisplay, imageDataAdd); }, 3000);
+}
+
+function continueExecution(ctx, imageDataDisplay, imageDataAdd, number, width, height){
+if (clicked == true){
+		clicked = false;
+	if (number == 1) {
+		//user has chosen keep, so amountOfRandomness increases, meaning less pixels are added
+		amountOfRandomness = amountOfRandomness + 1;
+		//imageDataAdd = imageDataDisplay;
+		imageDataAdd.data.set(imageDataDisplay.data);
+		//copyImageData(imageDataAdd, imageDataDisplay, width, height);
+		addRandomness(imageDataAdd);
+	}
+	else if (number == 2) {
+		//user has chosen change, so amountOfRandomness decreases, meaning more pixels are added
+		if (amountOfRandomness - 1 > 1) amountOfRandomness = amountOfRandomness - 1; else amountOfRandomness = 1;
+		//imageDataDisplay = imageDataAdd;
+		imageDataDisplay.data.set(imageDataAdd.data);
+		//copyImageData(imageDataDisplay, imageDataAdd, width, height);
+		addRandomness(imageDataAdd);
+	}
+
+}
+	if (number == 1) {
+		ctx.putImageData(imageDataAdd,0,0);
+	}
+	else if (number == 2) {
+		ctx.putImageData(imageDataDisplay,0,0);
+	}
+
+}
+
+function startJavascriptStuff(){
+
+element = document.getElementById("mirror");
+ctx = element.getContext("2d");
+
+// read the width and height of the canvas
+width = element.width;
+height = element.height;
+
+// create a new batch of pixels with the same
+// dimensions as the image:
+
+imageDataDisplay = ctx.createImageData(width, height);
+imageDataAdd = ctx.createImageData(width, height);
+blankCanvas(imageDataDisplay, imageDataAdd, width, height);
+
+addRandomness(imageDataAdd);
+
+//window.addEventListener("keydown", checkKeyPressed, false);
+
+canvas = document.getElementById('mirror');
+canvas.addEventListener('click', on_canvas_click, false);
+
+flickImages(ctx, imageDataDisplay, imageDataAdd);
+//ctx.putImageData(imageDataOld, 0, 0);
+//ctx.putImageData(imageDataSubtract, 0, 0);
+
+//ctxSubtract.createImageData(width, height);
+
+//copy(ctx, ctxOld);
+
+//while ()
+
+
+}
+
+//toggle on or off
+
+</script>
+</head><body onload="startJavascriptStuff();" bgcolor="white">
+<center>
+<canvas id="mirror" width="640" ,="" height="480"></canvas>
+</center>
+
+
+</body></html>

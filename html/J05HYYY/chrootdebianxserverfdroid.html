@@ -1,0 +1,51 @@
+<html>
+<TITLE>J05HYYY's site</TITLE>
+<center>
+<H1>Chrooted Debian on Android with an X Server installed via F-Droid.</H1>
+<table>
+<tr><td>
+1)  If you haven't already, go to www.fdroid.org and download, and install the F-Droid .apk.
+<br>
+2)  Select the fdroid icon and download & install Terminal Emulator, Lil' Debi, ConnectBot and X Server.
+<br>
+3)  Start the Lil' Debi app and install debian.
+<br>
+4)  Once installed and debian is running, start terminal emulator and type:
+<br>
+su
+<br>
+debian
+<br>
+passwd root
+<br>
+(and enter in a new password)
+<br>
+5)  Exit terminal emulator when done and start X Server.
+<br>
+7)  Press the menu button and click access control.
+<br>
+8)  Add the ip address 127.0.0.1 and click apply changes.
+<br>
+9)  Press the remote login button and add root@localhost
+<br>
+10) Click on the newly added root@local host option.
+<br>
+11) It should then connect and ask you for a password, which you should type in.
+<br>
+12) Key in:
+<br>
+export DISPLAY=127.0.0.1:0
+<br>
+13) Install an X11 application with:
+<br>
+sudo apt-get install <application>
+<br>
+14) Start the application.
+<br>
+15) Press back twice.
+<br><br>
+Job done.
+</td></tr>
+</table>
+</center>
+</html>

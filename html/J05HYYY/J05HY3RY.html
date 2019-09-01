@@ -1,0 +1,92 @@
+<html>
+<title>I canz shortenz your binaryz, but I can't count them on ma fingerz</title>
+<script>
+
+function readToJoshery(){
+output = "";
+var n = 1;
+var x = document.getElementById("from").value;
+
+	if (x == 0)
+	{
+		output = 0;
+	}
+	else if (x == 1)
+	{
+		output = 1;
+	}
+	else
+	{
+		while (1){
+
+			output = (x % 2).toString() + output.toString();
+
+			x = Math.floor(x/2)-1;
+
+			if (x < 0) break;
+		}
+	}
+
+document.getElementById("to").value = output;
+
+}
+
+
+function writeToDecimal(){
+
+input=document.getElementById("to").value.split("").reverse().join("");
+
+n=0;
+
+x=0;
+
+		for ( n = 0; n < input.length; ++n)
+		{
+			newn=(input.length-n)-1;
+
+			if ( newn > 0)
+			{
+				if (input[newn] == 1)
+				{
+						x+= Math.pow(2,newn+1);
+				}
+				else if ( input[newn] == 0)
+				{
+					x += Math.pow(2,newn);
+				}
+			}
+			else if ( newn == 0 && input[newn] == 1)
+			{
+				++x;
+			}
+		}
+
+document.getElementById("from").value = x;
+}
+
+</script>
+
+<body>
+<center>
+<table>
+<tr>
+<td>
+<input id="from" type="search" align="left">Decimal<br>
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button id="frombtn" onclick="readToJoshery();" align="center">\/</button><button id="tobtn" onclick="writeToDecimal();" align="center">/\</button><br>
+</td>
+</tr>
+<tr>
+<td>
+<input id="to" type="search" align="left">(+1) Bijective Binary</br>
+</td>
+</tr>
+</table>
+</center>
+</body>
+
+</html>
