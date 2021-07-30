@@ -1,0 +1,35 @@
+randomNewA = (0,1)
+randomNewB = (0,1)
+
+if randomNewA = 1
+	fetch random object from: https://en.wikipedia.org/w/api.php?action=query&list=random&rnlimit=1&rnnamespace=0&format=json
+else
+	fetch random object from database
+
+if randomNewB = 1
+	fetch random object from: https://en.wikipedia.org/w/api.php?action=query&list=random&rnlimit=1&rnnamespace=0&format=json
+else
+	fetch random object from database
+
+
+ask which is more important objectA or objectB
+if objectAIsMoreImportant
+	if randomNewA = 1
+		store objectA 1
+	else
+		objectAinDatabase++
+
+	if randomNewB = 1
+		store objectB -1
+	else
+		objectBinDatabase--
+else //objectB is more important
+	if randomNewA = 1
+		store objectA -1
+	else
+		objectAinDatabase--
+
+	if randomNewB = 1
+		store objectB 1
+	else
+		objectBinDatabase++

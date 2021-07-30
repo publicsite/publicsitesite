@@ -1,0 +1,25 @@
+bootstrapping metal <-- we haven't quite done
+bootstrapping plastic <-- we have done
+bootstrapping wood <-- we have done
+bootstrapping textiles <-- we have done
+bootstrapping glass <-- difficult
+textile work <-- we have done
+wood work <-- we have done
+metal work <-- we have done
+textile work <-- we have done
+glass work <-- none have done afaik
+bootstrapping software (has to be useful, & in source format) <-- we haven't quite done
+bootstrapping electronics <-- we haven't done
+programming software <-- we have done
+agriculture <-- we have done
+bootstrapping algriculture <-- not sure
+poultry farming <-- we have done
+bootstrapping poultry <-- plan to do
+sheep farming <-- we haven't done
+bootstrapping sheep <-- we haven't done
+printing?
+bootstrapping printing?
+bee keeping <-- haven't done (immediate family)
+bootstrapping bees <-- not sure if this is actually possible? don't think we have done (immediate family)
+first aid
+conservation

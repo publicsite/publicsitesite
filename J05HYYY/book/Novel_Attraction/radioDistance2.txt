@@ -1,0 +1,9 @@
+bandwidth - small as possible
+frequency - low as possible & legal
+speed of signal - slow as possible
+antenna - high as possible, biggest antenna gain possible (also directionality)
+power - high as possible
+receiver sensitivity
+	amplifier gain						//See common emmitter or LNA
+	signal to noise ratio
+height of antenna

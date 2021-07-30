@@ -1,0 +1,23 @@
+A boostrappable system is a closed system that can replicate.
+A closed system is different from a bootstrappable system. Unlike a bootstrappable system, it cannot be replicated without external input.
+Neither requires the transfer of materials inside of the system.
+
+A closed system needs the following:
+
+Metals: For tools.
+Wood: For burning (heat, cooking), for tools (for gardening, for cooking), for charcoal (for furnace).
+Seeds. For growing.
+Water. For drinking.
+Sun/Starlight (although this really cheating). For growing plants, for heat.
+Leaves or straw: For thatching.
+Mud, and clay: For growing, for pottery (cooking).
+Fibre: For making clothes.
+Air: For breathing. For growing plants.
+
+Required skillsets are:
+
+Thatching.
+Gardening.
+Pottery.
+Blacksmithing.
+

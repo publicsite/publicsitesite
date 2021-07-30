@@ -1,0 +1,198 @@
+oxygen
+food
+	edible plants (vegetables, grains)
+		stick
+			tree
+				soil
+				water
+				sunlight
+				carbon dioxide
+		spade/pitch fork
+			wood
+				tree
+					soil
+					water
+					sunlight
+					carbon dioxide
+			axe
+				blade
+					?
+					stone
+			knife
+				blade
+					?
+					stone
+		compost
+		soil
+		water
+		sunlight
+		carbon dioxide
+	cooking tools
+		knife
+			blade
+				?
+				stone
+		pots
+			ceramics
+				earth
+				cloth?
+				spade?
+					wood
+						tree
+							soil
+							water
+							sunlight
+							carbon dioxide
+water
+	fire
+		wood
+			tree
+				soil
+				water
+				sunlight
+				carbon dioxide
+		axe
+			blade
+				?
+				stone
+	cloth
+	pots
+		ceramics
+			earth
+			cloth
+				fibre
+					bamboo?
+						soil
+						water
+						sunlight
+						carbon dioxide
+						axe
+							blade
+								?
+								stone
+					water
+					stone
+			spade?
+				wood
+					tree
+						soil
+						water
+						sunlight
+						carbon dioxide
+	mugs
+		ceramics
+			earth
+			cloth
+				fibre
+					bamboo?
+						soil
+						water
+						sunlight
+						carbon dioxide
+						axe
+							blade
+								?
+								stone
+					water
+					stone
+			spade?
+				wood
+					tree
+						soil
+						water
+						sunlight
+						carbon dioxide
+warmth
+	fire
+		wood
+			tree
+				soil
+				water
+				sunlight
+				carbon dioxide
+		axe
+			blade
+				?
+				stone
+sanitation
+	soap
+		oil
+			wood?
+				tree
+					soil
+					water
+					sunlight
+					carbon dioxide
+			fire
+				wood
+					tree
+						soil
+						water
+						sunlight
+						carbon dioxide
+				axe
+					blade
+						?
+						stone
+			ceramics
+				earth
+				cloth?
+					wood
+						tree
+							soil
+							water
+							sunlight
+							carbon dioxide
+		ash
+			wood
+				tree
+					soil
+					water
+					sunlight
+					carbon dioxide
+			fire
+				wood
+					tree
+						soil
+						water
+						sunlight
+						carbon dioxide
+				axe
+					blade
+						?
+						stone
+		fire?
+			wood
+				tree
+					soil
+					water
+					sunlight
+					carbon dioxide
+			axe
+				blade
+					?
+					stone
+	toothpaste
+		?
+	toothbrush
+		chewstick
+			bamboo
+				soil
+				water
+				sunlight
+				carbon dioxide
+clothes
+	cloth
+		fibre
+			bamboo?
+				soil
+				water
+				sunlight
+				carbon dioxide
+				axe
+					blade
+						?
+						stone
+			water
+			stone
+shelter

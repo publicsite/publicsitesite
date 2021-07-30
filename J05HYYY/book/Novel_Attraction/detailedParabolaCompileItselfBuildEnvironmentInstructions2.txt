@@ -1,0 +1,43 @@
+1) Make a script to rsync the parabola repository, directory, "sources".
+
+2) Get sources.
+
+3) Make a script to extract pacman sources to a different directory whilst keeping the original source archive.
+
+4) Use pacman PKGBUILD, to make a generic bash script to build pacman with the default compiler (on a different system).
+This should install into a user specified directory.
+
+5) Build pacman, and install into the user specified directory.
+
+6) Make a pacman.conf file and makepkg.conf file for compiling (host to host). These should install in the user specified directory. Most
+paths need to be changed. (still host to host.)
+
+7) Modify dagpkg package and scripts so that it accepts a pacman.conf and makepkg.conf. Make the script independent of libretools
+package. Make sure dagpkg doesn't get rid of source archives or modify the downloaded sources in any way.
+
+8) Run dagpkg on https://aur.archlinux.org/packages/qemu-user-static/ and binfmt-support: https://aur.archlinux.org/packages/binfmt-support/
+using the pacman we just built and install into the user specified directory.
+
+9) Run dagpkg on crosstool-ng-libre using the pacman we just built and install into the user specified directory.
+
+10) Build a toolchain with crosstool-ng based on parabola versions of packages (eg same glibc version etc).
+
+11) Make a chroot using the packages (qemu-user-static, binfmt-support) we built earlier.
+
+12) Cross compile pacman, and install into the chroot. (host-target)
+
+13) Repeat the processes in the chroot, using cross-compiler. (host-target)
+
+14) Validate.
+
+__________________________________________________________________________________________________________________
+
+1) Download sources using rsync.
+2) Build pacman, to binariesDir1
+3) Build croostool-ng-libre, and it's dependencies using dagpkg, install to binariesDir1
+4) Install all binaries from binariesDir1 to parabola-with-crosstool
+5) chroot into parabola-with-crosstool
+
+6) Cross compile pacman to binariesDir2 (inside parabola-with-crosstool)
+7) Cross compile base packages using crosstool-ng-libre to binariesDir2
+8) Install all binaries from binariesDir2 to parabola-final-product

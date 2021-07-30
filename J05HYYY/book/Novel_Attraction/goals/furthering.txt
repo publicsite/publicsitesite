@@ -1,0 +1,269 @@
+Problems in communications.
+
+Communications infrastructure may go down.
+May cost money to use communications infrastructure.
+Communications aren't encypted.
+	Encryption is difficult to use.
+Communications are centralised.
+
+Problems in the food web.
+
+Contaminants in food.
+Food supply may get broken and/or run out.
+May cost money to buy food.
+Things used to make food may get broken.
+
+Problems in water system.
+
+Water supply may run out.
+Cost of water.
+Things used to get water and clean it may get broken or run out.
+
+Problems in fuel system.
+
+Fuel supply may get broken and/or run out.
+Cost of fuel.
+Things used to get fuel might get broken.
+
+Problems with the environment.
+
+Burning fuel creates CO2.
+Land may get overused through farming.
+Using cars creates CO2.
+
+Problems with transport.
+
+Using cars uses fuel.
+Transport may get broken.
+
+Problems with technology.
+
+High technology uses a complex chain.
+
+Problems with sustainablity of sanitation.
+
+Water may run out for toilets.
+Sewers may stop working.
+Toilet may break.
+Shampoo costs money.
+Soap costs money.
+Toothpaste costs money.
+Shampoo may run out.
+Soap may run out.
+Toothpaste may run out.
+Toilet paper may run out.
+
+_____________________________________________________________________________________________________
+Solutions to problems.
+
+Communications infrastructure may go down.
+	Build alternative communications infrastructures.
+May cost money to use communications infrastructure.
+	Find free ways to communicate.
+Communications aren't encypted.
+	Advocate the use of encryption.
+	Build encryption platform.
+Encryption is difficult to use.
+	Build easy-to-use encryption platform.
+Communications are centralised.
+	Use decentralised communications platforms.
+	Build decentralised communications platforms.
+Contaminants in food.
+	Grow more of own food.
+	Make sure you know where the food originates from.
+Food supply may get broken and/or run out.
+	Grow more of own food.
+	Maximise yields.
+	Stockpile food.
+May cost money to buy food.
+	Grow more of own food.
+	Use seeds from plants, next year.
+Things used to make food may get broken.
+	Minimise use of complex machinery.
+	Find out how to easily make tools to grow food.
+Water supply may run out.
+	Collect rain water.
+	Store water.
+Cost of water.
+	Collect rain water.
+	Store water.
+Things used to get water and clean it may get broken or run out.
+	Store water.
+Fuel supply may get broken and/or run out.
+	Use biofuels.
+Cost of fuel.
+	Use biofuels.
+Things used to get fuel might get broken.
+	Learn how to make things that are used to get fuel.
+Burning fuel creates CO2.
+	Use biofuels.
+Land may get overused through farming.
+	Crop cycling.
+	Fertilisation of land.
+Using cars creates CO2.
+	Limit use of cars.
+	Electric vehicles.
+	Reduce dependency of cars.
+Using cars uses fuel.
+	Limit use of cars.
+	Reduce dependency of cars.
+Transport may get broken.
+	Limit use of cars.
+	Reduce dependency of cars.
+High technology uses a complex chain.
+	Prefer low technologies.
+	Simplify chain.
+Water may run out for toilets.
+	Use a composting toilet.
+Sewers may stop working.
+	Use a composting toilet.
+Toilet may break.
+	Use a composting toilet.
+Shampoo costs money.
+	Do not use shampoo?
+	Learn how to make shampoo.
+Soap costs money.
+	Do not use soap?
+	Learn how to make soap.
+Toothpaste costs money.
+	Do not use toothpaste.
+	Learn how to make toothpaste.
+Shampoo may run out.
+	Do not use shampoo?
+	Learn how to make shampoo.
+	Stockpile shampoo.
+Soap may run out.
+	Do not use soap?
+	Learn how to make soap.
+	Stockpile soap.
+Toothpaste may run out.
+	Do not use toothpaste?
+	Learn how to make toothpaste.
+	Stockpile toothpaste.
+Toilet paper may run out.
+	Do not use toilet paper?
+	Stockpile toilet paper.
+
+_________________________________________________________________________________________________
+Solutions only:
+
+Build alternative communications infrastructures.
+
+Find free ways to communicate.
+Advocate the use of encryption.
+Build encryption platform.
+Build easy-to-use encryption platform.
+Use decentralised communications platforms.
+Build decentralised communications platforms.
+Make sure you know where the food originates from.
+
+Collect rain water.
+Use biofuels.
+
+Grow more of own food.
+Crop cycling.
+Fertilisation of land.
+Use seeds from plants, next year.
+Maximise yields.
+
+Use a composting toilet.
+
+Electric vehicles.
+
+Prefer low technologies.
+Simplify chain.
+Minimise use of complex machinery.
+
+Learn how to make shampoo.
+Learn how to make soap.
+Learn how to make toothpaste.
+Learn how to make things that are used to get fuel.
+Find out how to easily make tools to grow food.
+
+Limit use of cars.
+Reduce dependency of cars.
+Do not use shampoo?
+Do not use soap?
+Do not use toothpaste?
+Do not use toilet paper?
+
+Store water.
+Stockpile food.
+Stockpile shampoo.
+Stockpile soap.
+Stockpile toothpaste.
+Stockpile toilet paper.
+
+_________________________________________________________________________________________________
+Working on solutions:
+
+Build alternative communications infrastructures.
+	Talking.
+	CB radio.
+
+Find free ways to communicate.
+	Freedompop.
+Advocate the use of encryption.
+Build encryption platform.
+Build easy-to-use encryption platform.
+Use decentralised communications platforms.
+Build decentralised communications platforms.
+Make sure you know where the food originates from.
+
+Collect rain water.
+	Build a rain water collector.
+Use biofuels.
+	Vegetable oil from seeds.
+	Wood burning stove.
+
+Grow more of own food.
+Crop cycling.
+Fertilisation of land.
+	Composter.
+	Lawn.
+
+Use seeds from plants, next year.
+Maximise yields.
+
+Use a composting toilet.
+	barrel + sawdust, seperate barrel for pee.
+	shouldn't use compost for food plants.
+
+Electric vehicles.
+	Solar panels.
+
+Convert diesel car to run on vegetable oil.
+
+Prefer low technologies.
+Simplify chain.
+Minimise use of complex machinery.
+
+Learn how to make shampoo.
+Learn how to make soap.
+	you can make potassium hydroxide.
+	with potassium hydroxide, and vegetable oil, you can make liquid soap.
+	you can make oil with seeds.
+Learn how to make toothpaste.
+Learn how to make things that are used to get fuel.
+	Axe.
+	Wheelbarrow.
+	Ferrocium rod.
+Find out how to easily make tools to grow food.
+	Pitch fork.
+	Trowel.
+	Wheelbarrow.
+	Containers.
+
+Limit use of cars.
+Reduce dependency of cars.
+Do not use shampoo?
+Do not use soap?
+Do not use toothpaste?
+Do not use toilet paper?
+
+Store water.
+Stockpile food.
+Stockpile shampoo.
+Stockpile soap.
+Stockpile toothpaste.
+Stockpile toilet paper.

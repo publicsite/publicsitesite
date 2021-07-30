@@ -1,0 +1,13 @@
+I looked at potassium nitrate + sugar as rocket fuel but this doesn't really yet provide enough of
+a specific impulse to escape earth and into space.
+
+I then found out about ethanol + water, as used in the V2 rocket.
+
+I thought about using air instead of liquid oxygen as an oxidiser but realised that once the air
+had run out (in space), the fuel would no longer burn.
+
+Submarines use liquid oxygen, presumably because oxygen as a gas runs out too quickly.
+
+In order for a space craft to support human life, it needs oxygen anyway. This probably means, at
+least for now, that liquid oxygen + ethanol + water is close to the best combination for space
+exploration possible.

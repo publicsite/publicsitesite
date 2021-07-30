@@ -1,0 +1,52 @@
+food and kitchen waste
+paper
+	paper mache
+		boat varnish
+	fuel?
+biodegradable waste
+	compost
+	fuel?
+cardboard
+	fuel?
+glass bottles
+	drinking glass cutter?
+	bottle sealer
+jars
+	chutney, jam, other preserved food
+tin cans
+	storage container
+aluminium cans
+	sand down
+	melt down
+aluminium foil
+	melt down
+metals
+	melt down
+plastics
+	?
+fabrics
+	reuseable?
+clothes
+	reuseable?
+tires
+	?
+batteries
+	?
+electronic waste
+	reuseable?
+	fix?
+	sell as broken?
+	sell components?
+composite waste
+	take apart?
+paints
+	mix?
+	paint mix algorithm?
+chemicals
+	?
+light bulbs
+	?
+spray cans
+	?
+pharmacuticals
+	?

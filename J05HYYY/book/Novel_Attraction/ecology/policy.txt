@@ -1,0 +1,77 @@
+In this document several words/phrases are used, if there's any doubt, here's how they are intended to be interpreted:
+
+'non-natural', means man made
+'natural', means not man made
+'object' or 'objects', means; combination of matter
+'resources', refers to a biological organism, biological organisms, or object.
+'methods', refers to processes which depend on a resource or resources, or refers to a single process, which depends on a resource or resources.
+'physical properties', refers to characteristics of an object which are measurable.
+'environment', means; the physical and biological factors, along with their chemical interactions, or physical properties, that affect a resource or resources.
+'sustainable', means; capable of being used with minimal negative effect to the natural environment, both in the short-term and in the long-term.
+'unsustainable', means; not capable of being used with minimal negative effect to the natural environment, in the short-term and/or in the long-term.
+'renewable', means dependent on resources that are replenished quicker than they are depleted.
+'non-renewable', means dependent on resources that are depleted quicker than they are replenished.
+
+[1]                                      To educate that ...
+	[1.1]                                      The action of creating or using:
+		[1.1.1]                                      Objects or methods that are sustainable;
+			[1.1.1.1]                                      is preferable to the action of creating or using, objects or methods that are unsustainable.
+		[1.1.2]                                      Objects or methods that are renewable;
+			[1.1.2.1]                                      is preferable to the action of creating or using, objects or methods, that are non-renewable.
+		[1.1.3]                                      Objects or methods that are sustainable and renewable;
+			[1.1.3.1]                                      is preferable to the action of creating or using, objects or methods, that are unsustainable and non-renewable.
+[2]                                      To develop and produce ...
+        [2.1]                                      For the methods and objects:
+		[2.1.1]                                      That are unsustainable and non-renewable;
+			[2.1.1.1]                                      alternatives that are sustainable and renewable, or failing that,
+			[2.1.1.2]                                      alternatives that are sustainable.
+		[2.1.2]                                      That are unsustainable and renewable;
+			[2.1.2.1]                                      alternatives that are sustainable and renewable
+        	[2.1.3]                                      That are unsustainable;
+			[2.1.3.1]                                      alternatives that are sustainable
+[3]                                      To not develop or produce ...
+	[3.1]                                      Methods or objects which are:
+		[3.1.1]                                      Unsustainable
+[4]                                      To conserve, expand and protect the natural & biological species which are rare, threatened, endangered, vulnerable, or near extinction ...
+	[4.1]                                      Via prioritising the quality and amount of aid given (for instance relating to habitat, food, accommodation, shelter, etc.) to the natural & biological organisms which are part those species, over the quality and amount of aid given to:
+		[4.1.1]					Biological organisms from biological species which are not rare, and/or
+		[4.1.2]					Biological organisms from biological species which are not threatened, and/or
+		[4.1.3]					Biological organisms from biological species which are not endangered, and/or
+		[4.1.4]					Biological organisms from biological species which are not vulnerable, and/or
+		[4.1.5]					Biological organisms from biological species which are not near extinction, and/or
+		[4.1.6]                                      Non-natural biological organisms from non-natural biological species.
+	[4.2]                                      Via the decisions made (for instance relating to habitat, food, accommodation, shelter etc.) by favouring the natural & biological organisms which are part of those species, over:
+		[4.2.1]					Biological organisms from biological species which are not rare, and/or
+		[4.2.2]					Biological organisms from biological species which are not threatened, and/or
+		[4.2.3]					Biological organisms from biological species which are not endangered, (, and/or)
+		[4.2.4]					Biological organisms from biological species which are not vulnerable, (, and/or)
+		[4.2.5]					Biological organisms from biological species which are not near extinction (, and/or)
+		[4.2.6]                                      Non-natural biological organisms from non-natural biological species (, and/or)
+		[4.2.7]                                      Man made objects
+[5]                                      To favour financially by ...
+	[5.1]                                      Increasing financial incentives for the:
+		[5.1.1]                                      Creation of, or use of, methods or objects, that are;
+			[5.1.1.1]                                      Both sustainable and renewable, over the creation of, or use of, methods or objects, that are both non-renewable and unsustainable, (or failing that ...)
+			[5.1.1.4]                                      Sustainable, over the creation of, or use of, methods or objects, that are both non-renewable and unsustainable, (and/or, )
+			[5.1.1.2]                                      Both sustainable and renewable, over the creation of, or use of, methods or objects, that are only renewable, (and/or, )
+			[5.1.1.3]                                      Both sustainable and renewable, over the creation of, or use of, methods or objects, that are only sustainable, (and/or, )
+			[5.1.1.4]                                      Sustainable, over the creation of, or use of, methods or objects, that are both unsustainable.
+		[5.1.2]                                      Protection, conservation and expansion of natural & biological organisms which are part of a natural and biological species;
+			[5.1.2.1]                                      For which the species is either rare, threatened, endangered, vulnerable, or near extinction.
+	[5.2]                                      Decreasing any financial incentives for the:
+		[5.2.1]                                      Creation of, or use of, methods or objects, that are;
+			[5.2.1.1]                                      Unsustainable.
+		[5.3.1]                                      Use of natural & biological organisms which are part of a natural biologicial species;
+			[5.3.1.1]                                      For which the species is either rare, threatened, endangered, vulnerable, or near extinction.
+[6]                                      To favour one's own use of ...
+	[6.1]                                      Methods that are sustainable over;
+		[6.1.1]                                      Methods that are unsustainable.
+	[6.2]                                      Man made objects that are sustainable over;
+		[6.2.1]                                      Man made objects that are unsustainable.
+	[6.3]                                      Man made objects for which the method of production is, or was sustainable over;
+		[6.3.1]                                      Man made objects for which the method of production is, or was unsustainable.
+	[6.4]                                      The natural & biological organisms that are part of a natural & biological species which is neither, threatened, endangered, vulnerable or near extinction, over that of the;
+		[6.4.1]                                      The natural & biological organisms that are part of a natural & biological species that are either rare, threatened, endangered, vulnerable or near extinction.
+
+Notes:
+Sustainable and renewable supplies may limit the damage from population collapses caused by population fluctuations (these are perhaps due to the consumption of non-renewable resources

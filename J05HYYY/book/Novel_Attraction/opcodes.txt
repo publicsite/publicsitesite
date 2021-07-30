@@ -1,0 +1,48 @@
+In binutils, there is a folder called opcodes, that has an <architecture>-opc.tbl file that
+contains opcodes.
+
+In gcc there is a folder at gcc/config/ that has a <architecture>.md file that contains standard
+names used to convert RTL to assembly.
+
+_________________________________________________________________________________________________
+
+ORISCs that are turing complete and universal:
+
+addition (Addleq), decrement (DJN), increment (P1eq), and subtraction (Subleq). The latter is the oldest, the most popular and, arguably, the most efficient.
+
+All the above need:
+
+load
+store
+jump
+NAND or NOR
+
+MY INSTRUCTIONS:
+
+Conditionals:
+
+if address equals 1
+if address equals 0
+
+Instructions:
+
+jump to address
+store 1 at address
+store 0 at address
+
+INSTRUCTIONS NEEDED TO IMPLEMENT (for example)
+
+MOV
+CMP
+JZ
+
+.set
+.space or .block
+
+
+
+
+
+
+
+

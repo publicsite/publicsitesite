@@ -1,0 +1,18 @@
+1.1	Heat silica sand (Silica) and carbon to produce silicon carbide.
+1.2	Keep heating to produce graphite.
+
+2.1	Make potash by putting plant ash into a pot in water.
+
+3.1	Potassium Nitrate production:
+	Urine is collected directly, in a sandpit under a stable. The sand itself is dug
+	out and leached for nitrates which were then converted to potassium nitrate via potash, as
+	above.
+
+4.1	Take Sulphur and Potassium Nitrate, heat until you get Sulfur trioxide.
+4.2	Mix with water to get Sulphuric Acid
+4.3	Place Potassium Nitrate in Sulphuric acid to get Potassium Bisulphate and Nitric Acid.
+
+
+5.1	Add Potassium Nitrate, Nitric Acid, and Graphite together and you get Graphite Oxide.
+
+6.1	Fire a ~40mW infared laser at a Graphite Oxide coated surface, and you get a graphene layer.

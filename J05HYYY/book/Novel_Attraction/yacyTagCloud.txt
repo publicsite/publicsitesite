@@ -1,0 +1,9 @@
+
+Find a yacy node from:
+http://www.yacyweb.de/peers.htm
+
+Perform a query as follows to get json text:
+http://yacy.searchlab.eu/solr/select?q=joshua&fl=text_t&start=0&rows=100&core=collection1&wt=json
+
+
+bookmarks --> website text --> word frequencies --> searches --> words and frequencies --> tag cloud

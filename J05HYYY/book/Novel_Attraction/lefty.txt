@@ -1,0 +1,31 @@
+The people within the business own the machinery and land. They rent to the producers.
+The producers pay an equal share to buy materials
+The producers rent machinery and land for a period of time.
+
+costtorent(machinery) + costtorent(land) + costof(materials) + costof(delivery) + costof(advertising) + costof(labor) = profit
+
+profit - costof(labor) = costtorent(machinery) + costtorent(land) + costof(materials) + costof(delivery) + costof(advertising)
+
+if (profit - costof(labor) > costtorent(machinery) + costtorent(land) + costof(materials) + costof(delivery) + costof(advertising))
+{
+	printf("Union should demand pay rise\n");
+}
+else
+{
+	printf("Union should not demand pay rise\n");
+}
+
+ALSO
+
+if(result > costtorent(machinery) + costtorent(land) + costof(materials) + costof(delivery) + costof(advertising) + costof(labor))
+{
+	printf("Business is probably profitable");
+}
+else
+{
+	printf("Business is not profitable");
+}
+
+https://en.wikipedia.org/wiki/Ethical_socialism
+https://en.wikipedia.org/wiki/Social_democracy
+https://en.wikipedia.org/wiki/Democratic_socialism

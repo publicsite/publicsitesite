@@ -1,0 +1,3 @@
+	Metals are needed.
+	Wood is optional.
+	Rope is optional.

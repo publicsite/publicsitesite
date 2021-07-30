@@ -1,0 +1,10 @@
+windows	msys2, or alternatively MS services linux				wine
+android	android shell (mksh)								anbox or qemu
+ios		bash											darling
+linux		bash											native
+bsd		mksh											bsd generally speaking has compatibility layers, other way is qemu
+
+all have sh posix compatibility pretty much
+all have a C compiler pretty much
+all have a browser pretty much
+

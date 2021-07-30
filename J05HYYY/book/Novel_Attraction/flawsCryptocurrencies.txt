@@ -1,0 +1,27 @@
+You know, most cryptocurrencies have flaws. Here are a few:
+
+Blockchain scalability (size of blockchain)
+Network scalability
+Premining
+Requirement of being online to make any sort of payment.
+Lost/Stolen Keys
+Practicality
+Danger of third party holding your wallet/keys on your behalf
+Adoption from wider public
+Viruses relating to cryptocurrencies
+Actual implementation (inc. possible flaws in protocols and implementation choices; [language & libraries etc.])
+Portability of underlying software (to new architectures/operating systems)
+Mining often in practice requires joining a pool, which is sometimes centralised
+Use-value vs economic value hyper-inflated.
+Regulation
+New coins solving mentioned problems unlikely to be added to any real exchange short-term.
+
+... in addition...
+
+For mined currencies:
+Mining needing specialist hardware in practice
+Energy use of mining
+
+For the consensus-based currencies:
+Sibyl attacks
+Making rich richer (interest is given as a % to those already with coins)

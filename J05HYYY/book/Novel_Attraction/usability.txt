@@ -1,0 +1,18 @@
+windoze
+gui
+single executable (no additional dependencies to install)
+installation wizard if needed
+
+cross platform if possible
+no drm
+
+runs without admin privilages if possible
+
+binary executable
+
+icon
+
+shortcut
+
+no bloatware
+no 'login' needed if possible

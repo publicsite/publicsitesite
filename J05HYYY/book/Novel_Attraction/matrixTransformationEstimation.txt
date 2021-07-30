@@ -1,0 +1,23 @@
+//pseudocode for matrix transformation estimation given pairs of input/output matrices 
+//this is more accurate than taking averages but much much slower
+
+//training
+
+in[inst][i]
+outputsample[inst][o]
+trained[]
+
+
+for each outputsample (o) // pixel
+	for each inputsample (i) //pixel
+		for each instance (inst)	//instance
+			trained[o]+=out[inst][o]/in[inst][i]
+	trained[o] = trained[o] / number_instances / number_outputs 
+
+//to get result
+
+newin[i]
+result
+
+for each outputsample(o)
+	result[o] = newin[o] * trained[o]

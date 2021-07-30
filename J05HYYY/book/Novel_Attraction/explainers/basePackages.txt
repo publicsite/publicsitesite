@@ -1,0 +1,15 @@
+###DEBIAN###
+
+Base packages for a debian minimal chroot can be found in the scripts directory of debootrap.
+
+https://salsa.debian.org/installer-team/debootstrap/tree/master/scripts
+
+If there is a <version>.buildd file, then that version is the one which is used.
+
+If there isn't a <version>.buildd file, then <version> is used.
+
+###PARABOLA###
+
+Base packages for a parabola minimal chroot can be found in the base-devel group
+
+https://www.parabola.nu/groups/i686/base-devel/

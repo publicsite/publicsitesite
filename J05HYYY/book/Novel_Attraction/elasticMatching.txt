@@ -1,0 +1,36 @@
+Elastic Matching:
+
+N0
+N1
+N2
+V0
+V1
+V2
+V3
+V4
+
+
+from=0
+N0 comp V0
+from=0 || 1
+if from=0 N1 comp V0
+if from=1 N1 comp V1
+from= 0 || 1 || 2 
+if from=0 N2 comp V0
+if from=1 N2 comp V1
+if from=2 N2 comp V2
+
+b=0;
+while (b < valsize)
+	for (a = 0; a < nullsize; ++a)
+		swap null[a] and val[b]?
+			yes:
+				b+=1
+				swap
+
+
+for video morphing:
+	run above algorithm, get point to point correlation
+	B=interpolate points on now stretched image (see http://tanbakuchi.com/posts/comparison-of-openv-interpolation-algorithms/)
+	for interpolated points on B, interpolate correlations
+	inbetween both colour and position using correlations of image A and B

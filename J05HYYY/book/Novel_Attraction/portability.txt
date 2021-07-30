@@ -1,0 +1,25 @@
+Windows: Xming + gnuwin32 + mingw-w64 + MSYS
+
+	Xming provides an Xserver
+	gnuwin32 provides glibc (which gcc should be made to link to) and coreutils, etc.
+	msys provides make and bash
+
+Linux: linux-libre + x.org + glibc + coreutils + ash
+
+Embedded Linux: x.org + uclibc + busybox
+
+	Busybox provides ash
+
+Android: An android kernel + uclibc? + libhybris + busybox
+
+____________________________________________________________________________
+
+For developer's portability:
+
+
+NATIVE:
+If you are writing a C program, try to write in ANSI C.
+If you're writing a shell script, try to write in ash.
+
+BYTECODE:
+Parrot also allows compiling a program to bytecode and running on a different system.

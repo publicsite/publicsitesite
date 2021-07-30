@@ -1,0 +1,15 @@
+read name section
+
+
+read synopsis section
+
+
+read description section
+
+
+read options section
+	is there a line starting with <whitespace>\-<something>
+	read to next <whitespace>\-<something> or read to line starting (no whitespace) in bold
+
+
+can use shell completion for implementation of this. :)

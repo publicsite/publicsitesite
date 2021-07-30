@@ -1,0 +1,11 @@
+molecule that reacts with lots and lots of different chemicals
+
+reaction creates physical properties
+	heat
+	?T change?
+
+electrolytic conductivity sensor
+
+conductivity meter
+	-sensitive to heat
+	-sensitive to contaminants

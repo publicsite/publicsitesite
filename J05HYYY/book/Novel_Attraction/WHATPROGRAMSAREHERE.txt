@@ -1,0 +1,10 @@
+baseascii, used ascii characters to write extremely large numbers. <-- missing don't understand where it went :(
+wikisearch, find answers from the web <-- missing don't understand where it went :(
+	used wordnet morph functions to turn words into their base form
+	then got the frequency of each morphed word
+	then searched for those words in sentences from wikipedia and returned the sentence using the highest total frequency (ie 1/frequencyA + 1/frequencyB + ...) from wikipedia
+	returning the sentence that supposedly matched the question
+	then did some other stuff. <-- not worth thinking about.
+characterAnalyzer: compares two strings to see how similar they are,
+sequenceAnalyzerBetter: compares two numeric arrays to see how similar they are, taking into account the order of the numbers and the difference between those numbers. <-- may be incomplete
+characterReconstructor: gets two strings and attempts to merge them together

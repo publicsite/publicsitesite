@@ -1,0 +1,10 @@
+sunxi kernel has drm https://github.com/linux-sunxi/linux-sunxi/tree/sunxi-3.4/drivers/gpu/drm/mali
+mainline doesn't.
+mesa uses libdrm, which uses drm and has libEGL
+kodi uses libEGL.
+
+we could try writing the old arch linux arm image, which has the correct sunxi kernel.
+
+mesa has software rendering, so we should try that first.
+
+DIDN'T WORK.

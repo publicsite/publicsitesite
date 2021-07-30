@@ -1,0 +1,59 @@
+    * that the world contains rigid objects that are continuous in space and time
+    * they treat any surface that is cohesive, bounded, and moves as a unit as a single object. When one solid object appears to pass through another, these infants are surprised.
+    * Babies less than a year old distinguish causal events from non-causal ones that have similar spatio-temporal properties
+    * they distinguish objects that move only when acted upon from ones that are capable of self-generated motion (the inanimate/animate distinction)
+    * they assume that the self-propelled movement of animate objects is caused by invisible internal states -- goals and intentions -- whose presence must be inferred, since internal states cannot be seen
+    * When an adult utters a word-like sound while pointing to a novel object, toddlers assume the word refers to the whole object, rather than one of its parts
+
+    * Acceptance, Agitation, Alarm, Amusement, Anger, Angst, Annoyance, Anticipation, Apprehension, Apathy, Awe
+    * Bitterness, Boredom
+    * Calmness, Comfort, Contentment, Confidence, Courage
+    * Depression, Disappointment, Discontentment, Disgust, Desire, Delight.
+    * Elation or Euphoria, Embarrassment, Ennui, Envy, Ecstasy
+    * Fear, Friendship, Frustration,
+    * Glee, Gladness, Gratitude, Grief, Guilt
+    * Hate, Happiness, Homesickness, Honor, Hope, Horror, Humility
+    * Impatience, Irritability
+    * Joy, Jealousy,
+    * Kindness
+    * Loneliness, Love, Lust, Limerence
+    * Melancholy, Modesty
+    * Nervousness, Negativity, Nostalgia
+    * Pain, Patience, Peace, Phobia, Pity, Pride
+    * Rage, Regret, Remorse, Resentment
+    * Sadness, Schadenfreude, Self-pity, Shame, Shyness, Sorrow, Shock,[disambiguation needed] Suffering, Surprise, Suspense
+    * Terror
+    * Unhappiness
+    * Vulnerability
+    * Worry
+
+Startle reflex: unexpected stimulus - startle, moving away, sheilding, crying
+This reflex is present at birth and fades between the ages of four to six months, if it remains beyond that it is always pathological. [10] You can stimulate this reflex by stroking the skin along one side of a child's back. The baby will swing toward the side you stroke.
+This is a reflex that is often confused with the Plantar Grasp. It is also present at birth, and fades around the first year. If you stroke the side of a child's foot, their toes will fan out and they will extend their big toe.
+The Palmar Grasp Reflex is a fairly persistent one. It appears at birth and manages to hang around until about the age of 5-6 months. Whenever an object is placed in the child's hand and strokes their palm, they will grasp it. The grip is incredibly strong, but unpredictable. A child may release suddenly or not be able to support their own weight, so you can't depend upon it. If you want the child to release, however, you can often stimulate the hand into opening by stroking the side of the palm or the back of the hand.
+The Tonic Neck Reflex or Asymmetric Tonic Neck Reflex is present at birth and dwindles away around the age of 4 months old. This reflex is sometimes referred to as the fencing posture. If the child's head is turned to the side, the arm on that side will straighten and the opposite arm will bend. Oddly enough, because this reflex is subtle you may not see it very clearly (especially if the child is otherwise occupied with crying).
+The Walking reflex is also present at birth, and it disappears around the same time as the Moro reflex at 2 months. Although children of this age can't support their own weight with their legs, whenever the soles of their feet touch a flat surface you'll see that they will place one foot in front of the other and "walk". This automatic response disappears and then reappears as a voluntary behavior at around a year old. This reflex is also referred to as the stepping reflex.
+
+Self-awareness is the explicit understanding that one exists. Furthermore, it includes the concept that one exists as an individual, separate from other people, with private thoughts. It may also include the understanding that other people are similarly self-aware.
+Human self-awareness leads us to recognize three core paradoxes or absurd features of the human condition:
+
+    * The human imagination has no physical boundaries, but our bodies do. In our minds, we can instantly travel to the ends of the universe, the center of the earth, even the center of the sun. We can use our mental microscope to visualize germs, viruses, atoms, quarks. As soon as we detect something with any instrument, we can make images of it in our minds. We travel effortlessly in our thoughts. The boundless production of fiction literature is evidence of the creative powers of the human imagination. Yet physically we are bound to one specific, small planet, and due to the speed limit of the universe (speed of light), it appears that we are bound to a small neighborhood around this planet for the foreseeable future. This paradox is the physical frustration of the human condition.
+    * Human spirits can motivate the noblest and holiest thoughts, the most altruistic actions, the most beneficial generosities. But they can also produce the most horrible cruelties and violence against countless people, including suicide of the perpetrators. Our will effortlessly moves our thoughts one way and then another, untamed by moral law or conscience. Leaders can sway whole populations to do things -- benevolent or malevolent -- that individuals would never, on their own, have contemplated. How can these two extremes coexist in the same individual? We don't observe such extremes in other animals. They are exclusive to the human condition.
+    * Human actions and our very lives are motivated by hope -- that we can make a difference, that we can learn and grow and build and make things better. Yet physically speaking we know that we are mortal, we are made of dust, and we will return to dust. Despite this realization, hope springs eternal. Without hope, as Albert Camus said, the only serious philosophical question is why we should not commit suicide. Hope gets us up in the morning, and drives us forward every day. By extension, we hope for eternal life beyond the grave -- God, heaven, paradise -- because otherwise our existential situation has no meaning. These aspirations -- for hope, meaning, significance, purpose, identity, peace, happiness, beauty, love -- are all aspects of human spirituality.
+The ability to self-analyze (or scrutinize) is widely believed among psychologists not to develop until mid-childhood, and arguably is present in only a few species of animals[citation needed]. Tests that are usually considered as representative of self-consciousness include applying a bright dot to a subjects forehead, and then placing them in front of a mirror – if they reach for their own forehead, it appears they may realize their own existence in a self-aware sense.
+
+Self-consciousness is credited with the development of identity (see the self). In an epistemological sense, self-consciousness is a personal understanding of the very core of one's own identity. It is during periods of self-consciousness that people come the closest to knowing themselves objectively. Jean Paul Sartre describes self-consciousness as being "non-positional", in that it is not from any location in particular.
+he term self conscious has a different meaning in colloquial use, namely a person who is worried or apprehensive how they may appear to others. It is widely believed that this trait is most present during the teenage years.
+When one is feeling self-conscious, one can feel too aware of even the smallest of one's own actions. Such awareness can impair one's ability to perform complex actions. 
+Unlike self-awareness, self-consciousness has connotations of being unpleasant, and is often linked to self-esteem. Self-consciousness is credited with the development of identity,
+
+Another test of AC, in the opinion of some, should include a demonstration that machine can learn the ability to filter out certain stimuli in its environment, to focus on certain stimuli, and to show attention toward its environment in general. The mechanisms that govern how human attention is driven are not yet fully understood by scientists. This absence of knowledge could be exploited by engineers of AC.
+ - the more stimuli a being gets from a sense, the more the sense is used.
+ - rewards!
+ - interest in a topic is developed by beings first programmed objectives, taking into account the amount of times a situation has occoured (and questioning it) and also the 'potential reward' which can develop from the interest.
+
+Touch
+Smell
+Taste
+Hearing
+Sight

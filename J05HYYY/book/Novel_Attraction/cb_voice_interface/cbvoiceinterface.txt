@@ -1,0 +1,33 @@
+"Info"
+	To access an inbox say 'Access Inbox' with your inbox ID. For example 'Access Inbox AAA'
+	To send a message to an inbox, say 'Message' with the inbox ID you wish to message. For example 'Message AAA'
+	To make a public inbox, say 'New Inbox'.
+
+"New inbox"
+	Your new Inbox ID will be 1233532, to confirm, say 'confirm'.
+	"Confirm"
+		Thank you, your new inbox 123352 has been created.
+	(Other or timeout)
+		Sorry, your inbox was not created, goodbye.
+
+"Access Inbox <Inbox ID>"
+	You wish to access inbox <Inbox ID>, is this correct?
+	"Yes"
+		There are <x> amount of recorded messages.
+		To get a message, say "Listen <x>".
+
+			"Listen" <x>
+				Message <x>, ID: <ID>
+				'This is a message for bob saying hello.'
+	"No" (Or other)
+		To access an inbox say 'Access Inbox' with your inbox ID. For example 'Access Inbox AAA'
+
+"Message <Inbox ID>"
+	You wish to Message inbox <Inbox ID>, is this correct?
+	"Yes"
+		Creating new message for <Inbox ID>. Recordings will automatically be terminated after 5 minutes.
+		Messages will automatically be deleted after 3 days. To start recording say 'start', to stop recording say 'The END'.
+		Repeating the message with message id: <Message ID>.
+		Thank you for your time, goodbye.
+	"No" (or other)
+		To send a message to an inbox, say 'Message' with the inbox ID you wish to message. For example 'Message AAA'

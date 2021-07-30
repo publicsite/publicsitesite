@@ -1,0 +1,62 @@
+To match different size arrays.
+
+arrays:
+
+0
+6
+3
+4
+2
+
+3
+1
+4
+0
+
+(where size of array 1 is bigger than size of array 2)
+
+ |
+ | sort struct     struct(value,fromarrayn)
+\|/
+
+0,0
+0,1
+1,1
+2,0
+3,0
+3,1
+4,0
+4,1
+6,0
+
+ |
+ | can be shown as
+\|/
+
+
+0	0	1
+2
+3	3
+4	4
+6	
+
+ |
+ | choosing the next availiable
+\|/
+
+0	0
+2	1
+3	3
+4	4
+6
+
+zeroIndex = first 0; oneIndex = first 1;
+last=0
+if the next is a 0, choose the next 0 or 1; choose [oneIndex] if oneIndex < zeroIndex; oneIndex = new position; else choose [zeroIndex]; zeroIndex = new position;
+if the next is a 1 and the last was a 0, choose [oneIndex]; oneIndex = new position (which is the position of the next 1 from oneIndex)
+if the next is a 1 and the last was a 1, choose [zeroIndex]; zeroIndex = new position (which is the position of the next 0 from zeroIndex)
+
+
+ 0 1
+1 
+0

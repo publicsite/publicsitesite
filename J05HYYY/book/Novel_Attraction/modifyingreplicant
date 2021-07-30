@@ -1,0 +1,10 @@
+clone linux sunxi into replicant-4.0/kernel/allwinner/common
+clone android-dev-team common into replicant-4.0/device/allwinner/common
+clone android-dev-team hardware realtek into replicant-4.0/hardware/realtek
+clone techn 13_mid into device/allwinner/a13_mid
+
+make modifications to device/allwinner/a13_mid
+
+add https://github.com/Quarx2k/android_external_cedarx/blob/master/CedarX/include/include_camera/type_camera.h
+to
+replicant-4.0/device/allwinner/common/camera

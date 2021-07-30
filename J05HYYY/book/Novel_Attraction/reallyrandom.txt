@@ -1,0 +1,8 @@
+find every pattern
+A: get pattern start to pattern + length
+B: get pattern end to pattern end + length
+if compare(A, B) = match add to pattern size matching
+else add to pattern size non matching
+
+calculate probabilities by length for both and times each by their probability.
+record and compare results.

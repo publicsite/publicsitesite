@@ -1,0 +1,121 @@
+Windows
+  !
+GRUB:
+    
+
+Edit grub to look for new versions
+Edit linux kernal to allow
+
+Linux distrobution:
+
+Update grub
+Change grubs splash screen
+Create a "trusted" method for doing this automatically.
+
+Change grubs reboot options.
+Allow the user to boot into a program straight away on any operating system.
+
+Update linux kernel
+All Repositories
+"Instructions" - For downloading and compiling the latest version of programs
+Smart System Chooser (choise of system for the user)
+
+	Internet:
+		Torrent Client
+		Browser
+	  Gaming:
+
+  Virtualisation:
+		
+		
+		
+		
+
+GRUB>                 Systems >
+                	      > Super Nintendo
+               		      > Sega Megadrive
+               		      > Amiga
+                     	      > Gameboy
+	            	      > PC >
+				   > Unix-Like System > 
+                   				      > X window system >
+									BSD (Licence) > FreeBSD (Kernel) > FreeBSD (OS)
+									              > OpenBSD (Kernel) > OpenBSD (OS)
+									              > NetBSD (Kernel) > NetBSD (OS)
+									              > Dragonfly BSD (Kernel)> Dragonfly BSD (OS)
+									              > Mac OS X (Kernel) > Mac OS X (OS)
+ 									> Linux (Kernel) >
+					    		                                 > C (Language) >
+											                > Enlightenment (OS)
+                                     			   		        	                > GTK+ (Toolkit) >
+                                            			 	               		                         > Gnome (OS)
+                                            			  	               		                         > Xfce (OS)
+										       		                         > Rox (OS)
+									    	         > C ++ (Language) >
+										       	     	           > GPL (Licence) 
+										              	 	                   : Openbox
+   															   > Qt (Toolkit) >
+                                          		       		                           	       	            		  > KDE
+										              		   > MIT (Licence) : Fluxbox
+													                   : Matchbox
+															   : Blackbox
+                                     		          		                      		
+
+                        	   > Restart and use in different operating system:  
+		 								  *Lists all operating systems installed on grub*
+		 	       						          *User clicks on an OS*
+		 							          *It opens the file at startup*
+	                 	   
+                                   > Specific Operating System Emulators> 
+                                                                        > Windows: 
+ 									         Wine
+                                                                                 DosBox
+	                           > Virualisation > 
+                                                   > Emulation: 
+                                                              Bochs, PearPC, QEMU
+                                                   > Paravirtualisation: 
+                                                                       Xen, Win4Lin 9x
+                                                   > Native and full virtualisation : 
+                                                                                    VirtualBox, QEMU, Mac-on-Linux
+                                                   > Operating system level virtualisation : 
+                                                                                           Linux-VServer, OpenVZ
+
+A file is ran:
+               *check if the file has been used before*
+                                                      * It hasn't * 
+						         	  * View programs which are able to read the file extention.
+							          * Download easy install script
+							          * Choose default for this file extention
+						
+							  
+                                                      > It has > 
+                                                                 *check for a file default*
+          								                  > There is >
+										                     Use default for this file
+                                                                                        
+					      
+
+                   > Default ***Program used most***
+                   > Other
+
+Options: Update Linux Kernel
+Get a program
+Remove a program
+Find get an online readme for a program
+Assign a readme for a program
+Find help online 
+Assign a helpfile for a program
+
+
+KDE
+XFCE
+
+
+
+
+
+
+
+
+
+

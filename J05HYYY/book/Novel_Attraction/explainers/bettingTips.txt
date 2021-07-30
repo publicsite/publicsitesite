@@ -1,0 +1,37 @@
+===================IF YOU HAVE LOST MONEY======================================
+
+If you have put more money in to the bookies, than your balance shown at the bookies,
+For instance, you put 31 pounds into the bookies
+Plus a _small_ amount to 31
+Eg 31 + 10 = 41
+Call this moneyInPlusSome
+Take away your displayed balance (accounting for any liabilities)
+Times this by 1/ some kind of ridiculous top heavy odds
+
+amountToBet = (moneyInPlusSome - displayedBalance) * 1/(topHeavyOdds)
+
+As an example;
+If your balance said £10 at the bookies,
+and you had put £41 from your bank account in,
+and there is a 1000/1 odds that pigs will fly to to your house tomorrow,
+the equation would become:
+
+amount to bet = (41 - 10) * 1/(1000/1)
+
+So you would bet £0.031, rounded upwards to 4p
+
+You only get so many chances to earn your money back, if you do not succeed, give up and do not give any more money to the bookies.
+
+As soon as you get your money back plus some. Withdraw the total amount of money you have handed to the bookies, in the example above, leaving £10.
+
+=====================IF YOU HAVE GAINED MONEY==================================
+
+If you have a balance of £20, and you have all the money back that you have put in, you should aim to double your balance.
+
+in this instance moneyPlusSome would be £40
+
+So using the pigs flying odds:
+
+amountToBet= (40 - 20) * 1/(1000/1)
+
+in which case you would bet 2p.

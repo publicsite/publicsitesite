@@ -1,0 +1,63 @@
+/*
+
+This algorithm totals up the probabilities for two 1d arrays.
+
+If array 1 contains 01020102012012102
+And the dataset array contains 1002102201202102
+
+A load of probabalistic relations are made in prob0, prob1 and prob2.
+
+These probabilistic relations can be used to output a number given a different input.
+
+Or so the theory goes.
+
+*/
+
+//binary function estimation && duplication
+//equivalent to null padding in an ANN, ie. an ANN with variable sized inputs and outputs
+
+//pad all the inputs to the same length using 2
+//pad all the outputs to the same length using 2
+
+//input
+
+prob0[n][m]
+prob1[n][m]
+prob2[n][m]
+
+for each input/output pair
+	for each indigit (n)
+		for each outdigit (m)
+			if outdigit[m] == 0
+				++prob0[n][m]
+			else if outdigit[m] == 1
+				++prob1[n][m]
+			else if outdigit[m] == 2
+				++prob2[n][m]
+//output guess
+
+theout[m]
+
+for each indigit (n)
+	for each potential outdigit (m)
+		if prob0[n][m] > prob1[n][m] && prob0[n][m] > prob2[n][m]
+			theout[m] = 0
+		else if prob1[n][m] > prob0[n][m] && prob1[n][m] > prob2[n][m]
+			theout[m] = 1
+		else if prob2[n][m] > prob0[n][m] && prob2[n][m] > prob1[n][m]
+			theout[m] = 2
+
+		// for equal probabilities
+		if prob0[n][m] >= prob1[n][m] && prob0[n][m] > prob2[n][m]
+			theout[m] = 3
+		else if prob1[n][m] >= prob0[n][m] && prob1[n][m] > prob2[n][m]
+			theout[m] = 4
+		else if prob2[n][m] >= prob0[n][m] && prob2[n][m] > prob1[n][m]
+			theout[m] = 5
+
+		if prob0[n][m] > prob1[n][m] && prob0[n][m] >= prob2[n][m]
+			theout[m] = 6
+		else if prob1[n][m] > prob0[n][m] && prob1[n][m] >= prob2[n][m]
+			theout[m] = 7
+		else if prob2[n][m] > prob0[n][m] && prob2[n][m] >= prob1[n][m]
+			theout[m] = 8

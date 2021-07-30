@@ -7,7 +7,7 @@ function xmlhttpPost2(strURL) {
 url = 'http://dbpedia.org/data/' + strURL + '.json';
 
 //here we use a cors proxy
-var newurl = 'https://gobetween.oklabs.org/pipe/';
+var newurl = 'https://api.allorigins.win/raw?url=';
 
     var xmlHttpReq = false;
     var self = this;
@@ -33,10 +33,10 @@ var newurl = 'https://gobetween.oklabs.org/pipe/';
 function xmlhttpPost(strURL) {
     var params = getstandardargs().concat(getquerystring());
     var strData = params.join('&');
-    var url = escape(strURL + '?' + strData);
-
-//here we use a cors proxy
-var newurl = 'https://gobetween.oklabs.org/pipe/';
+    var url = strURL + '?' + strData;
+//alert(url);
+//here we do not use a cors proxy
+var newurl = '';
     var xmlHttpReq = false;
     var self = this;
     if (window.XMLHttpRequest) { // Mozilla/Safari
@@ -45,7 +45,8 @@ var newurl = 'https://gobetween.oklabs.org/pipe/';
     else if (window.ActiveXObject) { // IE
         self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    self.xmlHttpReq.open('GET', newurl + url, false);
+    self.xmlHttpReq.open('POST', newurl + url, false);
+    self.xmlHttpReq.setRequestHeader('Accept', 'text/xml');
     self.xmlHttpReq.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     self.xmlHttpReq.onload = function() {
         if (self.xmlHttpReq.status == 200) {
@@ -156,7 +157,7 @@ function checkPattern(pattern)
 </head>
 <body>
 <center>
-<form name="f1" onsubmit='xmlhttpPost("http://model.dbpedia-spotlight.org/en/annotate"); return false;'>
+<form name="f1" onsubmit='xmlhttpPost("https://api.dbpedia-spotlight.org/en/annotate"); return false;'>
   <p>Query: <textarea id="query" rows="5" cols="100"></textarea>
   <input value="Go" type="submit"></p>
 <div id="raw"></div></pre>

@@ -1,0 +1,32 @@
+Things I would like robots to do ...
+
+____________________________________________________________________________________________________
+
+***water capture/cleaning robot***
+
+***house building robot***
+
+***agricultural robot***
+
+plant seeds
+weed
+water
+move compost
+harvest
+
+***house robot***
+
+take the bins out
+move things
+pack dishwasher
+pack washing machine
+move laundry from washing machine to tumble dryer
+cook food
+
+to do this a robot needs to ...
+
+identify objects
+climb stairs
+pick things up
+pinch/pincer
+navigate surroundings

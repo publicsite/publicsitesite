@@ -1,0 +1,8 @@
+debianchem
+debian edu
+debian gis?
+debian med
+debian science
+hamradio
+
+https://github.com/LinuxCNC/stretch-live-build/blob/master/do.sh

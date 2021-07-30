@@ -1,0 +1,12 @@
+1111
+
+1/2 * 1/2 * 1/2 * 1/2 = 1/2^4 = 1/16
+1 - 1/16 = 15/16
+
+(probability)^number_of_positive_detections = likelyhood_fraction
+
+likelyhood_fraction^(1/number_of_positive_detections) = probability
+
+1/(likelyhood_fraction^(probability)) = number_of_positive_detections
+
+

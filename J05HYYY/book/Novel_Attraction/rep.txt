@@ -1,0 +1,31 @@
+a give rep to b x1
+b give rep to c x2
+b give rep to d x1
+c give rep to e x1
+
+a:b 1/1 = 1
+b:c 2/3 = 0.6666
+b:d 1/3 = 0.3333
+c:e 1/1 = 1
+
+a:b:c:e = 1 * 0.6666 * 1 = 0.6666
+a:b:d = 1 * 0.3333 = 0.3333
+
+mint and pay 1 rep
+
+It would be better just to get the lowest value after each hop, less computation (and more accurate representation):
+
+a give rep to b x1
+b give rep to c x2
+b give rep to d x1
+c give rep to e x1
+
+a:b 1/1 = 1
+b:c 2/3 = 0.6666
+b:d 1/3 = 0.3333
+c:e 1/1 = 1
+
+a:b:c:e = 0.66666
+a:b:d = 0.333333
+
+20 hops max is good.

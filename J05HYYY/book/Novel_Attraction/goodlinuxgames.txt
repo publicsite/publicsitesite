@@ -1,0 +1,7 @@
+bugsquish - a mosquito game, where mosquitoes land on an arm and you have to swat them. That made me laugh whilst tredging through the packages.
+
+krank - a trippy game with great art-work, but hard to describe, that kind of supports gamepad but was incomplete for some-reason. The game used gravity, and you had to link these silver balls in the right places.
+
+cappuccino - not really a game, it had a screen that said stuff like "gcc virus.c -o virus", "emailing to whitehouse.gov", but I can see how it would be funny, nothing malicious I don't think, but still in a bit of doubt now...
+
+singularity - which is a strategy game where you play as an Artificial Intelligence.

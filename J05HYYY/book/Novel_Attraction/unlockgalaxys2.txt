@@ -1,0 +1,1 @@
+for sim unlock, there are threads on xda-devs, looks easy, just need root and editing the /ets/nv_data.bin for samsung phones

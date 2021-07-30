@@ -1,0 +1,5 @@
+Day_11__Thursday_24th_May
+
+Harvested spinach by picking biggest leaves from plant(s).
+
+This can then be repeated. Future picking of spinach won't be documented, so long as they dont go to seed, they should be eadible.

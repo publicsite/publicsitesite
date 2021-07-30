@@ -1,0 +1,69 @@
+				TABLE1
+PACKAGE_IDX		DEPENDENCIES_INDEX
+4				1
+4				3
+4				2
+
+				TABLE2
+PACKAGE_IDX	PACKAGE_NAME	LAST_BUILT	SUCCEDED
+1			packageA			<date>		y
+2			packageB			<date>		n
+3			packageC			<date>		y
+4			packageD			<date>		n
+
+#creating the build database
+
+for each package
+	if package does not exist in table2
+		add package to table2
+		get index
+	else
+		get index
+	get package dependencies
+		for each dependency
+			if dependency does not exist in table2
+				add dependency to table2
+				get index
+			else
+				getindex
+			if package, dependency does not exist in table1
+				add package,dependency to table1
+
+
+
+######################READ BELOW FOR THE SHIZZLE
+
+
+
+#building a package
+function build_package(package){
+	get package dependencies
+	for each package dependency
+	{
+		built=0
+		for each line in built_list_file
+		{
+			check if line matches package dependency
+			if yes
+			{
+				built=1
+				break;
+			}
+		}
+
+		if built = 0
+		{
+			build_package(dependency)
+		}
+	}
+
+	make_package
+	if error, bail
+	if success, add to built_list_file
+}
+
+#building all packages
+for each package
+{
+	build_package()
+}

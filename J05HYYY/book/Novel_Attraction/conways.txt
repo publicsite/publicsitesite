@@ -1,0 +1,34 @@
+int best steps									//the best number of steps it took to solve the solution
+int *best_instructions								//the best instructions used to solve the solution (each instruction has a value from 0 to m for it's opcode)
+
+int this_steps;									//the number of steps this solution has taken so far
+int this_instructions;								//the instructions used so far
+int target_size									//the site of the target
+target[] = "01001010"							//the target binary
+int var_size									//the size of the variable
+var[] = "10010101001"							//the working variable
+
+struct instruction(){
+eq_or_ne				//0 or 1
+int A					//index_A	
+int B					//index_B
+int C					//index_C			//if -1, then not used
+}
+
+this_steps = this_steps + 1;
+realloc(this_instructions, this_steps * )
+
+randbetween 0 and 3
+
+randombit	random_index_A
+randombit random_index_B
+
+{
+
+random_size = rand between input_array_size
+
+	malloc random_binary_mask = sizeof(random_size *)
+	random_bit
+	check()
+}
+

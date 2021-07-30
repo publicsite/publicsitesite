@@ -1,0 +1,31 @@
+label (name of option)
+					MAYBE:
+					checkbox (on/off)
+
+					AND MAYBE:
+						radio
+							file
+							text
+							radio
+							dropdown
+							list
+						file
+						text
+						radio
+						dropdown
+						list (multiselect)
+						list (single select)
+						checkbox (optionA, optionB, optionC)
+hover over (description)
+ok back cancel
+
+
+
+Generate XML
+Generate C code
+	<option>_var      -->    of type string
+	verbose_var
+	input_var
+	ouput_var
+
+Compile C code

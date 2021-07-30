@@ -1,0 +1,18 @@
+//Antibody, antigen testing pseudocode
+
+Test the secondary antibody and antigen for colour change
+	If no colour change
+		Add primary antibody
+		If new colour change
+			The antigen effects the primary antibody (though can't tell if secondary antibody is needed)
+	If colour change
+		The antigen effects the secondary antibody
+			Add primary antibody
+				If new colour change
+					The antigen effects both the primary and secondary antibody
+				If no new colour change
+					The antigen effects only the secondary antibody
+
+Test the primary antibody and antigen for colour change
+	If colour change
+		The antigen effects the primary antibody

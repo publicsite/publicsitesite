@@ -1,0 +1,45 @@
+
+Bookmarks (in the same window)
+
+Move File
+
+Delete File
+
+Rename File
+
+Edit (run a file)
+
+href "[location of unknown file extention]"
+No default program was found this type of file, so you can either: [new line]
+
+Press Return to run in [default program] or backspace to edit the run configurations.
+
+
+
+
+
+Buy
+select distance on map
+new/used/either
+find cheapest price
+
+Sell
+
+Download
+
+Find
+A person
+A place
+A organisation
+A shop
+
+Interact
+Email
+Messengers
+
+
+Movie Settings
+Multimedia Settings
+
+Find keycode
+

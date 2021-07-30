@@ -1,0 +1,20 @@
+000 //set all to 0
+001 //increment digit at index size-1
+002 //"            " last number full
+010 //increment digit at index size-2, set all digits after to 0
+011 //increment digit at index size-1
+012 //"           " last number full
+022 //increment digit at index size-2, digit full
+100 //increment digit at index size-3, set all digits after to 0
+// stop when first digit is full
+
+i=size-1; i--
+	while(array)
+        array[i]++
+	when array full
+		if (i-1 < 0) return;
+		array[i-1]++
+		for j < size-1
+			array[j]=0
+		i=size-1
+		break

@@ -1,0 +1,11 @@
+C F G occour major naturally in the chromatic scale eg. 5 semitones then 4 to move up 3 white notes.
+
+D E A B occours minor naturally in chromatic scale eg. 4 semitones then 4 to move up 3 white notes.
+
+The minor chords can turn more major (whilst using the black notes) by cutting out the middle note.
+There is an exception to this rule, which is the note B, its a bit gay.
+Because these are not naturally occouring in western music (a listener can't tell if its major or minor), They should be used for 2 / timesig
+
+Blues Riff sounds good because its the only way of moving a note (in this case G) two semitones without moving the base note.
+
+Moving the G down two semitones sounds like a shitty chord, but when broken down, it sounds really good. Also, when made into chords, they are all major.

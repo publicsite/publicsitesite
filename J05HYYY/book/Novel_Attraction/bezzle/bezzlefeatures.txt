@@ -1,0 +1,9 @@
+provides dynamic dns
+provides secure communications, with protection from MiM attack
+provides pseudo-anonimity
+provides easy mirroring of websites
+is peer-to-peer
+
+notes:
+forward ssl
+ssl/tuntap

@@ -1,0 +1,10 @@
+A FPGA or ASIC is usually made from transistors. Transistors usually contain a p-type and n-type doped semiconductor.
+Doping means adding an impurity to the semiconductor.
+
+A good p-type semiconductor for printing is Copper(II) Oxide.
+A good n-type semiconductor for printing is Tin Dioxide.
+
+To print, a mixture must be made using the oxides. On the reprap wiki [1], bitumen is used. An
+alternative may be pine tar.
+
+[1] http://www.reprap.org/wiki/ConductiveMaterials

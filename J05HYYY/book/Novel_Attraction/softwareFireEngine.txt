@@ -1,0 +1,11 @@
+anti-virus
+memory testers
+registry cleaners
+system monitors
+disk checkers
+disk defragmenters
+backup software
+disk cleaners
+
+See windows security software		https://en.wikipedia.org/wiki/Category:Windows_security_software
+See spyware removal category		https://en.wikipedia.org/wiki/Category:Spyware_removal

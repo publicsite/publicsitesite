@@ -1,0 +1,45 @@
+the cat sat on the mat
+
+string connection;
+string object1;
+string object2;
+int object2Empty;
+
+abc:
+get next word
+check to see if text matches phrase in connections database
+if so
+{
+get text, store as relation
+if object1 has been got
+getObject(2)
+else getObject(1)
+}
+else
+{
+if object1 has been got
+getObject(2)
+else getObject(1)
+}
+
+getObject(n):
+get next word
+check if it's a noun or adjective
+if it's a noun or adjective
+{
+if (n == 1) store word at end of object1;
+else if (n == 2)
+{
+	store word at end of object2
+	if (object2Empty == 0) object2Empty = 1
+}
+get next word
+}
+else
+{
+add word to connection
+get cde(n)
+}
+
+find text between abc1 and abc2
+put in database

@@ -1,0 +1,8 @@
+device that has podcasts, radio, music
+device that remembers position of playback of podcasts, even when turned off
+device that has TTS for name of podcast
+device that has TTS for name of radio station
+device that can start playing from the click of a button
+device that has shuffle for music
+device that sits next to bed, always on
+device that doesn't need a screen to operate

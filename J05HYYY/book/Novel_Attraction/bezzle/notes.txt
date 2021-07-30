@@ -1,0 +1,29 @@
+return ip && key, key when randomnumber + number = x or < x (if not already recorded)
+
+choose x random nodes, ask to forward ssl tunnel
+
+timeout; broadcast abort signal to those serving request
+
+seperate cgi for upload / download
+
+return hash of file from query
+
+amount of results related to amount of random queries.
+
+page buttons to scroll through results:
+<< page x >>
+
+was this useful button:
+yes or no
+(mirrors or blacklists result)
+
+time since stored, amount accessed, size
+
+perform command on query (see phone for details)
+serve file
+
+h:<hash> = get file from hash
+q:<query> = get hash from query
+t:<nodes> = tunnel connection through nodes
+
+return server ip and pubkey in http headers ?user agent?

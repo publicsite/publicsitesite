@@ -1,0 +1,12 @@
+80
+46+22+2.39+soldering iron
+
+get list of bootstrap nodes
+ask for list of x nodes and trust for nodes
+update bootstrap nodes file (remove previous nodes & replace with new ones and score)
+
+at a set time interval, query a random node in the bootstrap file for a key that exists in database
+if value is the same as value in database, increase trust of node
+if value is not found, do nothing
+if value is wrong, decrease trust of node
+<ip><pubkey>, trustscore

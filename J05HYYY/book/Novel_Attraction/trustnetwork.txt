@@ -1,0 +1,43 @@
+x send to y
+record chain
+x
+a
+b
+c
+d
+e
+y
+
+if message is good, y signs got the message from x, delivered by a
+signs delivery feedback for a
+if message is good, y signs got the message from x, delivered by b
+signs delivery feedback for b
+if message is good, y signs got the message from x, delivered by c
+signs delivery feedback for c
+if message is good, y signs got the message from x, delivered by d
+signs delivery feedback for d
+if message is good, y signs got the message from x, delivered by e
+signs delivery feedback for e
+
+
+A's delivery feedback
+sign from x
+sign from x
+sign from x
+sign from x
+
+start missing or inital rep, for contacts you add manually at average + 1 credit
+
+key	reference
+keya	keyb		1
+keya	keyb		1/4
+keyc	keya
+keyd	1/20
+
+for each key, add rep level, get average rep level
+
+rep credits:
+increase reps closer to 1 if add more rep. (repeat for amount of credits)
+decrease rep closer to 0 if reduce rep.
+
+1/2 3/4 7/8 15/16

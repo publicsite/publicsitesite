@@ -1,0 +1,61 @@
+_____________To declare:__________
+__Availiable but not collated:__
+kali & list of open source pen testing packages (parabola)
+	need to wget list from parabola wiki
+gingery crucible
+	need to find
+bloomery
+	need to youtube-dl primitive technology
+csound (frequency shift, frequency generation)
+	need to download sources
+	need to download documentation
+qflow
+	need to download sources for each program
+	need to download documentation for each program
+	need to download mirror of qflow website
+ice40 toolchain
+	need to download sources
+	need to download documentation
+	need to download mirror of cliffordwolf website
+pwm arduino
+	need to download 16 bit pwm C code
+cross-correlation fftw
+	need to download clean copy of code from github
+xcsoar
+	need to download
+	need to download documentation
+mimto wheel
+	need to find
+rtlsdr software
+	need to download documentation
+	need to download sources
+paper on graphene oxide
+	need to find
+ADC (verilog)
+	need to find or reimplement inc documentation
+Reprap firmware
+	need to download
+	need to download documentation
+	need to get a dump of the wiki
+cloud cover metoffice
+	need to find
+clay production
+	need to find.
+ball mill
+	need to wget webpage
+
+__Needs work:__
+passive radar software
+spectrometer
+industry os
+opencv background detection (record)
+cubic spline interpolation
+	(on video)
+turbine modelling
+
+__Missing:__
+helitical gear software
+neural computers
+encryption
+reverse engineering
+target tracking

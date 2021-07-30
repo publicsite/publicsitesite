@@ -1,0 +1,2 @@
+The bootstrapping of the building of automata which is capable of building itself and potentially
+other things.

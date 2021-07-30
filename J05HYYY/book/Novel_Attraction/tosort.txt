@@ -1,0 +1,147 @@
+_________________________SOFTWARE FOR ANY OF THE FOLLOWING:______________________________
+radar
+intrusion software (offensive or defensive)
+detection of explosive residues (trace detection: eg. acousitic wave, ion mobility, differential mobility spectrometry, mass spectrometry)
+design of pottery wheels and relevant furnaces
+software for the analysis of radar reflections or sonar reflections
+software tools for machining helitical gears
+firmware for CNC control units
+crucibles
+furnaces for metals
+frequency changers
+frequency generators
+physics simulation software for etching, deposition, masks for semiconductors
+ADCs
+neural computers
+survellience equiptment
+any cryptographic function other than authentication, digital signature or the execution of "copy protected" software
+reverse engineering software including cracking
+target tracking
+correlation or superposition
+cross section measurement systems (radar)
+acousitic beam forming
+passive reception hydrophone
+slowmo camera software (interpolation etc.)
+air traffic control software
+GNSS position and time
+adaptive antenna systems
+GNSS, GPS, GLONASS receving equiptment
+software to decrypt GNSS
+software for navigation systems
+wind tunnel simulation (flow-environments) 2d or 3d
+
+subs, boats (inc. hydrofoil), hulls, keels, sonar, log equiptment
+filament winding machines
+weaving machines (fibres)
+fibre placement machines
+tape laying machines (missiles)
+the creation of carbon matrixes
+design of gas masks and filters
+design/production of polymer fibres (clay)
+design/production for vapour deposition (especially of carbon composites)
+processing fibres
+metal powder production
+production of liquid, solid or gas propellants
+vaccume mixers
+fluid energy mills for grinding or milling substances (absorbers of electromagnetic waves, metal powders)
+anti friction bearings
+machine tools for grinding
+four axis CNC
+software for deep hole drilling
+software for removing metals, ceramics or composites
+electrical discharge machines
+spin forming machines (computer controlled)
+flow forming machines (computer controlled)
+magnetic bearings
+ball barings
+valves (mechanical)
+isostatic presses
+vibration test systems
+pyrolysis of composite rocket nozzles and reentry nose tips
+centrifuges
+balancing machines (especially Centrifugal multiplane balancing machines)
+coordianate measuring machines
+systems for simultaneous linear-angular inspection of hemishells
+'linear displacement' measuring machines
+robots and control units for handling high explosives
+turning machines
+toxic gas monitoring systems
+testing of semiconductor devices
+spray cooling
+accelerators (inc. capable of producing radation)
+thermal batteries (for missiles)
+computers which can withstand high temps and radiation
+systolic array computers
+optical computers
+super computers
+passive coherent location systems
+counter IED equiptment
+laser communications systems
+laser PWM
+laser frequency conversion
+missile telemetry
+digital techniques performing 
+optical control equiptment (orientation, steering, tracking, mobilisation)
+gimbals
+aspheric optical elements
+signal pulse compression
+imaging sensors
+direct view imaging equiptment
+fibre optic sensors
+cryocooling
+location and recognition of divers and swimmers
+slowmo cameras
+magnetic and electric field compensation systems (probably for missiles)
+detectic magnetic field anomalies
+gravity meters
+flight record software
+gyros or angular rate sensors
+radomes
+precision tracking for missiles
+inertial measurement
+star trackers
+altimeters
+linear accelerometers
+navigational systems for missiles
+autoflight software for missiles (flight control software)
+gyro-compasses
+patsys magic bullet
+autonomous vehicle software (inc. subs)
+brayton or rankine cycle engine (air independent)
+underwater robots
+robots that apply torque or force
+diesel engine (air independent)
+fuel cells > 2KW
+stirling engines
+propellers
+power transmission systems
+noise reduction systems
+pumpjet propulsion systems
+rebreathers
+acousic deterrent to divers that's non lethal.
+water tunnels
+syntactic foam
+aero gas turbine engines
+aero gas turbine cooling
+individual rocket stages
+turbines and blades
+real time control systems and sensors (inc. on-line)
+wind tunnels
+acousitic vibration test equiptment
+rocket motor test equiptment
+wall skin friction transducers
+environmental chambers and anechoic chambers
+turbine engines
+space launch vehicles (and modelling/simulation)
+spacecraft
+spacecraft buses
+spacecraft payloads
+stuff for making rockets (nozzles)
+ramjet scramjet or combined cycle engines
+unmanned aerial vehicles (drones)
+turbojet and turbofan engines
+pulse jet engines
+spraying or fogging systems
+FADEC Systems
+crystal growing control software
+

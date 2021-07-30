@@ -1,0 +1,17 @@
+a plus times a plus is a plus.
+a plus times a minus is a minus.
+a minus times a minus is a plus.
+
+Works just as well as:
+
+a plus times a plus is a plus.
+a plus times a minus is a plus.
+a minus times a minus is a minus.
+
+(-a)(-b) = (-1)(-a)(-1)(-b) = (-1)(-1)(-a)(-b)
+= (-a)(-b) = (-1)(-ab) = -ab = -ab
+
+(-3 lots of) 5
+-5-5-5
+-3 (lots of 5)
+555

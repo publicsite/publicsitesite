@@ -1,0 +1,11 @@
+amount of chips
+
+hand dealt - chance of a better hand
+	   - chance of them having a better hand (amount of players at the table)
+	   - chance of some of them bluffing
+
+risk/reward ratio
+
+guess if a player is bluffing by - seeing how many times the player has had a bad hand and at what point the player bets with the hand.
+				 - seeing who often the player does it.
+

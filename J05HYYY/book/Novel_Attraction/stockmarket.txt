@@ -1,0 +1,74 @@
+
+________________________________________________________________________________________________________________________________________
+
+##THE FOLLOWING IS ONLY HALF TRUE
+
+Here is my micro case study on stock market share price inflation.
+I will use the company Apple as an example, using figures for The last day in December 2017.
+Apple's total shareholder equity is $140,199 [1] ... this is it's assets minus it's liabilities.
+Apple has 5,126,201 [1] shares outstanding ... this is how many shares in the company Apple, someone other than Apple owns.
+If we divide 140,199 by 5,126,201, we get the actual worth of the shares: $0.027.
+Now take a look at the confidence value of the share ... on 12/29/2017, it opened at $170.52 [2].
+This means the real to inflated value of Apple is 1:6315.56.
+
+On average, apple has paid out $1.3 per year and per share in dividends. This means, if you bought a share at the cost of $170.52, you would have to wait ~130 years
+for the dividends to match the cost of the share.
+
+Shares, therefore are almost entirely based upon market confidence alone, they are known as a type of 'ficticious capital'
+
+[1]	http://investor.apple.com/secfiling.cfm?filingID=320193-18-5&CIK=320193
+[2]	https://www.nasdaq.com/symbol/aapl/historical
+[3]	https://www.nasdaq.com/symbol/aapl/dividend-history
+
+#READ BELOW WHY
+
+The average dividend yield, which is the dividend per share divided by the price per share is around 2.4% for the FTSE100 [1]. If we divide 100 by 2.4, we can
+work out that it will take approximately 40 years to earn back the money in dividends.
+
+If the average life span of a company is ~15 years, it is entirely possible that you will never get your money back through dividends,
+that is, unless you rely on speculation.
+[1] http://siblisresearch.com/data/ftse-all-total-return-dividend/
+
+____________________________________________________________________________________________________________________________________
+
+When shares are sold by the company, the ficticious capital is converted into financial capital in the form of real money. A business can make money simply by
+selling shares. A good way to maximise the hysteria (or confidence) surrounding your shares is to gradually reduce the worth of the subsequently issued shares.
+In order to maintain control over your public business, you will have to own over 50% of the shares. Below is pseudo code for issuing n shares to Person.
+
+Issue_Shares(Person, n){
+Is there anyone with shares?
+No
+	Owner gets n + 1 shares
+	Person gets n shares
+Yes
+	Each give each stockholder n extra shares
+	Give Person n shares
+	OwnerShares += (Number_Of_External_Shares + 1) - Number_of_Shares_Owner_Already_Has
+}
+
+___________________________________________________________________________________________________________________________________
+
+Issuing dividends follows a similar process, take the total worth of the company (assets - liabilities), and create a percentage of the worth you wish to pay out in
+dividends. Pay out the dividends each time someone buys new shares, or at a longer timespan depending.
+
+Pay_Dividends(worth, percentage)
+{
+	totalToPay = (percentage/100) * worth
+	payPerShare = totalToPay/numberOfShares
+	for each person holding shares
+		pay_Person(numberOfSharesPersonOwns * payPerShare)
+}
+
+Pay_Dividends(assets-liabilties, 50)
+
+_____________________________________________________________________________________________________________________________________
+
+Return = (Ending price - Beginning price + Dividends) / (Beginning price) = ($90,000 - $75,000 + $2,500) / $75,000 = 23.3% percent.
+
+If this percentage is negative do not sell, and do not continue with the rest ...
+
+Inflation = (Ending CPI level - Beginning CPI level) / Beginning CPI level = (721 - 700) / 700 = 3 percent
+
+Inflation-adjusted return = (1 + Stock Return) / (1 + Inflation) - 1 = (1.233 / 1.03) - 1 = 19.7 percent
+
+If this percentage is negative do not sell.

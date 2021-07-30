@@ -1,0 +1,67 @@
+/*
+if person has said coins
+	allow transaction
+	mirror
+if person does not have said coins
+	disallow transaction
+	do not mirror
+*/
+
+mirrored[]
+mirroredFreq[]
+questionable[]
+
+contactTransactions[]
+valid[]
+
+owed['contact']
+mirroredPaid['']
+
+for each contact-Transactions
+	add to contactTransactions[]
+
+contacts[]
+positive['contact']
+negative['contact']
+for each in contactTransactions[]
+	if paidBy is not in contacts, add it
+	if paidTo is not in contacts, add it
+	if paidTo is saidContact
+		add amount to positive[paidBy]
+	if paidBy is saidContact
+		add amount to negative[paidTo]
+
+for each contact in contacts[]
+	lookup positive['contact']
+	lookup negative['contact']
+	if positive < negative && paidTo is not in questionable[]
+		add paidTo to questionable[]
+
+for each in contactTransactions[]
+	if paidTo is not in questionable
+		add transaction to valid[]
+
+//we now have a list of valid transactions and a list of questionable contacts to which over payments were made
+
+for each mirrored
+	get transaction
+	if transaction exists in mirrored[]
+		get index in mirrored[]
+		++mirroredFreq[index]
+	else if transaction does not exist in mirrored[]
+		add transaction to mirrored[]
+		mirroredFreq[index] = 0
+
+sort mirrored[] and mirroredFreq[] by mirroredFreq[] decending
+
+negativeMirrored['contact']
+
+for each in mirrored[] decending
+	if transaction is not in valid[]
+		if paidBy is saidContact
+			if positive > negative+amount
+				add transaction to valid
+
+mirror valid
+		
+	

@@ -1,0 +1,28 @@
+THIS WON'T WORK as api will just get a pdf.
+
+load historical accounts
+get UKCompaniesHouseRegisteredNumber, EntityCurrentLegalOrRegisteredName, currentCashAtBank, previousCashAtBank, currentNetAssets,previousNetAssets
+store
+load monthly accounts
+get UKCompaniesHouseRegisteredNumber, EntityCurrentLegalOrRegisteredName, currentCashAtBank, previousCashAtBank, currentNetAssets,previousNetAssets
+check if a value already exists in database for that company number
+if so, overwrite and store
+if not, store
+
+get list of company IDs from this generated set.
+load list of company IDs from BasicCompanyData
+
+check if each id in basic company data exists in generated set
+
+for the ones that don't, write program using API to get data, baring in mind rate limits.
+
+concat generated list and list from API
+
+you should now have the list.
+
+add up the currentnetassets and currentcashatbank to get currentWorth
+add up the previousnetassets and previouscashatbank to get previousWorth
+
+subtract currentWorth from previous worth to get yearlyProfit
+
+sort by yearlyProfit

@@ -1,0 +1,6 @@
+food
+water
+shelter
+clothing
+sanitation (hygenic means of preventing disease)
+healthcare

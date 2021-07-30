@@ -1,0 +1,140 @@
+1234567890
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+
+THEN
+
+(1-2)
+(3-4)
+(5-6)
+(7-8)
+(9-0)
+
++
+
+(2-3)
+(4-5)
+(6-7)
+(8-9)
+
+THEN
+
+{
+
+(
+(1-2)-(3-4)
+(5-6)-(7-8)
+)
+
+OR
+
+(
+(3-4)-(5-6)
+(7-8)-(9-0)
+)
+
+}
+AND
+
+{
+
+(
+(2-3)-(4-5)
+(6-7)-(8-9)
+)
+
+AND
+
+(4-5)-(6-7)
+
+}
+
+THEN
+
+((1-2)-(3-4))-((5-6)-(7-8)) AND ((3-4)-(5-6))-((7-8)-(9-0))
+OR
+((2-3)-(4-5))-((6-7)-(8-9)) AND (4-5)-(6-7)
+
+___________________________________
+
+(a-b)-c OR a-(b-c)
+
+doEvenBit(char *string, int allLength)
+{
+	keep multiplying 1 by two until you get to = or above allLength
+	store each multiplication in an array
+	1
+	2
+	4
+	8
+	16
+	32
+
+	newRe=allLength // = 38
+	if newRe is greater than 0 take next largest division
+	newRe -= 32 // newRe originally 38, now is 6
+	newRe -= 4 // newRe = 6, now is 2
+	newRe -= 2 // newRe = 2, now is 0
+
+	32
+	16                              16
+	8 8                             8 8
+	4 4 4 4	                        4 4 4 4					4
+	2 2 2 2 2 2 2 2                 2 2 2 2 2 2 2 2				2 2		2
+	1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1	1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1		1 1 1 1		1 1
+}
+
+
+//argv[1] is a 38 character string
+
+strlen(argv[1]);
+
+if EVEN:
+doEvenBit(argv[1], allLength);
+else
+doEvenBit(allLength-1);
+
+_______________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________
+
+CONTENTTABLE:
+contenttableindex	documentindex		patternindex/text switch	patternindex/text		nextcontenttableindex
+0			0			0				"hel"				1
+1			0			1				0				2
+2			0			1				2				3
+3			0			0				"rld"				null
+
+METADATATABLE:
+documentindex	document name	sourcelocation
+0		"greeting"	www.wikipedia.org/hello_world
+1		"apage"		www.apage.com
+
+PATTERNTABLE:
+patternindex	text		frequency
+0		"llo w"		1
+1		"lo"		1
+2		"o"		2
+
+CONTAINSTABLE:
+patternindex	patternindex	startposition
+0		1		1
+1		2		1
+0		2		3
+
+
+get text
+generate combinations
+search text for combination
+if found text store as pattern and reference
+
+search pattern for combination
+if found pattern, plus one to frequency

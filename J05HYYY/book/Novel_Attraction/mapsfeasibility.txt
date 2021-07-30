@@ -1,0 +1,12 @@
+1:10000
+Number of kilometers on an A4 sheet
+2.750km (width)
+2.250km (height)
+
+scotland
+440km
+
+1300km
+680km
+
+500 pages.

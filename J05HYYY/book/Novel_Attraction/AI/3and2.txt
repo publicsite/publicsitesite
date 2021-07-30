@@ -1,0 +1,9 @@
+All of the numbers can be made with the integers 3 and 2.
+
+For example,
+
+The number 242 can be made with 3 and 2:
+
+	242 = ((3 ^ (3-2)) - 3) + 2
+
+This could be a useful way of presenting equations in a raw format, and can be useful for equation solvers.

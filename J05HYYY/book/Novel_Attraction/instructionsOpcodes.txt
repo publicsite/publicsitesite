@@ -1,0 +1,8 @@
+jmp		<address>
+mov		<address>	<bitIndex>	<address>	<bitIndex>
+ifeq		<address>	<address>
+ifeq		<address>	<bitIndex> 	<address>	<bitIndex>
+ifne		<address>	<address>
+ifne		<address>	<bitIndex>	<address>	<bitIndex>
+setbit		<address>	<bitIndex>
+nand		<address>	<bitIndex>	<address>	<bitIndex>

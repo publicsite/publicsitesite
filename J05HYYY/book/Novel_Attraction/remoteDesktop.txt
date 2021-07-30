@@ -1,0 +1,23 @@
+reverse ssh to administrator ip							(client)
+ssh into ip											(administrator)
+start remote desktop on localhost						(administrator on clients machine using ssh)
+do stuff
+close remote desktop connection						(administrator on clients machine using ssh)
+close ssh connection									(administrator)
+close reverse ssh									(client?)
+
+[1]https://www.howtoforge.com/reverse-ssh-tunneling
+________________________________________________________________________________________________
+
+1: From Clients Machine)
+start rdesktop on localhost:<rdesktop port>
+2: From Clients Machine)
+ssh -R <somePortToTraverse>:localhost:<rdesktop port> <adminUserName>@<adminIP>
+3:
+Some way of sending port, ip and details, and readystate to Admin eg. web request
+	it may be possible to check with "netstat -nap"
+			(see http://xmodulo.com/access-linux-server-behind-nat-reverse-ssh-tunnel.html)
+4: From Admins Machine)
+ssh <userIP> -p <somePortToTraverse>
+OR
+possibly connect with guacamole or other?

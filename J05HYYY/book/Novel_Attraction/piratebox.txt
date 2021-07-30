@@ -1,0 +1,12 @@
+rasbperry pi: disadvantages: arm, non-free bootloader
+		advantages: open source graphics
+cubox i: disavantages: arm, very expensive, non-free graphics (but close to getting free)
+		advantages: free bootloader
+hdmi x86 stick: disadvantages: very expensive, non-free bootloader, 16 gigabyte ones run windows
+		advantages: open source graphics, if I get a 16 gigabyte one I can install games too
+android arm boxes: cheap
+
+
+
+
+... or, what I did was find another source for putlocker :)

@@ -1,0 +1,8 @@
+copper doped zinc-sulphide: p-type
+tin dioxide: n-type
+
+polyester resin: polymer thermosetting binder
+white spirit: dispersion solvent
+
+
+PVA glue + water --> polymer emulsion

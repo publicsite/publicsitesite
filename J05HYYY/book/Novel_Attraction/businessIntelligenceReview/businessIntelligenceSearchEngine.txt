@@ -1,0 +1,64 @@
+_____General Query:_____From:_________
+
+checkbox for the following:
+logo image					wikidata
+duckduckgo abstract				duckduckgo
+
+checkbox for the following:
+wikipedia article				wikidata, failing that, wikipedia search, failing that yacy with site:wikipedia
+wordcloud						yacy
+images						startpage
+
+automatically generated:
+link to news					?
+country of citizenship				wikidata
+birth name					wikidata
+given name					wikidata
+occupation					wikidata
+employer						wikidata
+manufacturer					wikidata
+official website					wikidata
+programming language			wikidata
+source code repository			wikidata
+developer						wikidata
+license						wikidata
+genre						wikidata
+record label					wikidata
+performer						wikidata
+country						wikidata
+headquarters location			wikidata
+official website					wikidata
+original language of work			wikidata
+main subject					wikidata
+duration						wikidata
+director						wikidata
+producer						wikidata
+cast member					wikidata
+screenwriter					wikidata
+production company				wikidata
+platform						wikidata
+publisher						wikidata
+game-mode					wikidata
+series						wikidata
+subreddit						wikidata
+GitHub username				wikidata
+Twitter username				wikidata
+YouTube channel ID				wikidata
+Instagram username				wikidata
+LinkedIn personal profile URL		wikidata
+Facebook profile ID				wikidata
+
+checkboxes for the following:
+Search Yacy for Subreddit	        	reddit search
+Search Yacy for GitHub			github search
+Search Yacy for Twitter			twitter search
+Search Yacy for Youtube 			youtube search
+Search Yacy for instagram			yacy with site:instagram
+Search Yacy for linkedin			yacy with site:linkedin
+Search Google Plus				google plus search
+Search Facebook				facebook search
+Search IMDb 					IMDb search
+Search Yacy for pastebin account	yacy with site:pastebin
+pastie account					yacy with site:pastie
+
+any files						yacy with filetype: "doc", "docx", "ppt", "pptx", "pdf", 'xls', 'xlsx', 'zip' ...

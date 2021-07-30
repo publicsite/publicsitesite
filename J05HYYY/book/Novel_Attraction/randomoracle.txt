@@ -1,0 +1,9 @@
+0 to n
+x = pick a number
+random oracle function = x + a * x - b / x - c * x + d / x - e * x + f / x - g * x - h / x + i * x + j*x - k / x ... //unbalanced salt and oil, variables chosen randomly, signs (+/-,*/)) chosen randomly
+
+LOOP:				//number of loops random
+	x
+	plus or minus 		//random
+	variable			//random
+	multiply or divide	//random

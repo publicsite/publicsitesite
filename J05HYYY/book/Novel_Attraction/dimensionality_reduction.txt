@@ -1,0 +1,21 @@
+We have two sets of numbers:
+
+1 2 3
+
+3 4 6
+
+... and we wish to compare them.
+
+Divide each (higher) digit, from the other (lower) digit.
+
+3/1=3
+4/2=2
+6/3=2
+
+Times out the answer:
+
+3*2*2 = 12
+
+This gives us a comparison function that can be used with qsort.
+
+The closer the value is to 1, the more similar they are.

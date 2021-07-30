@@ -1,0 +1,14 @@
+Q: How do we measure time?
+A: Using a clock.
+
+Q: How do we know when an hour has passed?
+A: We look at the starting position of the clock hand and the ending position. An event has occoured.
+
+If an event has occoured we percieve it as a passing of time.
+
+Of course, there are many events, so we have alot of measures of time.
+
+But, this theory makes sense, as
+
+When we are engaged in a fun activity, we may perhaps notice more events occouring, and hence time flies.
+Likewise, when we are bored, and there are not many events occouring, time seems to pass slower.

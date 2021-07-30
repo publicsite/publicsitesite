@@ -1,0 +1,81 @@
+//data forecasting multidimentional, requires lots of processing power
+
+//collecting model from dataset
+
+for each pic [x] in numimages - 2
+	for each pixel [i] in pic[x]
+		for each pixel [j] in pic[x+1]
+			for each pixel [k] in pic[x+2]
+				pushback(i:pic[x][i],j:pic[x+1][j],k:pic[x+2][k])
+
+//making a forecast
+
+for each pixel [i] in pica
+	for each pixel [j] in picb
+		for each result pixel [k]
+			lookup(ivalue,jvalue,kvalue)
+			totalk=0
+			for each result [y] in numresults
+				a=sqrt(pow(pica[i] - ivalue,2))
+				b=sqrt(pow(pica[j] - jvalue,2))
+				difference=(a+b)/2
+				totalk += kvalue*(1/difference)
+			specialk = totalk / numresults					// this is the forecasted pixel for pixel i,j
+			picc[k] = specialk
+
+//we can then we can interpolate, and quantize to find the nowcast
+
+// this algorithm below should speed up training exponentially
+
+	x=7
+
+	for i
+	{
+		if (x > 1)
+		for j
+		{
+
+			if (x > 2)
+			for k
+			{
+				i,j=k
+
+				if (x > 3)
+				for l
+				{
+					j,k=l
+
+					if (x > 4)
+					for m
+					{
+						k,l=m
+
+						if (x > 5)
+						for n
+						{
+							l,m=n
+
+							if (x > 6)
+							for o
+							{
+								m,n=o
+
+								if (x > 7)
+								for p
+								{
+									n,o=p
+								}
+								x--
+							}
+							x--
+						}
+						x--
+					}
+					x--
+				}
+				x--
+			}
+			x--
+		}
+		x--
+	}

@@ -1,0 +1,33 @@
+FROM: https://en.wikipedia.org/wiki/Category:Technology_companies_of_the_United_Kingdom
+
+video conferencing
+video advertising
+video distribution
+virtual data room
+video survelliance systems
+
+media and entertainment
+hospital bedside communication and entertainment systems
+
+https://en.wikipedia.org/wiki/Ecourier
+google street view
+location-based services
+telematics
+
+design software
+drug modelling software
+scientific imaging software
+electrical generator modelling
+materials research
+antenna modelling
+electronics design
+
+application, account management, and administration product suite
+decision support
+consultancy
+mobile commerse, e-commerse
+high performance computing
+
+note, on debian:
+the packages starting with med- are metapackages for the debian med blend
+the packages starting with science- are metapackages for the debian science blend

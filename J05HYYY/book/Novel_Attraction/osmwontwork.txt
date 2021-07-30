@@ -1,0 +1,18 @@
+code point open can get the properties per post code
+price paid data can get the min and max building numbers
+
+for each min max building number, we can use match and cleanse from ordnance survey to check the x_coordinates and y_coordinates for min and max (are correct)
+we generate numbers from min to max, and assign them to the code point open coordinates, including price paid
+then generate an address for the street, town and city using osm
+and add the postcodes from code point open
+we will get a list of addresses generated under the open government licence
+it can then be used in open street map
+also we can get the INSPIRE index polygons, and add the price paid to the parcels of land
+
+both are under the open government licence, apart from the address data
+
+
+
+
+
+interpolation is not good for house numbers ... can use ordance survey api to check start and end numbers as there are > 2000 streets.

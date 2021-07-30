@@ -1,0 +1,4 @@
+salix with:
+vnc server
+guacamole
+qemu

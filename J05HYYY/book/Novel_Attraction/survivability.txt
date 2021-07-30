@@ -1,0 +1,25 @@
+Food
+	Buy from supermarket.
+	Growing.
+Water (or Drink)
+	Buy from water company.
+	Collect rainwater and boil.
+Shelter
+	Have to pay rent and council tax.
+Sanitation
+	Have to buy from supermarket.
+	Toothpaste
+		Baking soda
+	Soap
+		Oil
+			Pyrolysis? (must take a look at image I made on pyrolysis, charcoal, syngas etc.)
+Healthcare
+	Relatively healthy.
+Energy
+	Have to buy from electricity company.
+	Solar.
+Tools for all of the above
+	Pitch fork, trowel
+	Pots, cutlery
+	Clothes
+	Shoes

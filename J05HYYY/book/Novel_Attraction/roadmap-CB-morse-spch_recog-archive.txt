@@ -1,0 +1,17 @@
+you make an archive using web
+speech synthesizer
+speech recognition
+	ASCII alphabet
+	down
+	up
+	left
+	right
+then you get a morse program that works with audio
+	you modify it to have a mode for extra characters
+	you modify it to have a mode for bluetooth controller
+	you modify it to have a mode to act as a keyboard
+talking parabola
+clone it
+you write a program that reads normal morse (without the extra characters) and does a web request, and speaks the result
+	in elinks, you can press k for keybinding manager, and edit keybindings.
+	

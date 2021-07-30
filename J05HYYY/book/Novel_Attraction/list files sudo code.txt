@@ -1,0 +1,27 @@
+(rounded to nearest whole number) screensize/fontheight = screenlines
+screenlines = how many lines of text the screen can hold
+from = 0
+to = from+screenlines
+system(ls -F | nl)
+
+upon keypress up:
+
+if from-screenlines > 0 {
+
+from = from-screenlines
+{from++ to
+print line from}
+
+}
+
+upon keypress down:
+
+{
+
+if from + screenlines < numberoflines {
+from = from + screenlines
+{ from++ to
+print line from }
+}
+
+}

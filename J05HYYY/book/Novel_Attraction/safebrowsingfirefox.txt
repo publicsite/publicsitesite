@@ -1,0 +1,12 @@
+Turn of safebrowsing firefox:
+
+1)
+
+Go to options > settings > security and uncheck:
+
+Block reported attack sites
+Block reported web forgeries
+
+2)
+
+Restart the browser.

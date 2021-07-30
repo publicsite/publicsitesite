@@ -1,0 +1,21 @@
+rdesktop			for connecting remotely to windows boxes
+openssh-client		for connecting remotely to linux boxes
+wine				for running windows programs in linux
+lxde				graphical environment
+libre office			for editing spreadsheets, presentations and office documents
+firefox			for web browsing
+odbc				for database connectivity
+samba			for sharing files over network
+kolourpaint		paint style program
+leafpad			text editor
+pcmanfm			file manager
+dosbox			software to run dos applications in linux
+vlc				media player
+evince			pdf viewer
+ndiswrapper		software to run windows drivers in linux
+xarchiver			file extractor
+darling			software to run mac programs on linux
+gcc				for compiling software
+
+ccups?
+nfts?

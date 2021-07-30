@@ -1,0 +1,144 @@
+A,G,E,F, <- okay
+D,G,E,F, <- okay
+G,A,E,F,
+C,A,E,F, <- okay
+A,C,E,F, <- okay
+D,C,E,F, <- okay
+G,D,E,F, <- hmm
+C,D,E,F, <- hmm
+A,E,G,F, <- okay
+C,E,G,F, <- okay
+D,E,G,F,
+E,A,G,F,
+C,A,G,F, <- okay
+D,A,G,F,
+E,C,G,F,
+A,C,G,F, <- okay
+D,C,G,F, <- hmm
+E,D,G,F, 
+A,D,G,F, <- hmm
+C,D,G,F, <- okay
+G,E,A,F, <- okay
+C,E,A,F, <- okay
+E,G,A,F, <- okay
+D,G,A,F, <- okay
+E,C,A,F, <- okay
+D,C,A,F, <- okay
+G,D,A,F, <- okay
+C,D,A,F, <- okay
+G,E,C,F, <- okay
+A,E,C,F,
+D,E,C,F, <- okay
+E,G,C,F,
+A,G,C,F, <- okay
+D,G,C,F, <- okay
+E,A,C,F, <- hmm
+G,A,C,F, <- hmm
+D,A,C,F, <- hmm
+E,D,C,F,
+G,D,C,F, <- okay
+A,D,C,F, <- hmm
+G,E,D,F, <- hmm
+C,E,D,F, <- okay
+E,G,D,F, <- okay
+A,G,D,F, <- okay
+G,A,D,F, <- hmm
+C,A,D,F, <- okay
+E,C,D,F, <- okay
+A,C,D,F, <- okay
+A,F,E,G, <- okay
+D,F,E,G, <- okay
+F,A,E,G, <- okay
+C,A,E,G, <- okay
+A,C,E,G, <- okay
+D,C,E,G,
+F,D,E,G,
+C,D,E,G,
+A,E,F,G, <- okay
+C,E,F,G, <- okay
+D,E,F,G,
+E,A,F,G, <- okay
+C,A,F,G, <- okay
+D,A,F,G, <- okay
+E,C,F,G,
+A,C,F,G, <- okay
+D,C,F,G, <- okay
+E,D,F,G, <- maybe
+A,D,F,G, <- okay
+C,D,F,G, <- okay
+F,E,A,G, <- maybe
+C,E,A,G,
+E,F,A,G, <- okay
+D,F,A,G, <- okay
+E,C,A,G,
+D,C,A,G, <- okay
+F,D,A,G,
+C,D,A,G, <- okay
+F,E,C,G,
+A,E,C,G, <- okay
+D,E,C,G,
+E,F,C,G,
+A,F,C,G, <- okay
+D,F,C,G, <- okay
+E,A,C,G, <- okay
+F,A,C,G, <- okay
+D,A,C,G, <- okay
+E,D,C,G,
+F,D,C,G,
+A,D,C,G, <- okay
+F,E,D,G,
+C,E,D,G, <- okay
+E,F,D,G, <- okay
+A,F,D,G, <- okay
+F,A,D,G,
+C,A,D,G, <- okay
+E,C,D,G, <- okay
+A,C,D,G, <- okay
+A,F,E,C, <- okay
+D,F,E,C, <- needs something added.
+A,G,E,C, 
+D,G,E,C, <- okay
+F,A,E,C,
+G,A,E,C,
+F,D,E,C,
+G,D,E,C,
+G,E,F,C, <- okay
+A,E,F,C, <- okay
+D,E,F,C, <- hmm
+E,G,F,C, <- hmm
+A,G,F,C,
+D,G,F,C,
+E,A,F,C, <- okay
+G,A,F,C, <- okay
+D,A,F,C,
+E,D,F,C, <- okay
+G,D,F,C, <- okay
+A,D,F,C, <- okay
+F,E,G,C, <- okay
+A,E,G,C, <- okay
+D,E,G,C,
+E,F,G,C, <- hmm
+A,F,G,C, <- okay
+D,F,G,C, <- okay
+E,A,G,C, <- okay
+F,A,G,C, <- okay
+D,A,G,C, <- okay
+E,D,G,C, <- hmmm
+F,D,G,C, <- okay
+A,D,G,C, <- okay
+F,E,A,C, <- okay
+G,E,A,C, <- okay
+E,F,A,C, <- okay
+D,F,A,C, <- okay
+E,G,A,C, <- okay
+D,G,A,C, <- okay
+F,D,A,C, <- okay
+G,D,A,C, <- okay
+F,E,D,C, <- okay
+G,E,D,C,
+E,F,D,C,
+A,F,D,C,
+E,G,D,C,
+A,G,D,C,
+F,A,D,C,
+G,A,D,C,

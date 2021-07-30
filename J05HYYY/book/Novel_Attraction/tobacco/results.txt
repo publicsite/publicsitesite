@@ -1,0 +1,10 @@
+chopped, sun, flue, moistened, ground
+	bad
+chopped, sun, moistened, ground
+	v. bad
+chopped, flue, moistened, ground
+	?
+unchopped, sun, ground, moistened
+	? probably v. v. bad
+unchopped, flue, moistened, ground
+	?

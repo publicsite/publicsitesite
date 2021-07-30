@@ -1,0 +1,19 @@
+In the systems methodology, a model is created and tested, then changed iteratively, with the expectation of each subsequent model
+being better than the previous.
+
+Systems Methodology:
+1) model system flow
+2) analyse system flow (quantify)
+3) propose possible/feasible changes
+4) create new model
+5) imlement model
+6) goto step 2
+
+In artificial intelligence, a model is generated, then trained against a dataset. It is then tested independently against a new
+data set, and the accuracy is recorded.
+
+Artificial intelligence:
+1) model generation
+2) training
+3) test against trained data/model
+4) record accuracy

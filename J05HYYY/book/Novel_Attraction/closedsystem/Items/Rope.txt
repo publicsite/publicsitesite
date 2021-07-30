@@ -1,0 +1,2 @@
+	Fibre is needed.
+	A spindle is optional.

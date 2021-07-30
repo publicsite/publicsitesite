@@ -1,0 +1,18 @@
+Modified data protection UK act & EU directive.
+
+Personal data should:
+1.	only be obtained or processed if the data subject has given explicit consent to the processing or obtaining of the personal data.
+	(Where consent has been given only to process, then data should only be processed; 
+	 and where consent has been given only to obtain, then data should only be obtained.)
+2.	only be used for the purpose or purposes stated and not for any other purpose.
+3.	be relevant and not excessive in relation to the purpose or purposes for which they are obtained and/or processed.
+4.	be accurate and, where necessary, kept up to date.
+5.	be removed upon request from the data subject.
+6.	be kept secure from any potential abuses.
+7.	be open to access by subjects so they can make corrections to any personal data if they wish.
+8.	not be kept for longer than is necessary for that purpose or those purposes.
+9.	not be disclosed without the data subject’s consent.
+10.	not be transferred to a place where these restrictions do not apply.
+
+Note: Regarding point 1, government are exempt from the processing side. They are also exempt from
+point 5.

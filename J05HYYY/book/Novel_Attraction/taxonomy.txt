@@ -1,0 +1,45 @@
+cat
+	classification	
+		eyes
+			color
+				blue
+
+blue
+	classification
+		red
+			byte value
+				base 10
+					0
+		green
+			byte value
+				base 10
+					0
+		blue
+			byte value
+				base 10
+					less than or equal to
+					255
+					greater than or equal to
+					250
+					if green is
+					5
+
+st johns wort
+	uses
+		sedative
+			how to
+				requires
+					kettle
+					water
+					step 1
+					step 2
+					step 3
+		analgesic
+			how to
+				url
+
+less than or equal to
+greater than or equal to
+equal to
+if
+

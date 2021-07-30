@@ -1,0 +1,6 @@
+Arbitary length variables can be represented like so:
+
+11,10,11,10,11,11,10,11,11,01
+
+the first binary number means read another
+the second binary number is the value

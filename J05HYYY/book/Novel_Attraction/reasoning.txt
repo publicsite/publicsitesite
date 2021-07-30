@@ -1,0 +1,51 @@
+An entity (objects[nouns, adjectives], values)
+A process (-->,verb, conjunctions, +, -, /, *)
+A linker (full stop, new line, colon, new paragraph)
+
+*an entity can be two objects, or two objects and a process linking them
+john has a red apple
+johns apple is red
+
+entity: apple is red
+entity: john
+process: has a
+_________________________________________________________________________________________
+A full stop defines a clause, and is linked to the last, the paragraph, or colon.
+A new line defines a clause, and is linked to the last, the paragraph, or colon.
+_________________________________________________________________________________________
+
+I like ham and pineapple pizza
+could mean:
+I like ham
+I like pinapple pizza
+
+or
+I like ham and pinapple pizza
+
+Lexical Relation: 
+
+Where one object can be replaced with another object to give the same meaning. (is-a, ==) [simple set]
+Where one object cannot be substituted for another (is-not-a)
+Where two objects are opposites. [set of pairs]
+Where some objects are part of an object. (is-part-of) [tree]
+Where the object expresses a quantity. (date, time, primatives, (strings such as hot, cold etc.)) [scale]
+_________________________________________________________________________________________
+
+Deductive reasoning:
+x == y
+a is a type of x
+Therefore a == y
+
+Inductive reasoning:
+r --> s, >50% of the time
+Therefore all s's are most likely to be produced by r
+
+Abductive reasoning:
+r --> s
+Therefore it could be r that produced s
+
+_________________________________________________________________________________________
+
+Question:
+
+Can the lexical relations somehow be grouped using frequencies?

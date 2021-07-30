@@ -1,0 +1,18 @@
+Has the software got minimal dependencies?
+	If the uses libraries where required, are the libraries of the KISS type?
+Was the choice of programming language and programming language version taken in respect of the software ecosystem?
+	(Thereby, aiding software lifespan, but at possible deprement of increased development time.)
+Is the software cross platform?
+Is the code fast?
+Is the code optimal?
+Is the software safe from memory leakages and segmentation faults?
+Is the software safe against cyber threats?
+Does the program crash at all?
+Is the software well documented?
+Does the code contain comments?
+Is the code open source?
+Is the software flexible (are there any fallbacks for when a piece of code doesn't work)?
+Does the software perform a novel function?
+Does the software complete the given objective?
+Is the code architecturally easy to read and understand?
+Are there any better ways any of the above can be achieved whilst maintaining the existing software quality?

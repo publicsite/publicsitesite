@@ -1,0 +1,44 @@
+1) buyer requests contract to buy good(s)
+2) seller sends contract to buy good(s)
+3) buyer announces he has paid seller
+4) seller can now announce feedback (that buyer has not paid)
+5) seller announces he has sent items
+5) buyer can now announce feedback (that buyer did pay, but seller did not send items)
+6) seller and buyer can now leave any other feedback
+
+LOG:
+
+buyer
+sign("started transaction to buy <good id> (<transaction id>)", seller)
+sign("paid seller x for <good id> (<transaction id>)", buyer)
+sign("sent items for <good id> (<transaction id>), seller)
+sign("I paid seller to buy <good id> (<transaction id>) but seller did not send items", buyer)
+sign("0-10 feedback for seller <good id> (transaction id)", buyer)
+
+seller
+sign("paid seller x for <good id>", buyer)
+sign("buyer did not pay for <good id> but claim that they did", seller)
+sign("0-10 feedback for buyer <good id> (transaction id)", seller)
+
+
+NOTE: won't work because of multiple accounts problem
+
+search who you have given good feedback to, follow their positive feedback, and theirs and theirs etc. tally up the positive and negative feedback score.
+
+
+buyer goodid --> log
+seller goodid --> log
+
+buyer transactionids --> buying/selling:goodid, buying/selling:goodid, buying/selling:goodid, buying/selling:goodid, buying/selling:goodid ...
+
+_____________________________________________________________________________________________________
+
+keyA --> keyB,signB(I entered into a contract n with keyA),positive/negative/neutral
+
+getkey(key, n)
+	search through list
+		tally up positives
+		tally up negatives
+		add key to array
+	n = n - 1
+	getkey(array, n)

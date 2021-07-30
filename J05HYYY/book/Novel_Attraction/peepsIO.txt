@@ -1,0 +1,57 @@
+integrate other's work in flow to create integrated system.
+	modelling outputs
+		find active outputs
+		find similar outputs which fit possible needs
+			request and proposal
+	modelling inputs
+		find wants which can be provided for
+			request and proposal
+
+
+d:
+	i:
+	crockery
+	o:
+	plants
+	odd jobs (for me to do for others)
+	transport
+	food
+	shelter
+	other:
+	sailing
+	pottery
+	furnace
+
+m:
+	i:
+	watch k
+	o:
+	textiles
+	transport
+	food
+	shelter
+	laundry
+
+s:
+	i:
+	smart speaker
+	o:
+	computers
+	access to vr and smart watch
+
+z:
+	o:
+	rope
+	antenna
+	occasional transport
+	access to drone
+	other:
+	furnace
+
+g:
+	i:
+	help sdr?
+
+br:
+	other:
+	sailing

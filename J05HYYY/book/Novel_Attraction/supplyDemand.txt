@@ -1,0 +1,66 @@
+Supply and Demand ...
+
+High Supply of Goods (Quantity) <-> Low Demand of Goods (Quantity)
+Low Supply of Goods (Quantity) <-> High Demand of Goods (Quantity)
+
+also
+
+Low Cost of Goods <-> High Demand
+High Cost of Goods <-> Low Demand
+__________________________________________________________________________________________________
+
+Assumptions ...
+
+More Efficient Products --> More Demand For Goods (Quantity)
+Less Efficient Products --> Less Demand For Goods (Quantity)
+
+__________________________________________________________________________________________________
+
+More Efficient Products --> More Demand For Goods (Quantity) <-> Low Supply of Goods (Quantity)
+Less Efficient Products --> Less Demand For Goods (Quantity) <-> High Supply of Goods (Quantity)
+
+More Efficient Products --> More Demand For Goods (Quantity) <-> Low Cost of Goods
+Less Efficient Products --> Less Demand For Goods (Quantity) <-> High Cost of Goods
+
+__________________________________________________________________________________________________
+
+Ways to reduce demand, as a supplier:
+	By selling inefficient product(s)
+	By increasing the supply of the product(s)
+	By selling the product(s) at a high cost
+
+Ways to increase demand, as a supplier:
+	By selling efficient product(s)
+	By reducing the supply of the product(s)
+	By selling the product(s) at a low cost
+
+Ways to reduce supply, as a consumer:
+	By decreasing demand for the product(s)
+	By wanting efficient product(s)
+	By wanting cheap product(s)
+
+Ways to increase supply, as a consumer:
+	By increasing demand for the product(s)
+	By wanting inefficient product(s)
+	By wanting expensive product(s)
+
+___________________________________________________________________________________________________
+
+small purchacing power, can only buy low (quantity * quality)
+large purchacing power, can buy high (quantity * quality) and low (quantity * quality)
+
+replace "quality" for "efficiency"
+
+small purchacing power <-> reduction in supply to them
+small purchacing power <-> increase in demand from them
+large purchacing power <-> increase in supply to them
+large purchacing power <-> reduction in demand from them
+
+__________________________________________________________________________________________________
+
+[1]        The following products have high demand:
+	[1.1]        The ecologically friendlyness of the product is higher than existing products, including the manafacturing and use, and
+		[1.1.1]        The use efficiency of the product is the same or higher than existing products, or
+		[1.1.2]        The consumer purchace price is lower than existing products
+
+__________________________________________________________________________________________________

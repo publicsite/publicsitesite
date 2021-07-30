@@ -1,0 +1,18 @@
+In a game there are usually some rules to winning:
+
+* The last event which won a game has to complete the winning pattern.
+	... This makes sense, because the last person wins a game by performing the last move
+* The pattern is a pattern which the loser does not have.
+	... This also makes sense, as if the loser had the winning pattern, he or she would have won already.
+* The pattern will almost certianly work in places where each piece in the pattern could have the exact same attributes.
+	... If in the game of chess, the board was mirrored down the vertical axis, the position of the pieces would be different,
+	but the attributes would be broadly the same, therefore it would be a winning pattern, given the same attributes.
+
+Defining characteristics of a winning pattern can include:
+	* The amount of pieces in the pattern
+	* The positioning of the pieces in the pattern
+
+To write an efficient algorithm, the computer will have to recognise transformations,symmetry ect. by itself. This would be a form
+of generalisation in artificial intelligence.
+
+

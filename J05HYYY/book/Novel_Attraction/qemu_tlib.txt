@@ -1,0 +1,7 @@
+https://github.com/emul8/tlib/blob/master/arch/translate-all.c		accel/tcg/translate-all.c
+https://github.com/emul8/tlib/blob/master/callbacks.c
+https://github.com/emul8/tlib/arch							qemu/target
+https://github.com/emul8/fpu								qemu/include/fpu
+https://github.com/emul8/fpu								qemu/fpu
+https://github.com/emul8/tcg								qemu/tcg
+https://github.com/emul8/tlib/blob/master/cpu-exec.c			qmu/accel/tcg/cpu-exec.c

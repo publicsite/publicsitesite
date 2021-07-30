@@ -1,0 +1,68 @@
+replicant
+debian
+arch linux
+gentoo
+parabola
+salix
+linux-sunxi
+kiwix
+openlabs
+gutenberg
+seeks
+open-mesh
+ffmpeg
+qemu
+openstreetmap
+osmocom
+cyanogenmod
+openinkpot
+xen
+openjdk
+libsdl
+gnome
+geda
+lustre
+strongswan
+libregamewiki
+openbox
+wine
+reprap
+freedesktop.org
+appropedia
+p2pfoundation
+open source ecology
+wikipedia
+wikibooks
+wikiversity
+simplewiki
+wikimedia wiki
+mixxx
+voip-info.org
+ubuntu
+freesmartphone
+libreplanet
+gnuradio
+wikihow
+freesoftwaredirectory
+gcc.gnu.org
+boinc
+flightgear
+xastir
+linaro
+cmusphinx
+mozilla
+trisquel
+printwiki
+forensicswiki
+kodiwiki
+mobilereadwiki
+connochaetos wiki
+freeslack wiki
+linuxquestions.org wiki
+vlc wiki
+crosstool-ng wiki
+openlabs wiki
+manyears
+blender
+playground.arduino.cc
+olpc wiki

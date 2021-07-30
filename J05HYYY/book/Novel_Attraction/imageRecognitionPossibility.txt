@@ -1,0 +1,27 @@
+maxw=width1-width2
+maxh=height1-height2
+
+for i=0; i < width2; ++i
+	maxw + i
+
+
+arraysize					 width2
+constraint					value_x < bitIndex_x + (width1-width2)
+						value_y < bitIndex_y + (height1-height2)
+
+value < (bitIndex_x + (width1-width2)) * width2_len + (bitIndex_y + height1-height2)
+
+
+
+x * w + y = c
+c / w = x
+c mod w = y 
+
+value_x * width1 + value_y < (bitIndex_x * width1 + bitIndex_y) + ((width1-width2)*width1) + (height1-height2)
+
+
+//create a 1d array from 2d, then use this constraint for the numeral system (if one-to-one)
+value < bitIndex + ((width1-width2)*width1) + (height1-height2))
+
+//(the one-to-many and combinations, for the same is pretty straight-forward ...)
+value < width1

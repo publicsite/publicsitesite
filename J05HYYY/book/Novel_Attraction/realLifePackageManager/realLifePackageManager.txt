@@ -1,0 +1,33 @@
+OSHW Product Recipie File.
+
+Author information for product recipie
+Title of product
+Description of product
+Image(s) of final product
+Video(s) of final product
+Optional link to product .
+Tool(s) 1 to x
+	Title of Tool
+	Description of Tool
+	URL(s) to Tool (Optional, 1 to x, If product recipie file; button to show and button to include additional tools/steps [also removes tool], if other, option to show in iframe)
+	Image(s) of Tool
+	Video(s) of Tool
+Steps to create product using tools, using d'Aboville System, Title of step (0 should be 'Create [product]'), text area containing HTML for step or URL of step (displayed as an iframe)
+Notes/Conclusion
+Citations (numbered. Use <cite> html tag)
+________________________________________________________________
+
+Number of people
+Interleave for paralell tasks
+Concatatuate for dependencies
+
+GUI Creator:
+HTML/Javascript
+Gives link to download/export OSHW Product Recipie File.
+Undo/Redo (cache log)
+
+Server:
+CGI shell script?
+list files and description, clicky to load
+Open OSHW Product Recipie File
+Display it

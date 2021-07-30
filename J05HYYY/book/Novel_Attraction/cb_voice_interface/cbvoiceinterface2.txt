@@ -1,0 +1,18 @@
+weeble, record message for <callsign>
+"recording message for <callsign>, message number <message_number>"
+
+weeble, play message for <callsign>, message number <message_number>
+"playing message for <callsign>, message number <message_number>"
+(play message)
+
+weeble, how many messages for <callsign>
+"there are <x> amount of messages for <callsign>"
+
+weeble, stop
+"stopped recording, message for <callsign>, message number <message_number>"
+OR
+"stopped playing, message for <callsign> at message number <message_number>"
+
+
+
+callsign_messagenumber.wav
