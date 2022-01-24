@@ -1,0 +1,93 @@
+<HTML>
+<script type="text/javascript">
+function isFloat(n) {
+    return n === +n && n !== (n|0);
+}
+
+function buttonClick(){
+
+var lines = document.getElementById("inputText").value.split('\n');
+
+	var data = [];
+b=0;
+for (a=0; a < lines.length; ++a)
+{
+	if (isNaN(parseFloat(lines[a])) == false) data[b] = parseFloat(lines[a]);
+	++b;
+}
+
+var linesTwo = document.getElementById("inputTextTwo").value.split('\n');
+
+	var sample = [];
+b=0;
+for (a=0; a < linesTwo.length; ++a)
+{
+	if (isNaN(parseFloat(linesTwo[a])) == false) sample[b] = parseFloat(linesTwo[a]);
+	++b;
+}
+	var outputSize = sample.length;
+
+	var output;
+
+	var output = [];
+	var count = [];
+	for (i=0; i < outputSize; i++)
+	{
+		output[i] = 0;
+		count[i] = 0;
+	}
+
+	totalDifference = 0;
+
+	for (i=0; i < ((data.length - sample.length) - outputSize) + 1; i++)
+	{
+		cellDifference = 0;
+		for (j=i; j < i + sample.length; j++)
+		{
+//alert("j=" + j + " k=" + k + " i=" + i);
+			cellDifference += Math.sqrt(((Math.pow(sample[j-i] - data[j],2))+1))
+			
+		}
+
+		cellDifference /= sample.length;
+		cellDifference = 1 / cellDifference;
+
+		for (j=0; j < outputSize; j++)
+		{
+			k = i + sample.length + j;
+			output[j] += cellDifference * (data[k] - sample[sample.length-1]);
+			++count[j];
+		}
+
+	}
+
+	document.getElementById("outputText").value = "";
+
+	for (i=0; i < sample.length; i++)
+	{
+		document.getElementById("outputText").value = document.getElementById("outputText").value + ((output[i]/count[i])+sample[sample.length-1]) + '\n';
+	}
+
+	document.getElementById("outputText").style.visibility = "visible";
+
+}
+</script>
+<body width="100%" height="100%">
+<center>
+Enter your values, separated by new lines, here:
+<br>
+Training Data:
+<br>
+<textarea id="inputText" cols="100" rows="20"></textarea>
+<br>
+Actual Data:
+<br>
+<textarea id="inputTextTwo" cols="100" rows="20"></textarea>
+<br>
+<button onclick="buttonClick();">Calculate!</button>
+<br>
+<br>
+<textarea style="visibility:hidden" id="outputText" cols="100" rows="7"></textarea>
+</center>
+</body>
+</HTML>
