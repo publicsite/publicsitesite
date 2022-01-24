@@ -91,13 +91,21 @@ function updatepage(str){
 var x2js = new X2JS();
 var formatted = x2js.xml_str2json(str);
 var myobj = formatted.Annotation.Resources;
-for (l=0; l < myobj.Resource.length; l++)
+if(typeof myobj.Resource._URI == 'undefined')
 {
-	checkPattern(JSON.stringify(myobj.Resource[l]._URI));
-	var fullString = JSON.stringify(myobj.Resource[l]._URI).substring(1, JSON.stringify(myobj.Resource[l]._URI).length - 1).split('/');
+	for (l=0; l < myobj.Resource.length; l++)
+	{
+		checkPattern(JSON.stringify(myobj.Resource[l]._URI));
+		var fullString = JSON.stringify(myobj.Resource[l]._URI).substring(1, JSON.stringify(myobj.Resource[l]._URI).length - 1).split('/');
+		xmlhttpPost2(fullString[fullString.length-1]);
+	}
+}
+else
+{
+	checkPattern(JSON.stringify(myobj.Resource._URI));
+	var fullString = JSON.stringify(myobj.Resource._URI).substring(1, JSON.stringify(myobj.Resource._URI).length - 1).split('/');
 	xmlhttpPost2(fullString[fullString.length-1]);
 }
-
 //sort tags and print in order
 
 //1) combine the arrays:

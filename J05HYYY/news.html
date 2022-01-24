@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<style>
+.fixedbarwoo {
+background: #000; 
+bottom: 0px; 
+color:#fff; 
+font-family: Arial, Helvetica, sans-serif; 
+left:0; 
+padding: 0px 0; 
+position:fixed; 
+font-size:16px; 
+width:100%; 
+z-index:99999; 
+float:left; 
+vertical-align:middle; 
+margin: 0px 0 0; 
+opacity: 0.95; 
+font-weight: bold;
+}
+</style>
+<script>
+function xmlhttpGet(strURL, tld) {
+var newurl = 'https://api.allorigins.win/raw?url=';
+    var xmlHttpReq = false;
+    var self = this;
+    if (window.XMLHttpRequest) { // Mozilla/Safari
+        self.xmlHttpReq = new XMLHttpRequest();
+    }
+    else if (window.ActiveXObject) { // IE
+        self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    self.xmlHttpReq.open('GET', newurl + strURL, false);
+    self.xmlHttpReq.onload = function() {
+        if (self.xmlHttpReq.status == 200) {
+           var theText = self.xmlHttpReq.responseText;
+           theText2 = theText.replace(/href="\//g, 'href="' + tld + '/');
+window.frames[0].document.body.innerHTML = theText2;
+var thebase = document.createElement("base");
+thebase.target = "_blank";
+window.frames[0].document.getElementsByTagName('head')[0].appendChild(thebase);
+            //document.getElementById("theFrame").document.body.innerHTML = theText2;
+        }
+    }
+
+    self.xmlHttpReq.send();
+}
+
+function xmlhttpGet2(strURL, tld) {
+var newurl = 'https://api.allorigins.win/raw?url=';
+    var xmlHttpReq = false;
+    var self = this;
+    if (window.XMLHttpRequest) { // Mozilla/Safari
+        self.xmlHttpReq = new XMLHttpRequest();
+    }
+    else if (window.ActiveXObject) { // IE
+        self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    self.xmlHttpReq.open('GET', newurl + strURL, false);
+    self.xmlHttpReq.onload = function() {
+        if (self.xmlHttpReq.status == 200) {
+           var theText = self.xmlHttpReq.responseText;
+           theText2 = theText.replace(/href="\//g, 'href="' + tld + '/');
+var firstSplit = theText2.split('"accessibility":{"accessibilityData":{"label":"');
+
+var theText3 = "";
+for (var i=1; i < firstSplit.length; i+=5)
+{
+
+	//alert(firstSplit[i].split('"')[0]);
+	var secondSplit = firstSplit[i+1].split('"commandMetadata":{"webCommandMetadata":{"url":"');
+	//alert("https://www.youtube.com/" + secondSplit[1].split('"')[0]);
+	var fourthSplit = firstSplit[i].split('"descriptionSnippet":{"runs":[{"text":"');
+	//alert(fourthSplit[1].split('"')[0]);
+
+	if (fourthSplit[1])
+	theText3 = theText3 + '<a href="' + "https://www.youtube.com/" + secondSplit[1].split('"')[0] + '">' + firstSplit[i].split('"')[0] + '</a><br>' + fourthSplit[1].split('"')[0] + '<br><br>';
+	else
+	theText3 = theText3 + '<a href="' + "https://www.youtube.com/" + secondSplit[1].split('"')[0] + '">' + firstSplit[i].split('"')[0] + '</a><br>' + "(No Description)" + '<br><br>';
+}
+window.frames[0].document.body.innerHTML = theText3;
+
+var thebase = document.createElement("base");
+thebase.target = "_blank";
+window.frames[0].document.getElementsByTagName('head')[0].appendChild(thebase);
+            //document.getElementById("theFrame").document.body.innerHTML = theText2;
+        }
+    }
+
+    self.xmlHttpReq.send();
+}
+
+function xmlRSSGet(strURL, tld) {
+var newurl = 'https://api.allorigins.win/raw?url=';
+    var xmlHttpReq = false;
+    var self = this;
+    if (window.XMLHttpRequest) { // Mozilla/Safari
+        self.xmlHttpReq = new XMLHttpRequest();
+    }
+    else if (window.ActiveXObject) { // IE
+        self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    self.xmlHttpReq.open('GET', newurl + strURL, false);
+    self.xmlHttpReq.onload = function() {
+        if (self.xmlHttpReq.status == 200) {
+    var xmlDoc = self.xmlHttpReq.responseXML;
+theHTML="<html><head><base target=\"_blank\"></head><center>"
+for(var index = 0; index < xmlDoc.getElementsByTagName("entry").length; index++)
+{
+var parser = new DOMParser;
+var dom = parser.parseFromString(
+    '<!doctype html><body>' + xmlDoc.getElementsByTagName("entry")[index].querySelector("content").innerHTML,
+    'text/html');
+var decodedString = dom.body.textContent.split("<span>")[1].match(new RegExp("href=\"" + "(.*)" + "\">"))[1];
+theHTML = theHTML + "<a href=\"" + decodedString + "\">" + xmlDoc.getElementsByTagName("entry")[index].getElementsByTagName("title")[0].childNodes[0].nodeValue + "</a>";
+theHTML = theHTML + "<br><a href=\"" + xmlDoc.getElementsByTagName("entry")[index].querySelector("link").getAttribute("href") + "\">Comments</a>" + "<br><br>";
+}
+theHTML = theHTML + "</center></html>"
+window.frames[0].document.body.innerHTML = theHTML;
+
+            //document.getElementById("theFrame").document.body.innerHTML = theText2;
+        }
+    }
+
+    self.xmlHttpReq.send();
+}
+
+function xmlRSSGet(strURL, tld) {
+var newurl = 'https://api.allorigins.win/raw?url=';
+    var xmlHttpReq = false;
+    var self = this;
+    if (window.XMLHttpRequest) { // Mozilla/Safari
+        self.xmlHttpReq = new XMLHttpRequest();
+    }
+    else if (window.ActiveXObject) { // IE
+        self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    self.xmlHttpReq.open('GET', newurl + strURL, false);
+    self.xmlHttpReq.onload = function() {
+        if (self.xmlHttpReq.status == 200) {
+    var xmlDoc = self.xmlHttpReq.responseXML;
+theHTML="<html><head><base target=\"_blank\"></head><center>"
+for(var index = 0; index < xmlDoc.getElementsByTagName("entry").length; index++)
+{
+var parser = new DOMParser;
+var dom = parser.parseFromString(
+    '<!doctype html><body>' + xmlDoc.getElementsByTagName("entry")[index].querySelector("content").innerHTML,
+    'text/html');
+var decodedString = dom.body.textContent.split("<span>")[1].match(new RegExp("href=\"" + "(.*)" + "\">"))[1];
+theHTML = theHTML + "<a href=\"" + decodedString + "\">" + xmlDoc.getElementsByTagName("entry")[index].getElementsByTagName("title")[0].childNodes[0].nodeValue + "</a>";
+theHTML = theHTML + "<br><a href=\"" + xmlDoc.getElementsByTagName("entry")[index].querySelector("link").getAttribute("href") + "\">Comments</a>" + "<br><br>";
+}
+theHTML = theHTML + "</center></html>"
+window.frames[0].document.body.innerHTML = theHTML;
+
+            //document.getElementById("theFrame").document.body.innerHTML = theText2;
+        }
+    }
+
+    self.xmlHttpReq.send();
+}
+
+function xmlRSSGet2(strURL, tld) {
+var newurl = 'https://api.allorigins.win/raw?url=';
+    var xmlHttpReq = false;
+    var self = this;
+    if (window.XMLHttpRequest) { // Mozilla/Safari
+        self.xmlHttpReq = new XMLHttpRequest();
+    }
+    else if (window.ActiveXObject) { // IE
+        self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    self.xmlHttpReq.open('GET', newurl + strURL, false);
+    self.xmlHttpReq.onload = function() {
+        if (self.xmlHttpReq.status == 200) {
+    var xmlDoc = self.xmlHttpReq.responseXML;
+theHTML="<html><head><base target=\"_blank\"></head><center>"
+for(var index = 0; index < xmlDoc.getElementsByTagName("item").length; index++)
+{
+var thelink = xmlDoc.getElementsByTagName("item")[index].querySelector("link").innerHTML.replace("<![CDATA[", "").replace("]]>", "");
+var thetitle = xmlDoc.getElementsByTagName("item")[index].querySelector("title").innerHTML.replace("<![CDATA[", "").replace("]]>", "");
+theHTML = theHTML + "<a href=\"http://webcache.googleusercontent.com/search?q=cache:" + thelink + "&strip=1&vwsrc=0" + "\">" + thetitle + "</a>" + "<br><br>";
+}
+theHTML = theHTML + "</center></html>"
+window.frames[0].document.body.innerHTML = theHTML;
+
+       }
+    }
+
+    self.xmlHttpReq.send();
+}
+
+function showBBC(){
+xmlhttpGet("http://www.bbc.co.uk", "http://www.bbc.co.uk");
+}
+
+function showGuardian(){
+xmlhttpGet("https://www.theguardian.com/uk", "https://www.theguardian.com");
+}
+
+function showI(){
+xmlhttpGet("https://inews.co.uk/category/news/uk", "https://inews.co.uk");
+}
+
+function showIndependent(){
+xmlhttpGet("https://www.independent.co.uk/news/uk", "https://www.independent.co.uk");
+}
+
+
+function showPositive(){
+xmlhttpGet("https://www.positive.news", "https://www.positive.news");
+}
+
+function showHuffPost(){
+xmlRSSGet2("https://www.huffingtonpost.co.uk/feeds/verticals/uk/index.xml", "https://www.huffingtonpost.co.uk/feeds/verticals/uk/index.xml");
+}
+
+function showReddit(){
+xmlRSSGet("https://old.reddit.com/r/ukpolitics.rss", "https://old.reddit.com/r/ukpolitics.rss");
+}
+
+function showYTTrending(){
+xmlhttpGet2("https://m.youtube.com/feed/trending?persist_app=1&app=m", "https://m.youtube.com");
+}
+
+
+</script>
+<body onload='showBBC()'>
+<div class="fixedbarwoo">
+<input type="radio" name="theRadios" onclick="showBBC()" checked>BBC</input>
+<input type="radio" name="theRadios" onclick="showGuardian()">Guardian</input>
+<input type="radio" name="theRadios" onclick="showIndependent()">Independent</input>
+<input type="radio" name="theRadios" onclick="showI()">i</input>
+<input type="radio" name="theRadios" onclick="showPositive()">Positive</input>
+<input type="radio" name="theRadios" onclick="showHuffPost()">HuffPost</input>
+<input type="radio" name="theRadios" onclick="showReddit()">Reddit Politics</input>
+<input type="radio" name="theRadios" onclick="showYTTrending()">YTTrending</input>
+<a href="https://twitter.com/explore/tabs/trending" target="_blank">TwitTrending</a>
+<a href="https://twitter.com/explore/tabs/news" target="_blank">TwitNews</a>
+</div>
+<iframe id="theFrame" style="position: absolute; width: 99%; height: 100%; border: none"></div>
+</table>
+</body>
+</html>
