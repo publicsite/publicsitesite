@@ -1,16 +1,19 @@
 <html>
 <head>
-<title>Tag cloud generator</title>
+<title>Tag cloud generator revived</title>
 <script src="https://cdn.jsdelivr.net/gh/timdream/wordcloud2.js@latest/src/wordcloud2.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/abdmob/x2js/xml2json.js"></script>
 <script language="Javascript">
-function xmlhttpPost(strURL) {
-    var params = getstandardargs().concat(getquerystring());
-    var strData = params.join('&');
-    var url = strURL + '?' + strData;
+function callbackOnClick(item, dimension, event){
+window.open("http://en.wikipedia.org/wiki/" + item[0].replace(" ","_"), '_blank');
+}
 
-//here we use yahoo yql as a cors proxy
-var newurl = 'https://query.yahooapis.com/v1/public/yql?q=';
-var yqlquery = "select * from json where url='" + url + "'"
+function xmlhttpPost2(strURL) {
+url = 'http://dbpedia.org/data/' + strURL + '.json';
+
+//here we use a cors proxy
+var newurl = 'https://api.allorigins.win/raw?url=';
+
     var xmlHttpReq = false;
     var self = this;
     if (window.XMLHttpRequest) { // Mozilla/Safari
@@ -19,7 +22,36 @@ var yqlquery = "select * from json where url='" + url + "'"
     else if (window.ActiveXObject) { // IE
         self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    self.xmlHttpReq.open('POST', newurl + escape(yqlquery) + "&format=json", true);
+
+    self.xmlHttpReq.open('GET', newurl + url, false);
+    self.xmlHttpReq.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    self.xmlHttpReq.onload = function() {
+        if (self.xmlHttpReq.status == 200) {
+            updatepage2(self.xmlHttpReq.responseText);
+        }
+    }
+
+    self.xmlHttpReq.send();
+}
+
+
+function xmlhttpPost(strURL) {
+    var params = getstandardargs().concat(getquerystring());
+    var strData = params.join('&');
+    var url = strURL + '?' + strData;
+//alert(url);
+//here we do not use a cors proxy
+var newurl = '';
+    var xmlHttpReq = false;
+    var self = this;
+    if (window.XMLHttpRequest) { // Mozilla/Safari
+        self.xmlHttpReq = new XMLHttpRequest();
+    }
+    else if (window.ActiveXObject) { // IE
+        self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    self.xmlHttpReq.open('POST', newurl + url, false);
+    self.xmlHttpReq.setRequestHeader('Accept', 'text/xml');
     self.xmlHttpReq.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     self.xmlHttpReq.onload = function() {
         if (self.xmlHttpReq.status == 200) {
@@ -32,52 +64,98 @@ var yqlquery = "select * from json where url='" + url + "'"
 
 function getstandardargs() {
     var params = [
-        'wt=json'
-        , 'fl=text_t'
-        , 'start=0'
-        , 'rows=10'
-	, 'core=collection1'
+        'confidence=0'
+        , 'support=20'
         ];
 
     return params;
 }
 
 function getquerystring() {
+document.getElementById("raw").innerHTML = "";
 patternsArray = [];
 patternsFrequency = [];
-  qstr = 'q=' + escape(document.getElementById("query").value);
+  qstr = 'text=' + document.getElementById("query").value;
   return qstr;
+}
+
+function updatepage2(str){
+var myobj = JSON.parse(str);
+//document.getElementById("raw").innerHTML = JSON.stringify(myobj);
+var key, keys = [];
+for (key in myobj) {
+  if (myobj.hasOwnProperty(key))
+    checkPattern(JSON.stringify(key));
+    //document.getElementById("raw").innerHTML = document.getElementById("raw").innerHTML + JSON.stringify(key) + '<br>';
+}
+
 }
 
 // this function does all the work of parsing the solr response and updating the page.
 function updatepage(str){
-
-var yahooFormatted = JSON.parse(str);
-var myobj = yahooFormatted.query.results.json;
-//document.getElementById("raw").innerHTML = JSON.stringify(myobj.response.docs);
-
-for (l=0; l < myobj.response.docs.length; l++)
+var x2js = new X2JS();
+var formatted = x2js.xml_str2json(str);
+var myobj = formatted.Annotation.Resources;
+if(typeof myobj.Resource._URI == 'undefined')
 {
-	if (myobj.response.docs[l])
-	findPatterns(myobj.response.docs[l].text_t);
-}
-
-var theList = [[]];
-	for (j = 0; j < patternsArray.length; j++)
+	for (l=0; l < myobj.Resource.length; l++)
 	{
-		theList[j] = [patternsArray[j],patternsFrequency[j]];
+		checkPattern(JSON.stringify(myobj.Resource[l]._URI));
+		var fullString = JSON.stringify(myobj.Resource[l]._URI).substring(1, JSON.stringify(myobj.Resource[l]._URI).length - 1).split('/');
+		xmlhttpPost2(fullString[fullString.length-1]);
+	}
+}
+else
+{
+	checkPattern(JSON.stringify(myobj.Resource._URI));
+	var fullString = JSON.stringify(myobj.Resource._URI).substring(1, JSON.stringify(myobj.Resource._URI).length - 1).split('/');
+	xmlhttpPost2(fullString[fullString.length-1]);
+}
+//sort tags and print in order
+
+//1) combine the arrays:
+var list = [];
+for (var j = 0; j < patternsArray.length; j++) 
+    list.push({'name': patternsArray[j], 'freq': patternsFrequency[j]});
+
+//2) sort:
+list.sort(function(a, b) {
+    return ((b.freq < a.freq) ? -1 : ((b.freq == a.freq) ? 0 : 1));
+    //Sort could be modified to, for example, sort on the freq 
+    // if the name is the same.
+});
+
+//3) separate them back out:
+
+var thePatternsArray = [];
+var thePatternsFrequency= [];
+
+var final = "";
+for (var k = 0; k < list.length; k++) {
+var theString = list[k].name.substr(1,list[k].name.length-2).replace('__','_(');
+if (theString[theString.length-1] == '_') theString = theString.substring(0,theString.length-1) + ')';
+
+thePatternsArray.push(theString.replace("http://dbpedia.org/resource/","").replaceAll("_"," "));
+thePatternsFrequency.push(list[k].freq * 10);
+
+//final = final + '<a href=\'' + theString + '\'>' + theString + '</a>  Freq=' + list[k].freq + '<br>'; //+ "   ---   " + list[k].freq + '<br>';
+    //document.getElementById("raw").innerHTML = document.getElementById("raw").innerHTML + list[k].name + '<br>'; //+ "   ---   " + list[k].freq + '<br>';
+}
+//document.getElementById("raw").innerHTML = final;
+
+	var theList = [[]];
+	for (j = 0; j < thePatternsArray.length; j++)
+	{
+			theList[j] = [thePatternsArray[j],thePatternsFrequency[j]];
 	}
 
-options = {
-    list : theList,
-    click: callbackOnClick
-}
-WordCloud(document.getElementById('my_canvas'), options);
+	var options = {
+	    list : theList,
+	    click: callbackOnClick
+	}
 
-}
+	WordCloud(document.getElementById('my_canvas'), options);
 
-function callbackOnClick(item, dimension, event){
-document.getElementById("query").value= item[0];
 }
 
 var patternsArray;
@@ -105,44 +183,14 @@ function checkPattern(pattern)
 	}
 }
 
-function findPatterns(theText)
-{
-	oldIndex=-1;
-	after=1;
-	for (i=0; i < theText.length; ++i)
-	{
-		if (theText[i] == " " || theText[i] == "." || theText[i] == "," || theText[i] == "(" || theText[i] == ")" || theText[i] == ";" || theText[i] == ":" || theText[i] == "!" || theText[i] == "?")
-		{
-				if (after == 1)
-				{
-					checkPattern(theText.substring(oldIndex+1,i));
-					oldIndex = i;
-				}
-				else
-				oldIndex = i;
-				after=0;
-		}
-		else
-		{
-					after=1;
-		}
-	}
-	if (after == 1)
-	{
-			checkPattern(theText.substring(oldIndex+1,i));
-	}
-}
-
 </script>
 </head>
 <body>
 <center>
-<form name="f1" onsubmit='xmlhttpPost("https://yacy.searchlab.eu/solr/select"); return false;'>
-  <p>Query: <input id="query" type="text">
+<form name="f1" onsubmit='xmlhttpPost("https://api.dbpedia-spotlight.org/en/annotate"); return false;'>
+  <p>Query: <textarea id="query" rows="5" cols="100"></textarea>
   <input value="Go" type="submit"></p>
-
-<div id="result"></div>
-<canvas id='my_canvas' width=320 height=480></canvas>
+<canvas id='my_canvas' width=640 height=480></canvas>
 <div id="raw"></div></pre>
 </form>
 </center>

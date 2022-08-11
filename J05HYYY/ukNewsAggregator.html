@@ -1,5 +1,228 @@
 <html>
+<head>
+<title>UK News Aggregator</title>
+<script src="https://cdn.jsdelivr.net/gh/abdmob/x2js/xml2json.js"></script>
 <script>
+
+function matchingFunction(title, description){
+
+	if ( description != "" )
+	{
+		if (description.match("oil") != null)
+			return 1;
+		else if (description.match("Oil") != null)
+			return 1;
+		else if (description.match("petrol") != null)
+			return 1;
+		else if (description.match("Petrol") != null)
+			return 1;
+		else if (description.match("OPEC") != null)
+			return 1;
+		else if (description.match("Natural Gas") != null)
+			return 1;
+		else if (description.match("natural gas") != null)
+			return 1;
+		else if (description.match("Wheat") != null)
+			return 1;
+		else if (description.match("wheat") != null)
+			return 1;
+		else if (description.match("Grain") != null)
+			return 1;
+		else if (description.match("grain") != null)
+			return 1;
+		else if (description.match("Inflation") != null)
+			return 1;
+		else if (description.match("inflation") != null)
+			return 1;
+		else if (description.match("Supply-Chain") != null)
+			return 1;
+		else if (description.match("supply-chain") != null)
+			return 1;
+		else if (description.match("Supply Chain") != null)
+			return 1;
+		else if (description.match("supply chain") != null)
+			return 1;
+		else if (description.match("Consumer Confidence") != null)
+			return 1;
+		else if (description.match("consumer confidence") != null)
+			return 1;
+		else if (description.match("Demand") != null)
+			return 1;
+		else if (description.match("demand") != null)
+			return 1;
+		else if (description.match("Consumer Price Index") != null)
+			return 1;
+		else if (description.match("consumer price index") != null)
+			return 1;
+		else if (description.match("CPI") != null)
+			return 1;
+		else if (description.match("Underground") != null)
+			return 1;
+		else if (description.match("underground") != null)
+			return 1;
+		else if (description.match("Tunnel") != null)
+			return 1;
+		else if (description.match("tunnel") != null)
+			return 1;
+		else if (description.match("Trench") != null)
+			return 1;
+		else if (description.match("trench") != null)
+			return 1;
+		else if (description.match("NHS") != null)
+			return 1;
+		else if (description.match("Dentist") != null)
+			return 1;
+		else if (description.match("dentist") != null)
+			return 1;
+		else if (description.match("Private Healthcare") != null)
+			return 1;
+		else if (description.match("private healthcare") != null)
+			return 1;
+		else if (description.match("Shipping") != null)
+			return 1;
+		else if (description.match("shipping") != null)
+			return 1;
+		else if (description.match("Dover") != null)
+			return 1;
+		else if (description.match("Airlines") != null)
+			return 1;
+		else if (description.match("airlines") != null)
+			return 1;
+		else if (description.match("Flights") != null)
+			return 1;
+		else if (description.match("flights") != null)
+			return 1;
+		else if (description.match("Backlog") != null)
+			return 1;
+		else if (description.match("backlog") != null)
+			return 1;
+		else if (description.match("Stagflation") != null)
+			return 1;
+		else if (description.match("stagflation") != null)
+			return 1;
+		else if (description.match("Sanctions") != null)
+			return 1;
+		else if (description.match("sanctions") != null)
+			return 1;
+		else if (description.match("Seafood") != null)
+			return 1;
+		else if (description.match("seafood") != null)
+			return 1;
+	}
+
+	if (title != "")
+	{
+		if (title.match("oil") != null)
+			return 1;
+		else if (title.match("Oil") != null)
+			return 1;
+		else if (title.match("petrol") != null)
+			return 1;
+		else if (title.match("Petrol") != null)
+			return 1;
+		else if (title.match("OPEC") != null)
+			return 1;
+		else if (title.match("Natural Gas") != null)
+			return 1;
+		else if (title.match("natural gas") != null)
+			return 1;
+		else if (title.match("Wheat") != null)
+			return 1;
+		else if (title.match("wheat") != null)
+			return 1;
+		else if (title.match("Grain") != null)
+			return 1;
+		else if (title.match("grain") != null)
+			return 1;
+		else if (title.match("Inflation") != null)
+			return 1;
+		else if (title.match("inflation") != null)
+			return 1;
+		else if (title.match("Supply-Chain") != null)
+			return 1;
+		else if (title.match("supply-chain") != null)
+			return 1;
+		else if (title.match("Supply Chain") != null)
+			return 1;
+		else if (title.match("supply chain") != null)
+			return 1;
+		else if (title.match("Consumer Confidence") != null)
+			return 1;
+		else if (title.match("consumer confidence") != null)
+			return 1;
+		else if (title.match("Demand") != null)
+			return 1;
+		else if (title.match("demand") != null)
+			return 1;
+		else if (title.match("Consumer Price Index") != null)
+			return 1;
+		else if (title.match("consumer price index") != null)
+			return 1;
+		else if (title.match("CPI") != null)
+			return 1;
+		else if (title.match("Underground") != null)
+			return 1;
+		else if (title.match("underground") != null)
+			return 1;
+		else if (title.match("Tunnel") != null)
+			return 1;
+		else if (title.match("tunnel") != null)
+			return 1;
+		else if (title.match("Trench") != null)
+			return 1;
+		else if (title.match("trench") != null)
+			return 1;
+		else if (title.match("NHS") != null)
+			return 1;
+		else if (title.match("Dentist") != null)
+			return 1;
+		else if (title.match("dentist") != null)
+			return 1;
+		else if (title.match("Private Healthcare") != null)
+			return 1;
+		else if (title.match("private healthcare") != null)
+			return 1;
+		else if (title.match("Shipping") != null)
+			return 1;
+		else if (title.match("shipping") != null)
+			return 1;
+		else if (title.match("Dover") != null)
+			return 1;
+		else if (title.match("Airlines") != null)
+			return 1;
+		else if (title.match("airlines") != null)
+			return 1;
+		else if (title.match("Flights") != null)
+			return 1;
+		else if (title.match("flights") != null)
+			return 1;
+		else if (title.match("Backlog") != null)
+			return 1;
+		else if (title.match("backlog") != null)
+			return 1;
+		else if (title.match("Stagflation") != null)
+			return 1;
+		else if (title.match("stagflation") != null)
+			return 1;
+		else if (title.match("Sanctions") != null)
+			return 1;
+		else if (title.match("sanctions") != null)
+			return 1;
+		else if (title.match("Seafood") != null)
+			return 1;
+		else if (title.match("seafood") != null)
+			return 1;
+		else
+			return 0;
+	}
+	else
+		return 0;
+
+}
+
+
+
+
 function getTime(dateString)
 {
 var date = new Date(dateString);
@@ -14,15 +237,43 @@ function sortByDate(a, b) {
 else return 0;
 }
 
-function updatepage(str, feed_name, index){
-var yahooFormatted = JSON.parse(str);
-var myobj = yahooFormatted.query.results;
 
-for (i=0; i < myobj.item.length; i++)
+function updatepage(str, feed_name, index){
+
+str=JSON.parse(str);
+str=str.contents;
+
+var x2js = new X2JS();
+var myobj = x2js.xml_str2json(str);
+
+for (i=0; i < myobj.rss.channel.item.length; i++)
 {
 
-var theEntry = '<a href="' + myobj.item[i].link + '">' + myobj.item[i].title + '</a>' + '<br>(' + feed_name + ": " + myobj.item[i].pubDate +')' + "<br>";
-entries.push([getTime(myobj.item[i].pubDate), theEntry]);
+var theEntry = '<a href="' + myobj.rss.channel.item[i].link + '">' + myobj.rss.channel.item[i].title + '</a>' + '<br>(' + feed_name + ": " + myobj.rss.channel.item[i].pubDate +')' + "<br><br>";
+//alert(theEntry);
+	if (typeof myobj.rss.channel.item[i].title !== 'undefined' || typeof myobj.rss.channel.item[i].description !== 'undefined')
+	{
+
+		if (typeof myobj.rss.channel.item[i].description === 'undefined')
+		{
+
+			if (matchingFunction(myobj.rss.channel.item[i].title,"") == 1){
+				entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
+			}
+		}
+		else if (typeof myobj.rss.channel.item[i].title === 'undefined')
+		{
+
+			if (matchingFunction("",myobj.rss.channel.item[i].description) == 1){
+				entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
+			}
+		}
+		else if (matchingFunction(myobj.rss.channel.item[i].title,myobj.rss.channel.item[i].description) == 1){
+
+			entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
+		}
+	}
+
 }
 
 //document.body.innerHTML = JSON.stringify(myobj.item);
@@ -30,11 +281,13 @@ entries.push([getTime(myobj.item[i].pubDate), theEntry]);
 }
 
 function xmlhttpPost(strURL, feed_name, index) {
-    var url = strURL;
+var newurl = 'https://api.allorigins.win/json?url=';
+//var newurl = 'https://api.allorigins.win/raw?url=';
+    var url = newurl + strURL;
 
 //here we use yahoo yql as a cors proxy
-var newurl = 'https://query.yahooapis.com/v1/public/yql?q=';
-var yqlquery = "select title,link,pubDate from rss where url='" + url + "'"
+var newurl = '';
+//"select title,link,pubDate from rss where url='"
 
     var xmlHttpReq = false;
     var self = this;
@@ -44,9 +297,9 @@ var yqlquery = "select title,link,pubDate from rss where url='" + url + "'"
     else if (window.ActiveXObject) { // IE
         self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    self.xmlHttpReq.open('POST', newurl + escape(yqlquery) + "&format=json", false);
-//alert(newurl+escape(yqlquery)+"&format=json");
-    self.xmlHttpReq.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+    self.xmlHttpReq.open('GET', newurl + url, false);
+    self.xmlHttpReq.setRequestHeader('Content-Type', 'application/rss+xml');
     self.xmlHttpReq.onload = function() {
         if (self.xmlHttpReq.status == 200) {
             updatepage(self.xmlHttpReq.responseText, feed_name, index);
@@ -54,50 +307,40 @@ var yqlquery = "select title,link,pubDate from rss where url='" + url + "'"
     }
 
     self.xmlHttpReq.send();
+
 }
 
 function aggregate(){
+
 var feed_urls = [
-"http://www.dailystar.co.uk/rss/1/news/",
-"http://www.huffingtonpost.com/feeds/verticals/uk/news.xml",
 "https://www.theguardian.com/uk-news/rss",
-"https://news.google.co.uk/news?hl=en&amp;pz=1&amp;ned=uk",
-"http://www.bbc.co.uk/news/",
-"http://www.express.co.uk/posts/rss/1/uknews",
-"http://www.telegraph.co.uk/news/uknews/rss",
-"http://www.scotsman.com/cmlink/1.957142",
-"http://www.thisislondon.co.uk/news/rss",
-"http://twitter.com/statuses/user_timeline/68672354.rss",
-"http://www.independent.co.uk/news/uk/rss",
-"http://news.sky.com/sky-news/rss/uk-news/rss.xml",
-"http://timesofindia.indiatimes.com/rssfeeds/2177298.cms",
+"http://feeds.bbci.co.uk/news/world/rss.xml",
+"http://feeds.bbci.co.uk/news/uk/rss.xml",
+"http://feeds.feedburner.com/daily-express-news-showbiz",
+"https://www.thesun.co.uk/feed/",
+"https://metro.co.uk/feed/",
+"http://feeds.skynews.com/feeds/rss/home.xml",
 "http://www.dailymail.co.uk/news/index.rss",
-"http://www.trinitymirror.com/atom.xml",
-"http://www.metro.co.uk/rss/news",
-"https://uk.news.yahoo.com/rss",
-"https://www.thesun.co.uk/news/feed/"
+"http://www.independent.co.uk/news/uk/rss",
+"http://www.telegraph.co.uk/rss.xml",
+"https://www.standard.co.uk/news/rss"
 ]
 
 var feed_names = [
-"The Daily Star",
-"Huffington Post",
 "The Guardian",
-"Google News",
-"The BBC",
+"BBC [World]",
+"BBC [UK]",
 "The Express",
-"The Telegraph",
-"The Scotsman",
-"The Evening Standard",
-"Twitter",
-"The Independent",
-"Sky",
-"The Times Of India",
-"The Daily Mail",
-"Trinity Mirror",
+"The Sun",
 "The Metro",
-"Yahoo",
-"The Sun"
+"Sky",
+"The Daily Mail",
+"The Independent",
+"The Telegraph",
+"The Evening Standard"
 ]
+
+//Removed in V2 "The Daily Star","The Scotsman","Twitter","Trinity Mirror","Yahoo","Huffington Post"
 
 	for (index=0; index < feed_urls.length; ++index)
 	{
@@ -107,7 +350,6 @@ var feed_names = [
 entries.sort(function(a, b) {
     return ((b[0] < a[0]) ? -1 : ((b[0] == a[0]) ? 0 : 1));
 });
-//entries.sort(sortByDate);
 
 var newsout = "";
 	for (index2=0; index2 < entries.length; ++ index2)
@@ -115,9 +357,11 @@ var newsout = "";
 		newsout = newsout + entries[index2][1];
 	}
 document.getElementById("theNews").innerHTML = "<center>" + newsout + "</center>";
+
 }
 
 </script>
+
 <center>
 <h2>All News:</h2>
 <body onload="aggregate();">

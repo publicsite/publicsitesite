@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>Tag cloud generator</title>
+<script src="https://cdn.jsdelivr.net/gh/timdream/wordcloud2.js@latest/src/wordcloud2.js"></script>
+<script language="Javascript">
+function xmlhttpPost(strURL) {
+    var params = getstandardargs().concat(getquerystring());
+    var strData = params.join('&');
+    var url = strURL + '?' + strData;
+
+//here we use yahoo yql as a cors proxy
+var newurl = 'https://query.yahooapis.com/v1/public/yql?q=';
+var yqlquery = "select * from json where url='" + url + "'"
+    var xmlHttpReq = false;
+    var self = this;
+    if (window.XMLHttpRequest) { // Mozilla/Safari
+        self.xmlHttpReq = new XMLHttpRequest();
+    }
+    else if (window.ActiveXObject) { // IE
+        self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    self.xmlHttpReq.open('POST', newurl + escape(yqlquery) + "&format=json", true);
+    self.xmlHttpReq.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    self.xmlHttpReq.onload = function() {
+        if (self.xmlHttpReq.status == 200) {
+            updatepage(self.xmlHttpReq.responseText);
+        }
+    }
+
+    self.xmlHttpReq.send();
+}
+
+function getstandardargs() {
+    var params = [
+        'wt=json'
+        , 'fl=text_t'
+        , 'start=0'
+        , 'rows=10'
+	, 'core=collection1'
+        ];
+
+    return params;
+}
+
+function getquerystring() {
+patternsArray = [];
+patternsFrequency = [];
+  qstr = 'q=' + escape(document.getElementById("query").value);
+  return qstr;
+}
+
+// this function does all the work of parsing the solr response and updating the page.
+function updatepage(str){
+
+var yahooFormatted = JSON.parse(str);
+var myobj = yahooFormatted.query.results.json;
+//document.getElementById("raw").innerHTML = JSON.stringify(myobj.response.docs);
+
+for (l=0; l < myobj.response.docs.length; l++)
+{
+	if (myobj.response.docs[l])
+	findPatterns(myobj.response.docs[l].text_t);
+}
+
+var theList = [[]];
+	for (j = 0; j < patternsArray.length; j++)
+	{
+		theList[j] = [patternsArray[j],patternsFrequency[j]];
+	}
+
+options = {
+    list : theList,
+    click: callbackOnClick
+}
+WordCloud(document.getElementById('my_canvas'), options);
+
+}
+
+function callbackOnClick(item, dimension, event){
+document.getElementById("query").value= item[0];
+}
+
+var patternsArray;
+var patternsFrequency;
+
+function checkPattern(pattern)
+{
+	found = -1
+//alert(patternsArray.length);
+	for (j = 0; j < patternsArray.length; j++)
+	{
+		if (patternsArray[j] == pattern)
+		{
+			found = 1;
+			patternsFrequency[j]++;
+			break;
+		}
+	}
+
+	if ( found == -1 )
+	{
+		patternsArray.push(pattern);
+		//alert(pattern);
+		patternsFrequency.push(1);
+	}
+}
+
+function findPatterns(theText)
+{
+	oldIndex=-1;
+	after=1;
+	for (i=0; i < theText.length; ++i)
+	{
+		if (theText[i] == " " || theText[i] == "." || theText[i] == "," || theText[i] == "(" || theText[i] == ")" || theText[i] == ";" || theText[i] == ":" || theText[i] == "!" || theText[i] == "?")
+		{
+				if (after == 1)
+				{
+					checkPattern(theText.substring(oldIndex+1,i));
+					oldIndex = i;
+				}
+				else
+				oldIndex = i;
+				after=0;
+		}
+		else
+		{
+					after=1;
+		}
+	}
+	if (after == 1)
+	{
+			checkPattern(theText.substring(oldIndex+1,i));
+	}
+}
+
+</script>
+</head>
+<body>
+<center>
+<form name="f1" onsubmit='xmlhttpPost("https://yacy.searchlab.eu/solr/select"); return false;'>
+  <p>Query: <input id="query" type="text">
+  <input value="Go" type="submit"></p>
+
+<div id="result"></div>
+<canvas id='my_canvas' width=320 height=480></canvas>
+<div id="raw"></div></pre>
+</form>
+</center>
+</body>
+</html>

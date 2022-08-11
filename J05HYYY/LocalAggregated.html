@@ -1,0 +1,316 @@
+<html>
+<head>
+<title>Local Aggregator</title>
+<script src="https://cdn.jsdelivr.net/gh/abdmob/x2js/xml2json.js"></script>
+<script>
+
+function matchingFunction(title, description){
+return 1;
+}
+
+
+
+
+function getTime(dateString)
+{
+var date = new Date(dateString);
+return date.getTime();
+}
+
+var entries = [];
+
+function sortByDate(a, b) {
+    if (a[0] > b[0])
+	return 1;
+else return 0;
+}
+
+
+function updatepage(str, feed_name, index){
+
+str=JSON.parse(str);
+str=str.contents;
+
+var x2js = new X2JS();
+var myobj = x2js.xml_str2json(str);
+
+for (i=0; i < myobj.rss.channel.item.length; i++)
+{
+
+var theEntry = '<a href="' + myobj.rss.channel.item[i].link + '">' + myobj.rss.channel.item[i].title + '</a>' + '<br>(' + feed_name + ": " + myobj.rss.channel.item[i].pubDate +')' + "<br><br>";
+//alert(theEntry);
+	if (typeof myobj.rss.channel.item[i].title !== 'undefined' || typeof myobj.rss.channel.item[i].description !== 'undefined')
+	{
+
+		if (typeof myobj.rss.channel.item[i].description === 'undefined')
+		{
+
+			if (matchingFunction(myobj.rss.channel.item[i].title,"") == 1){
+				entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
+			}
+		}
+		else if (typeof myobj.rss.channel.item[i].title === 'undefined')
+		{
+
+			if (matchingFunction("",myobj.rss.channel.item[i].description) == 1){
+				entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
+			}
+		}
+		else if (matchingFunction(myobj.rss.channel.item[i].title,myobj.rss.channel.item[i].description) == 1){
+
+			entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
+		}
+	}
+
+}
+
+//document.body.innerHTML = JSON.stringify(myobj.item);
+
+}
+
+function updatepageYT(str, feed_name, index){
+
+str=JSON.parse(str);
+str=str.contents;
+
+var x2js = new X2JS();
+var myobj = x2js.xml_str2json(str);
+
+for (i=0; i < myobj.feed.entry.length; i++)
+{
+//alert(JSON.stringify(myobj.feed.entry[i].link));
+var theEntry = '<a href="' + myobj.feed.entry[i].link._href + '">' + myobj.feed.entry[i].title + '</a>' + '<br>(' + feed_name + ": " + myobj.feed.entry[i].published +')' + "<br><br>";
+//alert(theEntry);
+	if (typeof myobj.feed.entry[i].title !== 'undefined' || typeof myobj.feed.entry[i].description !== 'undefined')
+	{
+
+		if (typeof myobj.feed.entry[i].description === 'undefined')
+		{
+
+			if (matchingFunction(myobj.feed.entry[i].title,"") == 1){
+				entries.push([getTime(myobj.feed.entry[i].published), theEntry]);
+			}
+		}
+		else if (typeof myobj.feed.entry[i].title === 'undefined')
+		{
+
+			if (matchingFunction("",myobj.feed.entry[i].description) == 1){
+				entries.push([getTime(myobj.feed.entry[i].published), theEntry]);
+			}
+		}
+		else if (matchingFunction(myobj.feed.entry[i].title,myobj.feed.entry[i].description) == 1){
+
+			entries.push([getTime(myobj.feed.entry[i].published), theEntry]);
+		}
+	}
+
+}
+
+//document.body.innerHTML = JSON.stringify(myobj.item);
+
+}
+
+function updatepageBRIDGE(str, feed_name, index){
+
+str=JSON.parse(str);
+str=str.contents;
+
+var x2js = new X2JS();
+var myobj = x2js.xml_str2json(str);
+
+for (i=0; i < myobj.xml.feed.entry.length; i++)
+{
+//alert(JSON.stringify(myobj.feed.entry[i].link));
+var theEntry = '<a href="' + myobj.xml.feed.entry[i].link._href + '">' + myobj.xml.feed.entry[i].title + '</a>' + '<br>(' + feed_name + ": " + myobj.xml.feed.entry[i].published +')' + "<br><br>";
+//alert(theEntry);
+	if (typeof myobj.xml.feed.entry[i].title !== 'undefined' || typeof myobj.xml.feed.entry[i].description !== 'undefined')
+	{
+
+		if (typeof myobj.xml.feed.entry[i].description === 'undefined')
+		{
+
+			if (matchingFunction(myobj.xml.feed.entry[i].title,"") == 1){
+				entries.push([getTime(myobj.xml.feed.entry[i].published), theEntry]);
+			}
+		}
+		else if (typeof myobj.xml.feed.entry[i].title === 'undefined')
+		{
+
+			if (matchingFunction("",myobj.xml.feed.entry[i].description) == 1){
+				entries.push([getTime(myobj.xml.feed.entry[i].published), theEntry]);
+			}
+		}
+		else if (matchingFunction(myobj.xml.feed.entry[i].title,myobj.xml.feed.entry[i].description) == 1){
+
+			entries.push([getTime(myobj.xml.feed.entry[i].published), theEntry]);
+		}
+	}
+
+}
+
+//document.body.innerHTML = JSON.stringify(myobj.item);
+
+}
+
+function xmlhttpPost(strURL, feed_name, index) {
+var newurl = 'https://api.allorigins.win/json?url=';
+//var newurl = 'https://api.allorigins.win/raw?url=';
+    var url = newurl + strURL;
+
+//here we use yahoo yql as a cors proxy
+var newurl = '';
+//"select title,link,pubDate from rss where url='"
+
+    var xmlHttpReq = false;
+    var self = this;
+    if (window.XMLHttpRequest) { // Mozilla/Safari
+        self.xmlHttpReq = new XMLHttpRequest();
+    }
+    else if (window.ActiveXObject) { // IE
+        self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+
+    self.xmlHttpReq.open('GET', newurl + url, false);
+    self.xmlHttpReq.setRequestHeader('Content-Type', 'application/rss+xml');
+    self.xmlHttpReq.onload = function() {
+        if (self.xmlHttpReq.status == 200) {
+            updatepage(self.xmlHttpReq.responseText, feed_name, index);
+        }
+    }
+
+    self.xmlHttpReq.send();
+
+}
+
+function xmlhttpPostYT(strURL, feed_name, index) {
+var newurl = 'https://api.allorigins.win/json?url=';
+//var newurl = 'https://api.allorigins.win/raw?url=';
+    var url = newurl + strURL;
+
+//here we use yahoo yql as a cors proxy
+var newurl = '';
+//"select title,link,pubDate from rss where url='"
+
+    var xmlHttpReq = false;
+    var self = this;
+    if (window.XMLHttpRequest) { // Mozilla/Safari
+        self.xmlHttpReq = new XMLHttpRequest();
+    }
+    else if (window.ActiveXObject) { // IE
+        self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+
+    self.xmlHttpReq.open('GET', newurl + url, false);
+    self.xmlHttpReq.setRequestHeader('Content-Type', 'application/rss+xml');
+    self.xmlHttpReq.onload = function() {
+        if (self.xmlHttpReq.status == 200) {
+            updatepageYT(self.xmlHttpReq.responseText, feed_name, index);
+        }
+    }
+
+    self.xmlHttpReq.send();
+
+}
+
+function xmlhttpPostBRIDGE(strURL, feed_name, index) {
+var newurl = 'https://api.allorigins.win/json?url=';
+//var newurl = 'https://api.allorigins.win/raw?url=';
+    var url = newurl + encodeURIComponent(strURL);
+
+//here we use yahoo yql as a cors proxy
+var newurl = '';
+//"select title,link,pubDate from rss where url='"
+
+    var xmlHttpReq = false;
+    var self = this;
+    if (window.XMLHttpRequest) { // Mozilla/Safari
+        self.xmlHttpReq = new XMLHttpRequest();
+    }
+    else if (window.ActiveXObject) { // IE
+        self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+
+    self.xmlHttpReq.open('GET', newurl + url, false);
+    self.xmlHttpReq.setRequestHeader('Content-Type', 'text/json');
+    self.xmlHttpReq.onload = function() {
+        if (self.xmlHttpReq.status == 200) {
+            updatepage(self.xmlHttpReq.responseText, feed_name, index);
+        }
+    }
+
+    self.xmlHttpReq.send();
+
+}
+
+function aggregate(){
+
+var feed_urls = [
+"http://www.metoffice.gov.uk/public/data/PWSCache/WarningsRSS/Region/ee",
+"https://www.lynnnews.co.uk/_api/rss/lynn_news_news_feed.xml",
+"http://scytheassociation.org/feed/",
+"https://wildscythe.co.uk/feed/"
+]
+
+var feed_names = [
+"Met Office - East Of England",
+"Lynn News",
+"Scythe Association",
+"Wildscythe"
+]
+
+//Removed in V2 "The Daily Star","The Scotsman","Twitter","Trinity Mirror","Yahoo","Huffington Post"
+
+	for (index=0; index < feed_urls.length; ++index)
+	{
+		xmlhttpPost(feed_urls[index], feed_names[index], index)
+	}
+
+var feed_urls2 = [
+"https://www.youtube.com/feeds/videos.xml?channel_id=UClykrxsUcLVY428ONkAUbJg"
+]
+
+var feed_names2 = [
+"RJB Scything"
+]
+
+	for (index=0; index < feed_urls.length; ++index)
+	{
+		xmlhttpPostYT(feed_urls2[index], feed_names2[index], index)
+	}
+
+
+var feed_urls3 = [
+"https://rss-bridge.org/bridge01/?action=display&bridge=Twitter&context=By+username&u=edp24&norep=on&noretweet=on&nopinned=on&nopic=on&noimg=on&noimgscaling=on&format=Mrss"
+]
+
+var feed_names3 = [
+"EDP"
+]
+
+	for (index=0; index < feed_urls.length; ++index)
+	{
+		xmlhttpPostBRIDGE(feed_urls3[index], feed_names3[index], index)
+	}
+
+entries.sort(function(a, b) {
+    return ((b[0] < a[0]) ? -1 : ((b[0] == a[0]) ? 0 : 1));
+});
+
+var newsout = "";
+	for (index2=0; index2 < entries.length; ++ index2)
+	{
+		newsout = newsout + entries[index2][1];
+	}
+document.getElementById("theNews").innerHTML = "<center>" + newsout + "</center>";
+
+}
+
+</script>
+
+<center>
+<h2>Local News:</h2>
+<body onload="aggregate();">
+<div id="theNews">Loading...</div>
+</body>
+</center>
+</html>
