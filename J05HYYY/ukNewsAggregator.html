@@ -360,8 +360,11 @@ var feed_names = [
 
 	for (index=0; index < feed_urls.length; ++index)
 	{
+		alert("Getting " + feed_names[index] + "...");
 		xmlhttpPost(feed_urls[index], feed_names[index], index)
 	}
+	
+	alert("Done getting feeds. Now Processing");
 
 entries.sort(function(a, b) {
     return ((b[0] < a[0]) ? -1 : ((b[0] == a[0]) ? 0 : 1));
