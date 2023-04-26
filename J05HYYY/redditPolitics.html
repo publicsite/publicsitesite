@@ -130,41 +130,6 @@ window.frames[0].document.body.innerHTML = theHTML;
     self.xmlHttpReq.send();
 }
 
-function xmlRSSGet(strURL, tld) {
-var newurl = 'https://api.allorigins.win/raw?' + 'nocache=' + Date.now() + '&' + 'url=';
-    var xmlHttpReq = false;
-    var self = this;
-    if (window.XMLHttpRequest) { // Mozilla/Safari
-        self.xmlHttpReq = new XMLHttpRequest();
-    }
-    else if (window.ActiveXObject) { // IE
-        self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    self.xmlHttpReq.open('GET', newurl + strURL, false);
-    self.xmlHttpReq.onload = function() {
-        if (self.xmlHttpReq.status == 200) {
-    var xmlDoc = self.xmlHttpReq.responseXML;
-theHTML="<html><head><base target=\"_blank\"></head><center>"
-for(var index = 0; index < xmlDoc.getElementsByTagName("entry").length; index++)
-{
-var parser = new DOMParser;
-var dom = parser.parseFromString(
-    '<!doctype html><body>' + xmlDoc.getElementsByTagName("entry")[index].querySelector("content").innerHTML,
-    'text/html');
-var decodedString = dom.body.textContent.split("<span>")[1].match(new RegExp("href=\"" + "(.*)" + "\">"))[1];
-theHTML = theHTML + "<a href=\"" + decodedString + "\">" + xmlDoc.getElementsByTagName("entry")[index].getElementsByTagName("title")[0].childNodes[0].nodeValue + "</a>";
-theHTML = theHTML + "<br><a href=\"" + xmlDoc.getElementsByTagName("entry")[index].querySelector("link").getAttribute("href") + "\">Comments</a>" + "<br><br>";
-}
-theHTML = theHTML + "</center></html>"
-window.frames[0].document.body.innerHTML = theHTML;
-
-            //document.getElementById("theFrame").document.body.innerHTML = theText2;
-        }
-    }
-
-    self.xmlHttpReq.send();
-}
-
 function xmlRSSGet2(strURL, tld) {
 var newurl = 'https://api.allorigins.win/raw?' + 'nocache=' + Date.now() + '&' + 'url=';
     var xmlHttpReq = false;
