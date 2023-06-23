@@ -1,57 +1,57 @@
 #EXTM3U
+#EXTINF:2062,RainyMood
+#EXTVLCOPT:network-caching=1000
+https://www.rainymood.com/audio1112/0.m4a
 #EXTINF:0,Echoes of BLUEMARS - Echoes of BLUEMARS - Cryosleep
 http://streams.echoesofbluemars.org:8000/cryosleep
+#EXTINF:0,Flowly Nature Sound Radio High Quality Relaxation Meditation Stress Relief Sleep
+#EXTVLCOPT:network-caching=1000
+http://stream.flowly-nature.com:8000/stream
+#EXTINF:0,[appradio.pro] nature sound
+#EXTVLCOPT:network-caching=1000
+http://radios.digital:8058/stream
+#EXTINF:0,Public Domain Classical
+http://relay.publicdomainradio.org/classical.aac
 #EXTINF:0,Another Music Project
 http://radio.anothermusicproject.com:8000/idm
+#EXTINF:32,BBC Radio One Dance
+http://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_one_dance/bbc_radio_one_dance.isml/bbc_radio_one_dance-audio%3d96000.norewind.m3u8
 #EXTINF:0,CALM RADIO
 http://streams.calmradio.com/api/503/128/stream
 #EXTINF:0,Sub.FM Where Bass Matters
 http://subfm.radioca.st/Sub.FM
 #EXTINF:0,Electro Swing Revolution Radio (The 1st Electro Swing Radio worldwide!)
 https://streamer.radio.co/s2c3cc784b/listen
-#EXTINF:0,AZPM Jazz
-http://streaming.azpm.org/jazz192.mp3
 #EXTINF:0,WKSU OHIO
 http://66.225.205.8:8030/
 #EXTINF:0,TUCSON ARIZONA CLASSICAL
 http://streaming.azpm.org:80/kuat192.mp3
-#EXTINF:0,Radio 999 Evolution
-#EXTVLCOPT:network-caching=1000
-http://stream.viclub.pro:4080/stream
 #EXTINF:0,Radioalchemy live radio
 #EXTVLCOPT:network-caching=1000
 http://168.119.74.185:9984/autodj
 #EXTINF:0,INSTRUMENTAL HOP RADIO
 #EXTVLCOPT:network-caching=1000
 http://cheetah.streemlion.com:2670/stream
-#EXTINF:0,(eilo) Earth and Beat Radio
-http://eilo.org:8000/earthbeat
-#EXTINF:0,(eilo) Trance Radio
-http://eilo.org:8000/trance
-#EXTINF:0,(eilo) House Radio
-http://eilo.org:8000/house
-#EXTINF:0,(eilo) Ambient Radio
-http://eilo.org:8000/ambient
-#EXTINF:0,(eilo) Psychedelic Radio
-http://eilo.org:8000/psychedelic
-#EXTINF:0,(eilo) Mixotic Radio
-http://eilo.org:8000/mixotic
-#EXTINF:0,(eilo) Dubstep Radio
-http://eilo.org:8000/dubstep
-#EXTINF:0,(eilo) Drum and Bass Radio
-http://eilo.org:8000/drum
-#EXTINF:0,(eilo) Hard Techno Radio
-http://eilo.org:8000/hard
-#EXTINF:0,(eilo) Progressive
-http://eilo.org:8000/progressive
-#EXTINF:0,(eilo) Techno
-http://eilo.org:8000/techno
+#EXTINF:0,GlobalBeats FM Green Channel (128kbps MP3) (#1)
+http://gbfm.li/ve/green/mp3
+#EXTINF:0,GlobalBeats FM Green Channel (128kbps MP3) (#2)
+http://gbs03.de:7020/
+#EXTINF:0,GlobalBeats FM Green Channel (128kbps MP3) (#3)
+http://gbs01.de:7020/
+#EXTINF:0,GlobalBeats FM Green Channel (192kbps MP3) (#4)
+http://gbfm.li/ve/green/mp3hq
+#EXTINF:0,GlobalBeats FM Green Channel (192kbps MP3) (#5)
+http://gbs03.de:7022/
+#EXTINF:0,GlobalBeats FM Green Channel (192kbps MP3) (#6)
+http://gbs01.de:7022/
 #EXTINF:0,Radio Schizoid Chill
 http://94.130.113.214:8000/chill
 #EXTINF:0,Radio Schizoid Dub Techno
 http://94.130.113.214:8000/dubtechno
 #EXTINF:0,Radio Schizoid Progressive
 http://94.130.113.214:8000/prog
+#EXTINF:0,ETN.fm Ch1 | EDM Livesets & DJ Shows
+http://8.43.48.6:8120/;
 #EXTINF:0,SomaFM: DEF CON Radio (#1): Music for Hacking. The DEF CON Year-Round Channel.
 http://ice4.somafm.com/defcon-128-mp3
 #EXTINF:0,SomaFM: DEF CON Radio (#2): Music for Hacking. The DEF CON Year-Round Channel.
@@ -156,6 +156,14 @@ https://sc2.dubplate.fm/radio/8030/dnb/lofi
 https://sc2.dubplate.fm/radio/8000/dubandbass/lofi
 #EXTINF:0,Dubplate FM Hip Hop
 https://sc2.dubplate.fm/radio/8020/hiphop/lofi
+#EXTINF:0,Jungletrain (#1)
+http://stream5.jungletrain.net:8024/
+#EXTINF:0,Jungletrain (#2)
+http://stream6.jungletrain.net:8024/
+#EXTINF:0,Jungletrain (#3)
+http://stream3.jungletrain.net:8024/
+#EXTINF:0,Jungletrain (#4)
+http://stream1.jungletrain.net:8024/
 #EXTINF:0,Radioactive FM
 https://radio123-gecko.radioca.st/radioactivefm
 #EXTINF:0,StillStream (#1)
@@ -166,8 +174,10 @@ http://radio.stillstream.com:8000/stillstream.ogg
 http://88.208.218.19:9106/stream
 #EXTINF:0,Deepvibes Radio (#2)
 http://88.208.218.19:8090/stream
-#EXTINF:0,Reboot FM
-http://87.118.122.220:8002/stream?type=.mp3
+#EXTINF:0,Fluid Radio
+http://uk4-vn.webcast-server.net:9270/
+#EXTINF:0,Rude FM
+http://78.129.228.187:8034/
 #EXTINF:0,Datafruits (#1)
 https://streampusher-relay.club/datafruits.mp3
 #EXTINF:0,Datafruits (#2)
@@ -176,18 +186,38 @@ https://streampusher-relay.club/datafruits.ogg
 https://securestreams2.autopo.st:1148/;stream.mp3
 #EXTINF:0,POINT BLANK FM
 http://pointblankradio.co.uk:8000/stream.mp3
+#EXTINF:0,Breakpirates
+http://bpstream.hostco.de:3000/
+#EXTINF:0,FLEX FM
+http://142.4.215.64:8116/
+#EXTINF:0,Bassdrive
+http://chi.bassdrive.co:80/
+#EXTINF:0,LiveDNB
+http://23.239.3.207:8040/
+#EXTINF:0,Origin UK Radio
+http://tachyon.shoutca.st:8586/
+#EXTINF:0,Vision Radio UK
+http://mscp3.live-streams.nl:8200/
+#EXTINF:0,Rinse FM
+http://206.189.117.157:8000/stream
 #EXTINF:0,Shine879
 http://s3.radio.co/sd4abfe69e/listen
 #EXTINF:0,LIFE FM
 http://streamer.radio.co/s1ed160262/listen
+#EXTINF:0,House FM
+http://streamer.radio.co/s0de514535/listen
+#EXTINF:0,BACK2BACK
+http://streaming.radio.co/s25550b002/listen
 #EXTINF:0,DigitalSoulRadio
 http://listen.radioking.com/radio/325465/stream/373462
 #EXTINF:0,PLAYBACK UK
 http://server2.unitystreams.com:8099/pb.mp3
-#EXTINF:0,Stomp Radio
-http://149.255.59.162:8064/live
 #EXTINF:0,Le Son Parisien (#1)
 http://stream.lesonparisien.com/hi.mp3
+#EXTINF:0,Le Son Parisien (#2)
+http://stream.lesonparisien.com/hi.aac
+#EXTINF:0,Le Son Parisien (#3)
+http://stream.lesonparisien.com/lo.aac
 #EXTINF:0,Le Son Parisien (#4)
 http://stream.lesonparisien.com/mid.mp3
 #EXTINF:0,Le Son Parisien (#5)
@@ -197,13 +227,11 @@ http://fm939.wnyc.org/wnycfm
 #EXTINF:0,WREM
 #EXTVLCOPT:network-caching=1000
 https://ncpr-ice.streamguys1.com/WREM
-#EXTINF:0,(#2 - 19/500) DEEP HOUSE LOUNGE - [www.deephouselounge.com]
-http://198.15.94.34:8030/stream
 #EXTINF:0,(#3 - 167/800) DEEP HOUSE LOUNGE - [www.deephouselounge.com]
 http://198.15.94.34:8006/stream
-#EXTINF:0,FUTUREDRUMZ JUNGLE DNB RADIO
-http://148.251.43.231:8625/stream
 #EXTINF:0,HBR1 - IDM Tranceponder
 http://radio.hbr1.com/stream/trance.ogg
-#EXTINF:0,HBR1 - Tronic Lounge
-http://radio.hbr1.com/stream/tronic.ogg
+#EXTINF:999, HBR1 - Dream Factory
+http://radio.hbr1.com/stream/ambient.aac
+#EXTINF:0,Rinse FM
+http://streamer-uk.rinse.fm:8000/stream
