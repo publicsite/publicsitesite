@@ -1,0 +1,4 @@
+The sources for maven repositories can be downloaded using web browser, here is an example for maven central and bintray:
+
+https://bintray.com/bintray/jcenter/download_file?file_path=hu%2Fwebhejj%2Fjunit%2Fstdio%2Fjunit-stdio%2F1.0.0%2Fjunit-stdio-1.0.0-sources.jar
+https://repo1.maven.org/maven2/chat/tamtam/tamtam-bot-sdk/0.0.1/tamtam-bot-sdk-0.0.1-sources.jar

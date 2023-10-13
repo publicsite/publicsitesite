@@ -1,0 +1,33 @@
+To create a bootable iso for powerpc (32 bit)
+
+You will need to make a hfs file system in an img file using mac-fdisk or equivialent.
+
+You should put yaboot bootloader on this hfs file system along with a minimal system (for installation) and
+an installer.
+
+https://tr.opensuse.org/SDB:PPC:_Booting_with_Yaboot_on_a_PowerMacintosh
+
+https://forums.macrumors.com/threads/debian-sid-installation-guide-powerpc.2146795/
+
+You should then make a hybrid HFS/ISO9660 image using mkisofs (but we should try using xorriso).
+
+https://superuser.com/questions/647204/proper-options-for-mkisofs-to-create-hybrid-mac-and-windows-iso-image
+
+The installer should create a 32mb hfs partition, and an ext2 partition for the rest of the disk
+
+Yaboot should be installed in the 32mb hfs partition on the hdd
+
+Debian unofficial ports powerpc repository is updated as of 14-Jun-2023, almost all other versions of linux
+for ppc32 have been discontinued.
+
+http://ftp.ports.debian.org/debian-ports/
+
+The CD-ROM should be less than 700mb to fit on a CD (not a DVD).
+
+Ideally, include a graphical gtk package manager, xfce and connman and also drivers
+
+Create a script to install the rest from network connection.
+
+See also:
+
+https://wiki.debian.org/DebianOnPowerPC

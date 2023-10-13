@@ -1,0 +1,13 @@
+Detect corners with FAST
+
+<A>: Get the centre of mass by getting average <x> and <y> value from the dataset.
+
+<B>: For each value in the dataset, multiply <x> by 2 and <y> by 2, and take the average for that.
+
+You should now have two points: <A> and <B>, and also the dataset.
+
+Go through each point in the dataset and calculate the angles and distances between <A>, <B>, and <a point in the dataset>
+
+Then run assignment problem using the angles and distances.
+
+This should allow you to geometrically match two images.

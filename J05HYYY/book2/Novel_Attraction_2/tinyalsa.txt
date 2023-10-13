@@ -1,0 +1,39 @@
+
+for audio input from modem... https://git.replicant.us/replicant/hardware_tinyalsa-audio/tree/audio_in.c
+
+define a struct:
+
+struct tinyalsa_audio_stream_in *stream_in
+
+tinyalsa_audio_device = (struct tinyalsa_audio_device *) dev;
+
+	if(tinyalsa_audio_device->mixer == NULL)
+		goto error_stream;
+
+	tinyalsa_audio_stream_in->mixer_props =
+		tinyalsa_mixer_get_input_props(tinyalsa_audio_device->mixer);
+
+stream_in->mixer_props->card should be set to int card number
+stream_in->mixer_props->device should be set to int device number
+
+call:
+
+audio_in_pcm_open
+
+you should now have:
+
+stream_in->pcm
+
+which you can pass to:
+
+rx
+
+use:
+
+audio_in_pcm_close
+
+to clean up
+
+____________________________________________________
+
+for audio output from modem ...

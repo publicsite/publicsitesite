@@ -1,0 +1,11 @@
+#debian recovery
+wpa_supplicant -B -i wlan0 -c <(wpa_passphrase "Your_SSID" Your_passphrase) && dhclient wlan0
+ping 8.8.8.8 #check if the internet works
+mkdir mountpoint
+mount /dev/sdX mountpoint
+cp -a mountpoint/home/user /path/to/somedir #make a backup of home directory
+umount mountpoint
+fsck /dev/sdX
+mount /dev/sdX mountpoint
+chroot mountpoint
+sudo apt-get install --reinstall $(dpkg --get-selections | grep -v deinstall | cut -f1) #reinstall all packages

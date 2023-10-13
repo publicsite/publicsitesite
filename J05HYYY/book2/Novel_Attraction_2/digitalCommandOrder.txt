@@ -1,0 +1,10 @@
+encrypt(ORDER:<command numbers><commands array>, <key>)
+encrypt(ISDONE:<command numbers>, <key>)
+encrypt(STATUS:<command numbers><running/exit code/exception>, <key>)
+
+A: write commands
+B: generate command numbers
+A: place order
+B: give immediate status on recieved commands (to show the order has been accepted)
+A: are these commands with the command numbers done?
+B: give status on commands

@@ -1,0 +1,17 @@
+The bootloader is called freeldr
+Hal is needed to run the bootloader
+The kernel is called ntoskrnl.exe
+SMSS.EXE is the first process run by ntoskrnl.
+
+#from https://reactos.org/wiki/FreeLoader
+Properly install a MultiBoot-compliant boot loader (for example, GRUB),
+and configure it to load the file "FREELDR.SYS" as a Multiboot kernel (cause FreeLoader supports that).
+See Boot FreeLoader from GRUB.
+You cannot directly load ntoskrnl.exe as a multiboot kernel,
+because it needs boot-time information that is extracted from the registry
+and other specific stuff that the multiboot standard,
+as a general standard, doesn't support.
+Then, of course, you need to write the file FREELDR.INI according to your needs.
+
+
+https://github.com/reactos/reactos/blob/master/boot/freeldr/FREELDR.INI

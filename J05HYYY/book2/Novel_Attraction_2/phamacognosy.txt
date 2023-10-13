@@ -1,0 +1,36 @@
+==2D MOLECULE STRUCTURE FILE FORMATS==
+
+SDF
+JSON
+XML
+ASNT
+2DMOL (TXT)
+
+==3D MOLECULE STRUCTURE FILE FORMATS==
+
+3DMOL (TXT)
+
+==PROTEIN STRUCTURE FILE FORMATS==
+
+FASTA
+PDB
+PDB gz
+PDBx/mmCIF
+PDBx/mmCIF gz
+PDBML/XML gz
+Biological Assembly 1
+Structure Factors (CIF)
+Structure Factors (CIF - gz)
+
+==WIKI PAGES==
+https://en.wikipedia.org/wiki/List_of_protein-ligand_docking_software
+https://en.wikipedia.org/wiki/Bioprospecting
+https://en.wikipedia.org/wiki/Reverse_pharmacology
+https://en.wikipedia.org/wiki/Docking_(molecular)
+https://en.wikipedia.org/wiki/Pharmacognosy
+
+==NOTES==
+One disease sample to lots of proteins (One to many)
+Toxtree
+https://qsartoolbox.org/
+-- other toxic hazard estimation softwares

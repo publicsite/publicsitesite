@@ -1,0 +1,36 @@
+==LoRa APRS LAN Server==
+
+LoRa signal is recieved through the antenna to the arduino-compatible MCU.
+The arduino-compatible MCU runs the RadioHead library.
+Packets from the RadioHead library are forwarded.
+Usually these are LoRa packets, and are forwarded over WiFi to the LAN.
+It does this using a TCP server running on the node.
+Xastir picks up the connection from LAN for graphical display on a computer on the LAN like so [1]:
+
+<interface>
+  tcp-device 127.0.0.1 6700 KISS
+  callsign YOURCALL-SSID
+  tx-ok true
+</interface>
+
+If this method of recieving the data fails using xastir, then socat is used to forward the TCP connection to a KISS virtual serial device. [2]
+The reference board is to be a TTGO T-Beam V1.1 [3]
+
+References:
+[1] https://groups.google.com/g/aprx-software/c/LdBGlH2v8c0
+[2] https://stackoverflow.com/questions/22624653/create-a-virtual-serial-port-connection-over-tcp
+[3] https://www.amazon.co.uk/TTGO-T-Beam-915Mhz-Wireless-Bluetooth-M5Stick/dp/B07SFVQ3Z8
+
+https://www.amazon.co.uk/Ebyte-E32-868T20D-Wireless-Transceiver-Transmitter/dp/B07QXQ7PXJ
+https://github.com/travisgoodspeed/loraham
+https://github.com/dmahony/LoRa-AX25-IP-Network
+https://github.com/josefmtd/kiss-lora/projects/1
+http://www.mobilinkd.com/2014/09/11/arduino-kiss-tnc/
+http://www.aprs.org/symbols/symbols-new.txt
+https://xastir.org/index.php/HowTo:AX.25
+https://www.airspayce.com/mikem/arduino/RadioHead/classRH__Serial.html
+https://github.com/lora-aprs/LoRa_APRS_Tracker
+http://www.f5kmy.fr/spip.php?article509
+https://www.amazon.co.uk/TTGO-T-Beam-915Mhz-Wireless-Bluetooth-M5Stick/dp/B07SFVQ3Z8
+https://stackoverflow.com/questions/1168960/maven-for-other-languages
+https://merobase.informatik.uni-mannheim.de/sources/

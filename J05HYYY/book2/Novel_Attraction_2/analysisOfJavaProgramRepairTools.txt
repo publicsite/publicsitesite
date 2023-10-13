@@ -1,0 +1,271 @@
+====FOR INTERNAL USE/EVALUATION - CANDIDATE APPROXIMATE ORDER====
+
+AVATAR - https://github.com/SerVal-DTF/AVATAR - Medium/Good
+	- supposedly generates output patches in txt format.
+		- they are infact diffs, that i understand
+	- you would be interested in ./FLFix.sh
+	- i don't know what <bugid> is supposed to be w/o reading sources
+		-this seems to be related to defects4j
+	- sources seem to be a mixture of shell and java
+	- delete lib directory, they are binaries
+	- has a compile.sh script
+
+Astor - https://github.com/SpoonLabs/astor - Good
+	-Examples for program input are java source files
+		-examples contain build.xml and pom.xml
+	-Astor is built with maven
+		- [so] a good immediate target to try and reconstruct
+	-Java source files for Astor are availiable.
+		- [so] a good immediate target to try and reconstruct
+	-supposedly generates output patches that I understand
+	- uses genprog, kali, and mutation based repair
+
+CapGen - https://github.com/justinwm/CapGen - Poor
+	- supposedly generates output patches that seem to be in .txt format, I wouldn't know how to apply these w/o further investigation.
+		- could be, or likely to be normal patches ala AVATAR, but not sure
+	- No apparent sources for program.
+	- Jar can be found in CapGen/CapGen/CapGen.jar
+
+ConFix - https://github.com/thwak/ConFix - Medium/Poor
+	- Java sources are availible for ConFix
+		- [so] a good immediate target to try and reconstruct
+	- Supposedly produces patches that I understand
+	- Requires a "change pool" of human written patches
+		- [so] not sure how effective program will be
+	- An example change pool "from 9 open source projects" is given
+	-Judging by the main readme and samples
+		- requires confix.properties
+			-some of the options in confix.properties I am unsure about
+		-requres [three] list(s) of tests
+			- so program is unlikely to be completely automated
+
+ACS - https://github.com/Adobee/ACS - Good
+	- delete acs.jar
+	- Java source is availiable
+		[so] a good immediate target to reconstruct
+	-java.cn
+	-can try without defects4j
+	-supposedly generates fixed java files
+
+ARJA - https://github.com/yyxhdy/arja - Good
+	- Has four different repair approaches - ARJA/GenProg/RSRepair/Kali
+		- All approaches output is in txt format
+			- this is NOT compatible with *NIX "patch" program AFAIK.
+			- the example output was in a repository called defects4j-patches
+				- defects4j i think is a program
+					- it might be able to apply the patches
+	- Source code is availiable
+	- Looks as if it will compile w/o specific build tool
+	- Patches need manual verification
+
+GenPat - https://github.com/xgdsmileboy/GenPat - Poor
+	- Uses patterns
+		- Only 2 example patterns are given.
+	(... evaluation of GenPat terminated after this)
+
+HistoricalFix - https://github.com/xuanbachle/bugfixes - Medium/Poor
+	- in historicalfixv2 folder
+		-is allLibs
+			-this, presumably are libraries for building the source
+				-delete this folder and reconstruct the whole folder from source
+		-is src
+			-this is written in scala, so you will need a scala compiler to build
+		-is faultFilter
+			-this contains many of, what are presumed, filters for the program
+	- there is also a repository from xuanbachle called data-bugfixes
+
+JFix - https://github.com/xuanbachle/semanticsrepair - Poor
+	- no sources found, all that was found was website code.
+
+fse-patchclone - https://github.com/xuanbachle/fse-patchclone - Poor
+	- does not contain many fixes
+
+JAID - https://bitbucket.org/maxpei/jaid - Medium/Good
+	- written in java
+	- requires a project properties file, as shown in jaid/example/af_test/af_test.properties
+		-program looks as if it only fixes individual methods, which are contained within classes
+	- jaid/lib directory contains binary libraries that need to be removed and compiled from source
+
+Java-RSRepair - https://github.com/qhanam/Java-RSRepair - Good
+	- written in java
+	- requires faulty.cov file and seed.cov ... they contain lines such as:
+	ca.uwaterloo.ece.qhanam.practice.lru:Node:10:0.1
+		- ca.uwaterloo.ece.qhanam.practice.lru is a directory in sample sources
+		- Node is the name of the java file eg. Node.java
+		- 10 is line number of a statement
+		- 0.1 is weight of statement (see readme.txt)
+		-good parts and bad parts can be found with a code coverage tool such as http://www.eclemma.org/jacoco/     (not evaluated here)
+	- program requires a build.xml
+
+QACrashFix - http://sei.pku.edu.cn/~gaoqing11/qacrashfix/ - Good
+	- i think it's written in java, though didn't download to check
+	- i think sources are availiable, though didn't download to check
+	- mines fixes from Q&A sites such as stack overflow
+
+Genesis - http://www.cs.toronto.edu/~fanl/program_repair/genesis-rep/index.html - Good
+	- written in java
+	- requires existing patches seed, but a data-v0.2.tar.gz 416MB file is given containing "Java AST trees"
+
+LSRepair - https://github.com/AutoProRepair/LSRepair - Good
+	-source code is in java
+	-contains some maven dependencies
+	-LSRepair/LSRepair/lib contains a binary jar, delete it and reconstruct/compile from source
+	-LSRepair/LSRepair patches are in SameSignature, Semantic, SimilarSignature, Syntactic
+		-these patches are txt files
+			they are NOT *NIX patch compatible
+	-Initial data contains GitCrawler.py which looks as if it crawls github for java files
+	-Defects4jBugs contains a script to get defects4j bugs, this needs looking over again
+
+SimFix - https://github.com/xgdsmileboy/SimFix - Medium/Good
+	-Source Code is in java, with some python and R
+	- d4j-info directory contains a txt file containing functions, that i think call defects4j test cases
+	- final directory contains all patch files generated by SimFix
+		- they are java files
+	-lib directory contains a load of binary jars that need to be compiled from source
+	-SimFix/sbfl/lib also contains one binary jar
+	-SimFix/stats has some stuff written in R
+
+SKETCHFIX - https://github.com/SketchFix/SketchFix - Good
+	- test cases are in JUnit framework
+	- java source file as input
+	-assumes the fault location is known
+	-generates sketches, which are patched pieces of java code ...
+	- ... then runs junit tests, eg. in support directory
+
+ssFix - https://github.com/qixin5/ssFix - Medium/Good
+	-i think this works by using the binary jar to help fix the source files, i'm not sure though
+	-uses a program called cocker to index code your base, program not evaluated in this document
+		-though cocker contains a server supposedly used to bypass a firewall
+	-the lib directory contains binary jars and needs to be removed, then reconstructed from source code
+	-the dependency jar file of the faulty program, could mean the binary jar, or could mean our reconstructed/purified version - IDK
+	-example Lang_21_buggy.tar.gz is not included, i think this can be found using defects4j
+
+NOPOL - https://github.com/SpoonLabs/nopol/ - Medium/Good
+	-contains server
+	-delete nopol/nopol/nopol-*-SNAPSHOT*.jar as it is a binary jar, then reconstruct
+	-delete nopol/nopol/lib as it contains both executables and binary jars, then reconstruct
+	-tests are in java 
+	-examples can be found in nopol/test/src
+
+NpeFix - https://github.com/Spirals-Team/npefix - Medium/Poor
+	- Looks like a partially complete program as output doesn't look that useful to me
+
+Repairinator - https://github.com/Spirals-Team/repairnator - Poor
+	-not simple.
+	- contains https://github.com/eclipse/repairnator/blob/master/doc/repair-tools.md
+	- might be able to extract the sequencer https://github.com/eclipse/repairnator/blob/master/src/repairnator-pipeline/src/main/java/fr/inria/spirals/repairnator/process/step/repair/sequencer/SequencerRepair.java
+
+TBar - https://github.com/SerVal-DTF/TBar - Good
+	- has lib directory with couple of jar binaries that need removing and reconstructing from source
+	- there is a target/dependency directory with jar binaries. this is in the git ignore. if it exists once TBar is cloned, try delete it and build w/o, else reconstruct using sources
+	- output is as .txt files
+		they should work with *NIX "patch" program
+	- not sure what source input format is
+		-possibly included in
+		TBar/D4J/projects/Chart_8.zip
+			- which seems to be a zipped defects4j project
+	- is written in java
+
+kGenProg - https://github.com/kusumotolab/kGenProg - Medium/Poor
+	- uses a custom maven repository
+	- requires path to test source code, the example source code was a junit testcase
+	- requires path to java file containing Main method
+	- no example output
+	- written in java
+
+kPAR - https://github.com/SerVal-DTF/FL-VS-APR/tree/master/kPAR - Good
+	- contains one binary jar in lib
+	- creates txt patch files as output
+		- that are compatible with *NIX patch
+	- is written in java
+
+AssertFixer - https://github.com/STAMP-project/AssertFixer
+
+Sorald - https://github.com/kth-tcs/sonarqube-repair
+
+Spoon - https://github.com/INRIA/spoon
+
+Cardumen
+Matias Martinez and Martin Monperrus. 2018. Ultra-Large Repair Search Spacewith Automatically Mined Templates: the Cardumen Mode of Astor. InProceed-ings of the 10th International Symposium on Search-Based Software Engineering(SSBSE ’18). Lecture Notes in Computer Science, vol 11036, Thelma Elita Colanziand Phil McMinn (Eds.). Springer International Publishing, Cham, 65–86.
+
+DeepRepair
+Martin White, Michele Tufano, Matias Martinez, Martin Monperrus, and DenysPoshyvanyk. 2019. Sorting and Transforming Program Repair Ingredients viaDeep Learning Code Similarities. InProceedings of the 26th IEEE InternationalConference on Software Analysis, Evolution and Reengineering (SANER ’19). IEEE,Hangzhou, China, 479–490.
+
+GenProg-A
+Yuan Yuan and Wolfgang Banzhaf. 2018. ARJA: Automated Repair of Java Pro-grams via Multi-Objective Genetic Programming.IEEE Transactions on SoftwareEngineeringPP (2018).
+
+jGenProg
+Matias Martinez and Martin Monperrus. 2016. ASTOR: A Program Repair Libraryfor Java. InProceedings of the 25th International Symposium on Software Testingand Analysis (ISSTA ’16), Demonstration Track. ACM, New York, NY, USA, 441–444.
+
+Kali-A
+Yuan Yuan and Wolfgang Banzhaf. 2018. ARJA: Automated Repair of Java Pro-grams via Multi-Objective Genetic Programming.IEEE Transactions on SoftwareEngineeringPP (2018).
+
+jKali
+Matias Martinez and Martin Monperrus. 2016. ASTOR: A Program Repair Libraryfor Java. InProceedings of the 25th International Symposium on Software Testingand Analysis (ISSTA ’16), Demonstration Track. ACM, New York, NY, USA, 441–444.
+
+HDRepair
+Xuan-Bach D. Le, Ferdian Thung, David Lo, and Claire Le Goues. 2018.  Over-fitting in semantics-based automated program repair. InProceedings of the 40thInternational Conference on Software Engineering (ICSE ’18). ACM, New York, NY,USA, 163–163.
+
+SOFix
+Xuliang Liu and Hao Zhong. 2018. Mining StackOverflow for Program Repair.InProceedings of the 25th IEEE International Conference on Software Analysis,Evolution and Reengineering (SANER ’18). IEEE, Campobasso, Italy, 118–129.
+
+xPar
+Xuan Bach D. Le, David Lo, and Claire Le Goues. 2016.  History Driven Pro-gram Repair. InProceedings of the 23rd IEEE International Conference on SoftwareAnalysis, Evolution and Reengineering (SANER ’16). IEEE, Suita, Japan, 213–224.
+
+PAR
+Dongsun Kim, Jaechang Nam, Jaewoo Song, and Sunghun Kim. 2013. AutomaticPatch Generation Learned from Human-Written Patches. InProceedings of the35th International Conference on Software Engineering (ICSE ’13). IEEE Press,Piscataway, NJ, USA, 802–811.
+
+RSRepair-A
+Yuan Yuan and Wolfgang Banzhaf. 2018. ARJA: Automated Repair of Java Pro-grams via Multi-Objective Genetic Programming.IEEE Transactions on SoftwareEngineeringPP (2018).
+
+CVC4
+
+Angelix
+
+Enumerative
+
+S3
+
+https://github.com/xuanbachle/syntax-guided-synthesis-repair/blob/master/main.py
+
+==Candidates that did not generate patches, or are patches or information only==
+
+program-repair - https://program-repair.org/tools.html
+- links to many program repair tools for different languages, including java 
+
+AnonymousPatch - https://github.com/AnonymousPatch/AnonymousPatch
+	-patches are in format *NIX "patch program understands", patches seem to be for java
+	-are output patches only
+	-jGenProg, jKali
+	-Nopol and S3
+	-Angelix, Enumerative and CVC4 "embedded in JFix"
+	-used the defects4j dataset
+
+Glade - https://github.com/obastani/glade
+- sources seem to be in java
+- has options for 'learn' and 'fuzz'
+- does not seem to repair code
+
+patchgen
+- provides link to Genesis and explains a bit about Kali
+
+Wikipedia, Automatic Bug Fixing - https://en.wikipedia.org/wiki/Automatic_bug_fixing
+- links to PAR, NOPOL, QACrashFix, Astor, ARJA, NpeFix
+
+Empirical Review of Java Program Repair Tools - https://arxiv.org/pdf/1905.11973.pdf
+- mentions ACS, ARJA, CapGen, Cardumen, DeepRepair, ELIXIR, GenProg-A, HDRepair, JAID, jGenProj, jKali, jMutRepair, Kali-A, LSRepair, PAR, RSRepair-A, SimFix, SKETCHFIX, SOFix, ssFix, xPar
+
+defects4j
+	-programs that use seem to produce .txt *NIX style patches?
+	-programs create folders FixedBugs and PartiallyFixedBugs, containing said output patches?
+
+JUnit 
+	-is a test framework
+	-code is often mutated before being fed into this
+
+#go over this:
+https://www.sei.cmu.edu/our-work/projects/display.cfm?customel_datapageid_4050=4555
+	- links to
+	- SCALe https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=10091
+	- CERT secure coding standard rules https://wiki.sei.cmu.edu/confluence/display/seccode/SEI+CERT+Coding+Standards
+	- Rose a framework for source code transformation http://rosecompiler.org/

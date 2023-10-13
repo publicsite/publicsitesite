@@ -1,0 +1,26 @@
+//Independent can be anything eg. The price of fish
+//Dependent can be anything eg. Solar
+//x can be anything eg. station index, y can be anything eg. 15 minute slot index
+//in the above EGs, it would predict the next 15 minute rainfall value for a station
+//given previous daily 15 minute data on both solar and the price of fish for all stations
+//and also given the latest day's Rain data for all stations
+
+archiveIndependent[numx][numy]
+archiveDependent[numx]
+
+// work out 2D coefficients for our 3D data
+numberProcessed = 0
+for (x = 0; x < numx; ++x)
+{
+	for (y = 0; y < numy; ++y)
+	{
+		coefficient[y] = ((archiveDependent[x]/archiveIndependent[x][y]) + (coefficient[y] * x)) / (x + 1))
+	}
+}
+
+// get the average of our coefficient multiplied by the latest independent variable
+forecastDependent = 0;
+for (y = 0; y < numy; ++y)
+	forecastDependent += (latestIndependent[y] * coefficient[y])
+
+forecastDependent = forecastDependent/numy

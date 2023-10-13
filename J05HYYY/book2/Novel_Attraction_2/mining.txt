@@ -1,0 +1,6 @@
+The scout searches for opportunities to mine and manafacture. The scout does the equivalent of prospecting in order for the company to exploit resources. The scout does this for the scheduler.
+The scheduler holds the master schedule of all the jobs that are to be done. This includes mining, manafacturing and can include analysis.
+The analyst is an intermediate role that assists the miners. The analyst produces reports for a job about good places to mine for the scope of that job.
+The miner mines raw materials. Raw materials are sometimes screened by the miners.
+The manafacturer is the secondary producer that creates the final product from the raw materials gathered by the miners.
+The product is then shipped, often using the services of a shipping company.

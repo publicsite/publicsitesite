@@ -1,0 +1,46 @@
+=== List of visualizers w/ sources (condensed from https://wiki.thingsandstuff.org/Visuals) ====
+ffmpeg -filters
+	--lavfi-complex=<string>
+ProjectM
+http://cthughanix.sourceforge.net/
+https://github.com/DISTRHO/ProM - projectM is an awesome music visualizer. DISTRHO ProM makes it work as an audio plugin (LV2 and VST).
+https://github.com/vovoid/vsxu - http://www.vsxu.com/ - (VSX Ultra) is an OpenGL-based (hardware-accelerated), modular programming environment with its main purpose to visualize music and create graphic effects in real-time.
+https://github.com/scottdraves/bomb - 90s open source artwork "bomb" now on github.
+https://github.com/scottdraves/flam3 - cosmic recursive fractal flames
+https://github.com/m-labs/flickernoise
+https://github.com/zbanks/radiance - https://radiance.video/ - video art software for Mac and Linux VJs. It supports beat detection, animated GIFs, YouTube video, and OpenGL shader effects. 
+	https://github.com/zbanks/radiance_controller
+https://sourceforge.net/projects/goom - https://github.com/notspiff/visualization.goom - http://www.fovea.cc/?page=details_produits&id=goom - allows you to admire your music! It's a cool visual effects generator for almost every multimedia player. (Goom will dazzle you with its hypnotic ...) It includes a large number of trippy hypnotic effects that dance, swirl and pop with the music. 
+https://github.com/djfun/audio-visualizer-python - a little GUI tool which creates an audio visualization video from an input audio. You can also give it a background image and set a title text. tested on Linux (Ubuntu 16.04) and Windows (Windows 7), it should also work on Mac OS X.
+https://github.com/paulbatchelor/kubus - https://ccrma.stanford.edu/~pbatch/256a/hw2/ - is a minimalist audio visualizer, written in C/C++ using OpenGL and RtAudio. The aesthetic of Kubus draws inspiration from artists like Ryoji Ikeda and Viznut. Audio input is buffered into Kubus 1024 samples at a time, where it is sequentially mapped onto a 32 x 32 grid of squares. The amplitude of each particular sample controls the square color's lightness at that point in time. If FFT mode is enabled, the FFT bins are mapped onto the grid as well, controlling the saturation level of the squares. 
+https://github.com/jlblatt/Teardrop - using the Web Audio API and a more traditional method of visualizing an audio signal. Teardrop implements time & frequency domain analyses, as well as beat detection, and uses WebGL to render 3D graphics inside of the browser.
+https://github.com/kritzikratzi/Oscilloscope - https://asdfg.me/osci/ - ?linux? - A software oscilloscope made for looking at music. Drop an audio file in the application and watch the waveforms. 
+https://github.com/ex-zee-ex/phosphorm - an audio visual synthesizers optimized for x-y oscilloscope displays for the waaave pool distro
+https://github.com/rodneydup/Alloscope - A cross-platform X-Y (octopus) Oscilloscope built in Allolib
+https://github.com/ex-zee-ex/VIDEO_WAAAVES_2 - a playground for video feedback synthesis
+https://github.com/ex-zee-ex/waaaave_pool - a port of video_waaaves to raspberry pi
+https://github.com/jberg/butterchurn - https://butterchurnviz.com/ - Butterchurn is a WebGL implementation of the Milkdrop Visualizer
+	https://github.com/jberg/milkdrop-preset-converter - Convert Milkdrop presets to Butterchurn JSON format
+	https://github.com/jberg/milkdrop-eel-parser - Parses NSEEL2 equations and converts them to Javascript for use within Butterchurn
+	https://github.com/captbaritone/eel-wasm - EEL-Wasm is a compiler, written in TypeScript, that can convert Milkdrop EEL source code into a WebAssembly module in the browser.
+	https://github.com/jberg/butterchurn-video-creator - Create videos of Milkdrop presets using Butterchurn
+https://github.com/jarcode-foss/glava - an OpenGL audio spectrum visualizer. Its primary use case is for desktop windows or backgrounds. Development is active, and reporting issues is encouranged.
+https://gitlab.com/CalcProgrammer1/KeyboardVisualizer - Razer Chroma, Corsair RGB, and other RGB peripherals spectrograph visualizer for Windows and Linux
+https://github.com/xdaimon/music_visualizer - Shader viewer / music visualizer for Windows and Linux
+http://www.niallmoody.com/heilan/index.htm - a cross-platform OpenGL X3D browser written in C++ and designed for audiovisual performance.
+https://github.com/ojack/hydra - a platform for live coding visuals, in which each connected browser window can be used as a node of a modular and distributed video synthesizer. 
+https://github.com/hvianna/audioMotion.js - a high-resolution real-time audio spectrum analyzer and full-featured music player written in JavaScript.
+https://github.com/PaulSlocum/magic-carpet - A generative audiovisual artwork that produces imagery using rapidly spinning photos of rugs and quilts. Magic Carpet is written in cross-platform C++ using SDL with minimal dependencies. It currently builds for Raspberry Pi and iOS, and it should be possible to add builds for Android and Windows. This code was ported from my original Magic Carpet iOS Objective C app.
+http://nestimmersion.ca/nestdrop.html - - allows you to perform with high-resolution high-fps visuals which react in realtime to the music and then broadcasts the video via Spout. Since the Milkdrop engine is at the core you can easily bring in your own Milkdrop presets. Use any audio source to drive the visuals, even live audio. We know that your attention bandwidth is already in high demand and so we've streamlined NestDrop to be simple and fast to use.
+https://soundshader.github.io/gallery/ - Different images use slightly different coloring schemes. Usually, linear mapping of ACF values to color brightness produces the best results, but in a few cases I had to use a more sophisticated scheme to capture a mix of too low and too high ACF values, which often happens in loud club music. The only reason a coloring scheme is needed at all is the very limited brightness range of LCD monitors: those generally can’t display pixels that differ in brightness 10,000 times.
+https://github.com/soundshader/soundshader.github.io - ACF is a simple method to visualize music that produces surprisingly good results. Perhaps the most unexpected property of ACF is that it accurately transfers the subjective "harmony level" from music to images. It's almost an unreasonable property, if you think about it. Images below are ACF height maps in polar coordinates.
+https://github.com/orlammd/pytaVSL - python tiny alpproximative VSL. It's a VJing and lights-projector virtualization program using pi3d.
+	https://github.com/PlagiatBros/pytaVSL
+https://github.com/zbanks/radiance - https://radiance.video/ - Chain together simple building blocks to create fantastic video effects. All rendering is GPU-accelerated for good performance, even on laptops. Radiance comes pre-loaded with over 150 effects, which are written in GLSL and can be edited live. .video art software for VJs. It supports beat detection, animated GIFs, YouTube video, OpenGL shader effects. It is designed for live performance and runs on Linux and MacOS.
+https://github.com/Tremeschin/modular-music-visualizer - High quality video music visualization tool for the music production community. Support for Piano Roll and Music Bars mode, post processing with experimental custom GLSL shaders.
+https://github.com/dpayne/cli-visualizer - Command line visualizer. Supports mpd, with experimental support for alsa and pulseaudio.This project was heavily inspired by C.A.V.A, ncmpcpp, and rainbow
+https://github.com/longmakesstuff/FFT-Power-Spectrum
+https://github.com/Dougal-s/Vkav - an audio visualizer written in C++ using Vulkan as its rendering backend.
+http://spectrum3d.sourceforge.net/ - displays a 3D audio spectrogram in real time or not from the microphone or an audio file (including recorded file from the microphone); it is compatible with Jack (jack-audio-connection-kit). Optionally, it supports multitouch gestures from touchscreen and touchpad. It is build with the Gstreamer, SDL (or Gtkglext), OpenGl, GTK+-2.0 and uTouch-Geis free libraries and is under GPL license. It is written for Ubuntu but works for other Linux distributions except for the multitouch frame (the uTouch suite is now available for Ubuntu).Spectrum3d can be compiled against GTK2 or GTK3. SDL will be used as the OpenGL extension by default untill GtkGlExt has a stable release for GTK3 (however, GtkGlExt can be used already in Spectrum3d, including the development version (GTKGLEXT3 for GTK3), but this has to be specifically enabled at the time of compiling).
+https://github.com/simoncrowe/stylegan2-jack-visualizer - Visualise the spectral density of a JACK client's audio output in real time using StyleGAN 2
+https://github.com/TimArt/3DAudioVisualizers - An OpenGL Audio Visualizer suite in C++ using JUCE for Audio and GUI.
