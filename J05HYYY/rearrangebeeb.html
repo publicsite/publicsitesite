@@ -37,11 +37,11 @@ responseText=replaceAll(responseText,"\"/sport","\"https://www.bbc.co.uk/sport")
 document.getElementById("testdiv").innerHTML=responseText;
 
 }
-    
+
 function xmlhttpPost(strURL) {
 //here we use a cors proxy
-var newurl = newurl = 'https://api.allorigins.win/raw?' + 'nocache=' + Date.now() + '&' + 'url=';
-//var newurl = newurl = 'https://api.allorigins.win/raw?' + 'url=';
+//var newurl = newurl = 'https://api.allorigins.win/raw?' + 'nocache=' + Date.now() + '&' + 'url=';
+var newurl = newurl = 'https://api.allorigins.win/raw?' + 'url=';
 
 url = newurl + strURL;
 
