@@ -1,4 +1,9 @@
 <html>
+<head>
+<meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='0'>
+<meta http-equiv='pragma' content='no-cache'>
+
 <script language="Javascript">
 
 function escapeRegExp(string) {
@@ -11,12 +16,20 @@ function replaceAll(str, find, replace) {
 
 function updatepage(responseText){
 
+responseText=replaceAll(responseText, "\"/news","\"https://www.bbc.co.uk/news");
+responseText=replaceAll(responseText,"\"/sport","\"https://www.bbc.co.uk/sport");
+
 document.getElementById("testdiv").innerHTML=responseText;
 
 
 mainContent=document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[0].innerHTML;
-another=document.getElementById("testdiv").querySelectorAll('[class="ssrcss-le5mn8-Container e1lr2am05"]')[0].innerHTML;
+another=""
+if (typeof document.getElementById("testdiv").querySelectorAll('[class$="-Container e1lr2am05"]')[0] !== 'undefined')
+another=document.getElementById("testdiv").querySelectorAll('[class$="-Container e1lr2am05"]')[0].innerHTML;
+
+
 mostRead=document.getElementById("testdiv").querySelector('[data-component="mostRead"]').innerHTML;
+
 mostWatched=document.getElementById("testdiv").querySelector('[data-component="mostWatched"]').innerHTML;
 sport=document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[3].innerHTML;
 thetwo=document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[2].innerHTML;
@@ -24,24 +37,33 @@ theone=document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44s
 
 document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[0].innerHTML=mostRead;
 document.getElementById("testdiv").querySelector('[data-component="mostWatched"]').innerHTML=thetwo;
-document.getElementById("testdiv").querySelectorAll('[class="ssrcss-le5mn8-Container e1lr2am05"]')[0].innerHTML=mainContent;
+if (another != ""){
+document.getElementById("testdiv").querySelectorAll('[class*="-Container e1lr2am05"]')[0].innerHTML=mainContent;
 document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[1].innerHTML=theone;
 document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[2].innerHTML=another;
+}
+else
+{
+//document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[1].innerHTML=mainContent;
+//document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[2].innerHTML=theone;
+document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[2].innerHTML=mainContent;
+document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[3].innerHTML=theone;
+alert("awoo");
+}
+
+
 
 document.getElementById("testdiv").querySelector('[data-component="mostRead"]').innerHTML=sport;
 document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[3].innerHTML=mostWatched
 
-responseText=document.getElementById("testdiv").innerHTML;
-responseText=replaceAll(responseText, "\"/news","\"https://www.bbc.co.uk/news");
-responseText=replaceAll(responseText,"\"/sport","\"https://www.bbc.co.uk/sport");
-document.getElementById("testdiv").innerHTML=responseText;
+//document.getElementById("testdiv").innerHTML=responseText;
 
 }
 
 function xmlhttpPost(strURL) {
 //here we use a cors proxy
-//var newurl = newurl = 'https://api.allorigins.win/raw?' + 'nocache=' + Date.now() + '&' + 'url=';
-var newurl = newurl = 'https://api.allorigins.win/raw?' + 'url=';
+var newurl = newurl = 'https://api.allorigins.win/raw?' + 'nocache=' + Date.now() + '&' + 'url=';
+//var newurl = newurl = 'https://api.allorigins.win/raw?' + 'url=';
 
 url = newurl + strURL;
 
@@ -66,7 +88,7 @@ url = newurl + strURL;
 }
 
 </script>
-
+</head>
 <body id="awoo" onload="xmlhttpPost('http://www.bbc.co.uk/news');">
 <div id="testdiv"></div>
 </body>
