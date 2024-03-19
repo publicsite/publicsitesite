@@ -1,7 +1,16 @@
 <html>
 <script language="Javascript">
 
+function escapeRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+}
+
+function replaceAll(str, find, replace) {
+  return str.replace(new RegExp(escapeRegExp(find), 'g'), replace);
+}
+
 function updatepage(responseText){
+
 document.getElementById("testdiv").innerHTML=responseText;
 
 
@@ -22,34 +31,13 @@ document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Cont
 document.getElementById("testdiv").querySelector('[data-component="mostRead"]').innerHTML=sport;
 document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[3].innerHTML=mostWatched
 
-
-
-//document.getElementById("testdiv").innerHTML=testdiv;
-
-/*
-newText=responseText;
-alert(newText);
-searchText="urn:bbc:onward-journeys:most:read?=site=News";
-position = newText.search(searchText);
-newText=newText.slice(position);
-alert(position);
-
-searchText="link";
-position = newText.search(searchText);
-newText=newText.slice(position);
-
-searchText='"';
-position = newText.search(searchText);
-newText=newText.slice(position);
-
-searchText='"';
-position = newText.search(searchText);
-alert(newText.slice(0,position));
-*/
-
+responseText=document.getElementById("testdiv").innerHTML;
+responseText=replaceAll(responseText, "\"/news","\"https://www.bbc.co.uk/news");
+responseText=replaceAll(responseText,"\"/sport","\"https://www.bbc.co.uk/sport");
+document.getElementById("testdiv").innerHTML=responseText;
 
 }
-
+    
 function xmlhttpPost(strURL) {
 //here we use a cors proxy
 var newurl = newurl = 'https://api.allorigins.win/raw?' + 'nocache=' + Date.now() + '&' + 'url=';
