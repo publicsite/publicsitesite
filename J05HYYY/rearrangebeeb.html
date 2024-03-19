@@ -5,22 +5,23 @@ function updatepage(responseText){
 document.getElementById("testdiv").innerHTML=responseText;
 
 
-mainContent=document.getElementById("testdiv").querySelectorAll('[class="ssrcss-p44stw-Container eqfxz1e7"]')[0].innerHTML;
+mainContent=document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[0].innerHTML;
+alert(mainContent);
 another=document.getElementById("testdiv").querySelectorAll('[class="ssrcss-le5mn8-Container e1lr2am05"]')[0].innerHTML;
 mostRead=document.getElementById("testdiv").querySelector('[data-component="mostRead"]').innerHTML;
 mostWatched=document.getElementById("testdiv").querySelector('[data-component="mostWatched"]').innerHTML;
-sport=document.getElementById("testdiv").querySelectorAll('[class="ssrcss-p44stw-Container eqfxz1e7"]')[3].innerHTML;
-thetwo=document.getElementById("testdiv").querySelectorAll('[class="ssrcss-p44stw-Container eqfxz1e7"]')[2].innerHTML;
-theone=document.getElementById("testdiv").querySelectorAll('[class="ssrcss-p44stw-Container eqfxz1e7"]')[1].innerHTML;
+sport=document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[3].innerHTML;
+thetwo=document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[2].innerHTML;
+theone=document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[1].innerHTML;
 
-document.getElementById("testdiv").querySelectorAll('[class="ssrcss-p44stw-Container eqfxz1e7"]')[0].innerHTML=mostRead;
+document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[0].innerHTML=mostRead;
 document.getElementById("testdiv").querySelector('[data-component="mostWatched"]').innerHTML=thetwo;
 document.getElementById("testdiv").querySelectorAll('[class="ssrcss-le5mn8-Container e1lr2am05"]')[0].innerHTML=mainContent;
-document.getElementById("testdiv").querySelectorAll('[class="ssrcss-p44stw-Container eqfxz1e7"]')[1].innerHTML=theone;
-document.getElementById("testdiv").querySelectorAll('[class="ssrcss-p44stw-Container eqfxz1e7"]')[2].innerHTML=another;
+document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[1].innerHTML=theone;
+document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[2].innerHTML=another;
 
 document.getElementById("testdiv").querySelector('[data-component="mostRead"]').innerHTML=sport;
-document.getElementById("testdiv").querySelectorAll('[class="ssrcss-p44stw-Container eqfxz1e7"]')[3].innerHTML=mostWatched
+document.getElementById("testdiv").querySelectorAll('[class*="ssrcss-p44stw-Container eqfx"]')[3].innerHTML=mostWatched
 
 
 
