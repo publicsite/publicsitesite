@@ -156,9 +156,9 @@ var theEntry = '<a href="' + myobj.xml.feed.entry[i].link._href + '">' + myobj.x
 }
 
 function xmlhttpPost(strURL, feed_name, index) {
-var newurl = 'https://api.allorigins.win/json?' + 'nocache=' + Date.now() + '&' + 'url=';
+var newurl = 'https://api.allorigins.win/json?url=';
 //var newurl = 'https://api.allorigins.win/raw?url=';
-    var url = newurl + strURL;
+    var url = newurl + encodeURIComponent(strURL + '&' + 'nocache=' + Date.now());
 
 //here we use yahoo yql as a cors proxy
 var newurl = '';
