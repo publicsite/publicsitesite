@@ -297,6 +297,8 @@ var theEntry = '<a href="' + myobj.rss.channel.item[i].link + '">' + myobj.rss.c
 
 }
 
+var tryagain=0;
+	
 function xmlhttpPost(strURL, feed_name, index) {
 //var newurl = 'https://api.allorigins.win/json?url=';
 var newurl = 'https://test.cors.workers.dev/?';
@@ -322,11 +324,12 @@ var newurl = '';
     self.xmlHttpReq.onload = function() {
         if (self.xmlHttpReq.status == 200) {
 		updatepage(self.xmlHttpReq.responseText, feed_name, index);
+		tryagain=0;
         }
 	else if (self.xmlHttpReq.status == 405) {
-		alert("Argh. Buggy CORS ... trying this one again.");
-		xmlhttpPost(strURL, feed_name, index);
+		tryagain=405;
 	}
+	else tryagain=0;
     }
 
     self.xmlHttpReq.send();
@@ -366,6 +369,11 @@ var feed_names = [
 	{
 		alert("Getting " + feed_names[index] + "...");
 		xmlhttpPost(feed_urls[index], feed_names[index], index)
+		while (tryagain=405)
+			{
+				alert("Argh. Buggy CORS ... trying this one again.");
+				xmlhttpPost(strURL, feed_name, index);
+			}
 	}
 	
 	alert("Done getting feeds. Now Processing");
