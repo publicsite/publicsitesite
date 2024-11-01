@@ -299,7 +299,7 @@ var theEntry = '<a href="' + myobj.rss.channel.item[i].link + '">' + myobj.rss.c
 
 function xmlhttpPost(strURL, feed_name, index) {
 //var newurl = 'https://api.allorigins.win/json?url=';
-var newurl = 'http://www.whateverorigin.org/get?url=';
+var newurl = 'https://api.codetabs.com/v1/proxy/?quest=';
 //var newurl = 'https://api.allorigins.win/raw?url=';
     //var url = newurl + encodeURIComponent(strURL + '&' + 'nocache=' + Date.now());
 var url = newurl + strURL;
@@ -321,10 +321,7 @@ var newurl = '';
     self.xmlHttpReq.setRequestHeader('Content-Type', 'application/rss+xml');
     self.xmlHttpReq.onload = function() {
         if (self.xmlHttpReq.status == 200) {
-		//change to this if using a different CORS proxy
-		//var theresponse=self.xmlHttpReq.responseText
-		var theresponse=JSON.parse(self.xmlHttpReq.responseText).contents;
-            updatepage(theresponse, feed_name, index);
+		updatepage(self.xmlHttpReq.responseText, feed_name, index);
         }
     }
 
