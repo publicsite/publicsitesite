@@ -299,10 +299,10 @@ var theEntry = '<a href="' + myobj.rss.channel.item[i].link + '">' + myobj.rss.c
 
 function xmlhttpPost(strURL, feed_name, index) {
 //var newurl = 'https://api.allorigins.win/json?url=';
-//var newurl = 'https://test.cors.workers.dev/?';
-var newurl = 'https://api.allorigins.win/raw?url=';
-    var url = newurl + encodeURIComponent(strURL + '&' + 'nocache=' + Date.now());
-//var url = newurl + strURL;
+var newurl = 'https://test.cors.workers.dev/?';
+//var newurl = 'https://api.allorigins.win/raw?url=';
+    //var url = newurl + encodeURIComponent(strURL + '&' + 'nocache=' + Date.now());
+var url = newurl + strURL;
 	
 //here we use yahoo yql as a cors proxy
 var newurl = '';
