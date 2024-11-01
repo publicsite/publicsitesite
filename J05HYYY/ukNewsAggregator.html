@@ -302,7 +302,7 @@ function xmlhttpPost(strURL, feed_name, index) {
 var newurl = 'http://www.whateverorigin.org/get?url=';
 //var newurl = 'https://api.allorigins.win/raw?url=';
     //var url = newurl + encodeURIComponent(strURL + '&' + 'nocache=' + Date.now());
-var url = newurl + encodeURIComponent(strURL);
+var url = newurl + strURL;
 	
 //here we use yahoo yql as a cors proxy
 var newurl = '';
