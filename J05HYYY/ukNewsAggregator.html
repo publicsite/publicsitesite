@@ -301,8 +301,9 @@ function xmlhttpPost(strURL, feed_name, index) {
 //var newurl = 'https://api.allorigins.win/json?url=';
 var newurl = 'http://www.whateverorigin.org/get?url=';
 //var newurl = 'https://api.allorigins.win/raw?url=';
-    var url = newurl + encodeURIComponent(strURL + '&' + 'nocache=' + Date.now());
-
+    //var url = newurl + encodeURIComponent(strURL + '&' + 'nocache=' + Date.now());
+var url = newurl + encodeURIComponent(strURL);
+	
 //here we use yahoo yql as a cors proxy
 var newurl = '';
 //"select title,link,pubDate from rss where url='"
@@ -321,8 +322,8 @@ var newurl = '';
     self.xmlHttpReq.onload = function() {
         if (self.xmlHttpReq.status == 200) {
 		//change to this if using a different CORS proxy
-		//theresponse=self.xmlHttpReq.responseText
-		theresponse=JSON.parse(self.xmlHttpReq.responseText).contents;
+		//var theresponse=self.xmlHttpReq.responseText
+		var theresponse=JSON.parse(self.xmlHttpReq.responseText).contents;
             updatepage(theresponse, feed_name, index);
         }
     }
