@@ -323,6 +323,10 @@ var newurl = '';
         if (self.xmlHttpReq.status == 200) {
 		updatepage(self.xmlHttpReq.responseText, feed_name, index);
         }
+	else if (self.xmlHttpReq.status == 405) {
+		alert("Argh. Buggy CORS ... trying this one again.");
+		xmlhttpPost(strURL, feed_name, index);
+	}
     }
 
     self.xmlHttpReq.send();
