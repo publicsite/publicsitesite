@@ -6,7 +6,8 @@
 <title>UK News Aggregator</title>
 <script src="https://cdn.jsdelivr.net/gh/abdmob/x2js/xml2json.js"></script>
 <script>
-
+var tryagain=405;
+	
 function matchingFunction(title, description){
 
 	if ( description != "" )
@@ -296,8 +297,6 @@ var theEntry = '<a href="' + myobj.rss.channel.item[i].link + '">' + myobj.rss.c
 //document.body.innerHTML = JSON.stringify(myobj.item);
 
 }
-
-var tryagain=405;
 	
 function xmlhttpPost(strURL, feed_name, index) {
 //var newurl = 'https://api.allorigins.win/json?url=';
@@ -337,7 +336,7 @@ var newurl = '';
 }
 
 function aggregate(){
-
+	
 var feed_urls = [
 "https://www.dailymail.co.uk/articles.rss",
 "https://www.express.co.uk/posts/rss/77/news",
