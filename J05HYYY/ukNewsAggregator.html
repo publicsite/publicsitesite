@@ -372,7 +372,7 @@ var feed_names = [
 		while (tryagain==405)
 			{
 				alert("Argh. Buggy CORS ... trying this one again.");
-				xmlhttpPost(strURL, feed_name, index);
+				xmlhttpPost(feed_urls[index], feed_names[index], index);
 			}
 	}
 	
