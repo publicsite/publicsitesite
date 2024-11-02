@@ -146,13 +146,13 @@ var feed_names = [
 			feed_name=feed_names[index];
 			//alert(entries.length);
 
-			//newurl = 'https://api.allorigins.win/raw?url=';
-			newurl = 'http://www.whateverorigin.org/get?url='
+			newurl = 'https://api.allorigins.win/raw?url=';
+			//newurl = 'http://www.whateverorigin.org/get?url='
 			url = newurl + encodeURIComponent(strURL) + '&' + 'nocache=' + Date.now();
 
   			copiedstr = await fetchFunction(url);
-			//str = copiedstr
-			str = JSON.parse(copiedstr).contents.toString();
+			str = copiedstr
+			//str = JSON.parse(copiedstr).contents.toString();
 			
 				myobj = x2js.xml_str2json(str);
 				//alert(myobj.rss.channel.item.length);
