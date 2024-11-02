@@ -311,8 +311,8 @@ function reqonload() {
 */
 
 async function getData(strURL, feed_name, index) {
-	var newurl = 'https://test.cors.workers.dev/?';
-	var url = newurl + strURL;
+	newurl = 'https://test.cors.workers.dev/?';
+	url = newurl + strURL;
 
 	try {
   		const response = await fetch(url);
