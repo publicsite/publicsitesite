@@ -6,7 +6,6 @@
 <title>UK News Aggregator</title>
 <script src="https://cdn.jsdelivr.net/gh/abdmob/x2js/xml2json.js"></script>
 <script>
-var tryagain=405;
 	
 function matchingFunction(title, description){
 
@@ -322,10 +321,10 @@ async function getData(strURL, feed_name, index) {
   		}
 	  
 	  	updatepage(response, feed_name, index);
-	  	tryagain=0;
+	  	return 0;
   	} catch (error) {
 		console.error(error.message);
-		tryagain=405;
+		return 405;
 	}
 }
 
@@ -391,11 +390,11 @@ var feed_names = [
 	for (index=0; index < feed_urls.length; ++index)
 	{
 		alert("Getting " + feed_names[index] + "...");
-		getData(feed_urls[index], feed_names[index], index)
+		tryagain = getData(feed_urls[index], feed_names[index], index)
 		while (tryagain==405)
 			{
 				alert("Argh. Buggy CORS ... trying this one again.");
-				getData(feed_urls[index], feed_names[index], index);
+				tryagain = getData(feed_urls[index], feed_names[index], index);
 			}
 	}
 	
