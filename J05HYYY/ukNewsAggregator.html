@@ -150,8 +150,10 @@ var feed_names = [
 			newurl = 'http://www.whateverorigin.org/get?url='
 			url = newurl + encodeURIComponent(strURL) + '&' + 'nocache=' + Date.now();
 
-  			str = await fetchFunction(url);
-
+  			copiedstr = await fetchFunction(url);
+			//str = copiedstr
+			str = toString(JSON.parse(copiedstr).contents);
+			
 				myobj = x2js.xml_str2json(str);
 				//alert(myobj.rss.channel.item.length);
 				for (i=0; i < myobj.rss.channel.item.length; i++)
