@@ -311,8 +311,11 @@ function reqonload() {
 */
 
 async function getData(strURL, feed_name, index) {
-	newurl = 'https://test.cors.workers.dev/?';
-	url = newurl + strURL;
+	//newurl = 'https://test.cors.workers.dev/?';
+	//url = newurl + strURL;
+
+	newurl = 'https://api.allorigins.win/raw?url=';
+        url = newurl + encodeURIComponent(strURL + '&' + 'nocache=' + Date.now());
 
 	try {
   		const response = await fetch(url);
