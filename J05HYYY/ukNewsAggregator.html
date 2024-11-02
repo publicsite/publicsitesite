@@ -297,6 +297,17 @@ var theEntry = '<a href="' + myobj.rss.channel.item[i].link + '">' + myobj.rss.c
 //document.body.innerHTML = JSON.stringify(myobj.item);
 
 }
+
+function reqonload() {
+        if (self.xmlHttpReq.status == 200) {
+		updatepage(self.xmlHttpReq.responseText, feed_name, index);
+		tryagain=0;
+        }
+	else if (self.xmlHttpReq.status == 405) {
+		tryagain=405;
+	}
+	else tryagain=0;
+}
 	
 function xmlhttpPost(strURL, feed_name, index) {
 //var newurl = 'https://api.allorigins.win/json?url=';
@@ -320,16 +331,7 @@ var newurl = '';
 
     self.xmlHttpReq.open('GET', newurl + url, false);
     self.xmlHttpReq.setRequestHeader('Content-Type', 'application/rss+xml');
-    self.xmlHttpReq.onload = function() {
-        if (self.xmlHttpReq.status == 200) {
-		updatepage(self.xmlHttpReq.responseText, feed_name, index);
-		tryagain=0;
-        }
-	else if (self.xmlHttpReq.status == 405) {
-		tryagain=405;
-	}
-	else tryagain=0;
-    }
+    self.xmlHttpReq.onload = reqonload();
 
     self.xmlHttpReq.send();
 
