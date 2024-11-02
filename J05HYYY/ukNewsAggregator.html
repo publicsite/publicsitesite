@@ -326,7 +326,6 @@ async function getData(strURL, feed_name, index) {
 	  	updatepage(response, feed_name, index);
 	  	return 0;
   	} catch (error) {
-		console.error(error.message);
 		return 405;
 	}
 }
@@ -393,7 +392,7 @@ var feed_names = [
 	for (index=0; index < feed_urls.length; ++index)
 	{
 		alert("Getting " + feed_names[index] + "...");
-		tryagain = getData(feed_urls[index], feed_names[index], index)
+		tryagain = getData(feed_urls[index], feed_names[index], index);
 		while (tryagain==405)
 			{
 				alert("Argh. Buggy CORS ... trying this one again.");
