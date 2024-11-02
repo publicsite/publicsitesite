@@ -298,6 +298,7 @@ var theEntry = '<a href="' + myobj.rss.channel.item[i].link + '">' + myobj.rss.c
 
 }
 
+/*
 function reqonload() {
         if (self.xmlHttpReq.status == 200) {
 		updatepage(self.xmlHttpReq.responseText, feed_name, index);
@@ -308,7 +309,27 @@ function reqonload() {
 	}
 	else tryagain=0;
 }
-	
+*/
+
+async function getData(strURL, feed_name, index) {
+	var newurl = 'https://test.cors.workers.dev/?';
+	var url = newurl + strURL;
+
+	try {
+  		const response = await fetch(url);
+  		if (!response.ok) {
+  			throw new Error(`Response status: ${response.status}`);
+  		}
+	  
+	  	updatepage(response, feed_name, index);
+	  	tryagain=0;
+  	} catch (error) {
+		console.error(error.message);
+		tryagain=405;
+	}
+}
+
+/*
 function xmlhttpPost(strURL, feed_name, index) {
 //var newurl = 'https://api.allorigins.win/json?url=';
 var newurl = 'https://test.cors.workers.dev/?';
@@ -336,6 +357,7 @@ var newurl = '';
     self.xmlHttpReq.send();
 
 }
+*/
 
 function aggregate(){
 	
@@ -369,11 +391,11 @@ var feed_names = [
 	for (index=0; index < feed_urls.length; ++index)
 	{
 		alert("Getting " + feed_names[index] + "...");
-		xmlhttpPost(feed_urls[index], feed_names[index], index)
+		getData(feed_urls[index], feed_names[index], index)
 		while (tryagain==405)
 			{
 				alert("Argh. Buggy CORS ... trying this one again.");
-				xmlhttpPost(feed_urls[index], feed_names[index], index);
+				getData(feed_urls[index], feed_names[index], index);
 			}
 	}
 	
