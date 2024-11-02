@@ -146,8 +146,9 @@ var feed_names = [
 			feed_name=feed_names[index];
 			//alert(entries.length);
 
-			newurl = 'https://api.allorigins.win/raw?url=';
-        		url = newurl + encodeURIComponent(strURL) + '&' + 'nocache=' + Date.now();
+			//newurl = 'https://api.allorigins.win/raw?url=';
+			newurl = 'http://www.whateverorigin.org/get?url='
+			url = newurl + encodeURIComponent(strURL) + '&' + 'nocache=' + Date.now();
 
   			str = await fetchFunction(url);
 
