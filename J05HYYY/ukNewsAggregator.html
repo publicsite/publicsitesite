@@ -152,7 +152,7 @@ var feed_names = [
 
   			copiedstr = await fetchFunction(url);
 			//str = copiedstr
-			str = toString(JSON.parse(copiedstr).contents);
+			str = JSON.parse(copiedstr).contents.toString();
 			
 				myobj = x2js.xml_str2json(str);
 				//alert(myobj.rss.channel.item.length);
