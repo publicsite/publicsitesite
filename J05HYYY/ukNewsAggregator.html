@@ -170,223 +170,384 @@ var feed_names = [
 						thedescription=await myobj.rss.channel.item[i].description.toString();
 					else
 						thedescription=""
-					if (thedescription.match("oil") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Oil") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("petrol") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Petrol") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("OPEC") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Natural Gas") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("natural gas") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Wheat") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("wheat") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Grain") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("grain") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Inflation") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("inflation") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Supply-Chain") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("supply-chain") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Supply Chain") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("supply chain") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Consumer Confidence") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("consumer confidence") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Demand") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("demand") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Consumer Price Index") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("consumer price index") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("CPI") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Underground") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("underground") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Tunnel") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("tunnel") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Trench") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("trench") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("NHS") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Dentist") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("dentist") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Private Healthcare") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("private healthcare") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Shipping") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("shipping") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Dover") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Airlines") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("airlines") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Flights") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("flights") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Backlog") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("backlog") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Stagflation") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("stagflation") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Sanctions") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("sanctions") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Seafood") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("seafood") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Environment") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("environment") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("Ammunition") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thedescription.match("ammunition") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("oil") != null) //							TITLE
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Oil") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("petrol") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Petrol") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("OPEC") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Natural Gas") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("natural gas") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Wheat") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("wheat") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Grain") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("grain") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Inflation") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("inflation") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Supply-Chain") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("supply-chain") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Supply Chain") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("supply chain") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Consumer Confidence") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("consumer confidence") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Demand") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("demand") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Consumer Price Index") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("consumer price index") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("CPI") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Underground") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("underground") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Tunnel") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("tunnel") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Trench") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("trench") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("NHS") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Dentist") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("dentist") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Private Healthcare") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("private healthcare") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Shipping") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("shipping") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Dover") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Airlines") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("airlines") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Flights") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("flights") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Backlog") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("backlog") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Stagflation") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("stagflation") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Sanctions") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("sanctions") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Seafood") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("seafood") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Environment") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("environment") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("Ammunition") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
-					else if (thetitle.match("ammunition") != null)
-						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
 
+					var pass=false;
+
+					// check the description
+
+					if (thedescription.match("oil") != null)
+						pass=true;
+					else if (thedescription.match("Oil") != null)
+						pass=true;
+					else if (thedescription.match("oil") != null)
+						pass=true;
+					else if (thedescription.match("Coal") != null)
+						pass=true;
+					else if (thedescription.match("coal") != null)
+						pass=true;
+					else if (thedescription.match("Nuclear") != null)
+						pass=true;
+					else if (thedescription.match("nuclear") != null)
+						pass=true;
+					else if (thedescription.match("Submarine") != null)
+						pass=true;
+					else if (thedescription.match("submarine") != null)
+						pass=true;
+					else if (thedescription.match("Royal Navy Fleet") != null)
+						pass=true;
+					else if (thedescription.match("Royal Navy fleet") != null)
+						pass=true;
+					else if (thedescription.match("Challenger 3") != null)
+						pass=true;
+					else if (thedescription.match("onsumption room") != null)
+						pass=true;
+					else if (thedescription.match("onsumption Room") != null)
+						pass=true;
+					else if (thedescription.match("njection site") != null)
+						pass=true;
+					else if (thedescription.match("njection Site") != null)
+						pass=true;
+					else if (thedescription.match("petrol") != null)
+						pass=true;
+					else if (thedescription.match("Petrol") != null)
+						pass=true;
+					else if (thedescription.match("OPEC") != null)
+						pass=true;
+					else if (thedescription.match("Natural Gas") != null)
+						pass=true;
+					else if (thedescription.match("natural gas") != null)
+						pass=true;
+					else if (thedescription.match("Wheat") != null)
+						pass=true;
+					else if (thedescription.match("wheat") != null)
+						pass=true;
+					else if (thedescription.match("Grain") != null)
+						pass=true;
+					else if (thedescription.match("grain") != null)
+						pass=true;
+					else if (thedescription.match("Inflation") != null)
+						pass=true;
+					else if (thedescription.match("inflation") != null)
+						pass=true;
+					else if (thedescription.match("Supply-Chain") != null)
+						pass=true;
+					else if (thedescription.match("supply-chain") != null)
+						pass=true;
+					else if (thedescription.match("Supply Chain") != null)
+						pass=true;
+					else if (thedescription.match("supply chain") != null)
+						pass=true;
+					else if (thedescription.match("Consumer Confidence") != null)
+						pass=true;
+					else if (thedescription.match("consumer confidence") != null)
+						pass=true;
+					else if (thedescription.match("Demand") != null)
+						pass=true;
+					else if (thedescription.match("demand") != null)
+						pass=true;
+					else if (thedescription.match("Consumer Price Index") != null)
+						pass=true;
+					else if (thedescription.match("consumer price index") != null)
+						pass=true;
+					else if (thedescription.match("CPI") != null)
+						pass=true;
+					else if (thedescription.match("Underground") != null)
+						pass=true;
+					else if (thedescription.match("underground") != null)
+						pass=true;
+					else if (thedescription.match("Tunnel") != null)
+						pass=true;
+					else if (thedescription.match("tunnel") != null)
+						pass=true;
+					else if (thedescription.match("Trench") != null)
+						pass=true;
+					else if (thedescription.match("trench") != null)
+						pass=true;
+					else if (thedescription.match("NHS") != null)
+						pass=true;
+					else if (thedescription.match("Dentist") != null)
+						pass=true;
+					else if (thedescription.match("dentist") != null)
+						pass=true;
+					else if (thedescription.match("Private Healthcare") != null)
+						pass=true;
+					else if (thedescription.match("private healthcare") != null)
+						pass=true;
+					else if (thedescription.match("Shipping") != null)
+						pass=true;
+					else if (thedescription.match("shipping") != null)
+						pass=true;
+					else if (thedescription.match("Dover") != null)
+						pass=true;
+					else if (thedescription.match("Airlines") != null)
+						pass=true;
+					else if (thedescription.match("airlines") != null)
+						pass=true;
+					else if (thedescription.match("Flights") != null)
+						pass=true;
+					else if (thedescription.match("flights") != null)
+						pass=true;
+					else if (thedescription.match("Backlog") != null)
+						pass=true;
+					else if (thedescription.match("backlog") != null)
+						pass=true;
+					else if (thedescription.match("Stagflation") != null)
+						pass=true;
+					else if (thedescription.match("stagflation") != null)
+						pass=true;
+					else if (thedescription.match("Sanctions") != null)
+						pass=true;
+					else if (thedescription.match("sanctions") != null)
+						pass=true;
+					else if (thedescription.match("Seafood") != null)
+						pass=true;
+					else if (thedescription.match("seafood") != null)
+						pass=true;
+					else if (thedescription.match("Environment") != null)
+						pass=true;
+					else if (thedescription.match("environment") != null)
+						pass=true;
+					else if (thedescription.match("Ammunition") != null)
+						pass=true;
+					else if (thedescription.match("ammunition") != null)
+						pass=true;
+
+					//check the title
+
+					if (thetitle.match("Oil") != null)
+						pass=true;
+					else if (thetitle.match("oil") != null)
+						pass=true;
+					else if (thetitle.match("Coal") != null)
+						pass=true;
+					else if (thetitle.match("coal") != null)
+						pass=true;
+					else if (thetitle.match("Nuclear") != null)
+						pass=true;
+					else if (thetitle.match("nuclear") != null)
+						pass=true;
+					else if (thetitle.match("Submarine") != null)
+						pass=true;
+					else if (thetitle.match("submarine") != null)
+						pass=true;
+					else if (thetitle.match("Royal Navy Fleet") != null)
+						pass=true;
+					else if (thetitle.match("Royal Navy fleet") != null)
+						pass=true;
+					else if (thetitle.match("Challenger 3") != null)
+						pass=true;
+					else if (thetitle.match("onsumption room") != null)
+						pass=true;
+					else if (thetitle.match("onsumption Room") != null)
+						pass=true;
+					else if (thetitle.match("njection site") != null)
+						pass=true;
+					else if (thetitle.match("njection Site") != null)
+						pass=true;
+					else if (thetitle.match("petrol") != null)
+						pass=true;
+					else if (thetitle.match("Petrol") != null)
+						pass=true;
+					else if (thetitle.match("OPEC") != null)
+						pass=true;
+					else if (thetitle.match("Natural Gas") != null)
+						pass=true;
+					else if (thetitle.match("natural gas") != null)
+						pass=true;
+					else if (thetitle.match("Wheat") != null)
+						pass=true;
+					else if (thetitle.match("wheat") != null)
+						pass=true;
+					else if (thetitle.match("Grain") != null)
+						pass=true;
+					else if (thetitle.match("grain") != null)
+						pass=true;
+					else if (thetitle.match("Inflation") != null)
+						pass=true;
+					else if (thetitle.match("inflation") != null)
+						pass=true;
+					else if (thetitle.match("Supply-Chain") != null)
+						pass=true;
+					else if (thetitle.match("supply-chain") != null)
+						pass=true;
+					else if (thetitle.match("Supply Chain") != null)
+						pass=true;
+					else if (thetitle.match("supply chain") != null)
+						pass=true;
+					else if (thetitle.match("Consumer Confidence") != null)
+						pass=true;
+					else if (thetitle.match("consumer confidence") != null)
+						pass=true;
+					else if (thetitle.match("Demand") != null)
+						pass=true;
+					else if (thetitle.match("demand") != null)
+						pass=true;
+					else if (thetitle.match("Consumer Price Index") != null)
+						pass=true;
+					else if (thetitle.match("consumer price index") != null)
+						pass=true;
+					else if (thetitle.match("CPI") != null)
+						pass=true;
+					else if (thetitle.match("Underground") != null)
+						pass=true;
+					else if (thetitle.match("underground") != null)
+						pass=true;
+					else if (thetitle.match("Tunnel") != null)
+						pass=true;
+					else if (thetitle.match("tunnel") != null)
+						pass=true;
+					else if (thetitle.match("Trench") != null)
+						pass=true;
+					else if (thetitle.match("trench") != null)
+						pass=true;
+					else if (thetitle.match("NHS") != null)
+						pass=true;
+					else if (thetitle.match("Dentist") != null)
+						pass=true;
+					else if (thetitle.match("dentist") != null)
+						pass=true;
+					else if (thetitle.match("Private Healthcare") != null)
+						pass=true;
+					else if (thetitle.match("private healthcare") != null)
+						pass=true;
+					else if (thetitle.match("Shipping") != null)
+						pass=true;
+					else if (thetitle.match("shipping") != null)
+						pass=true;
+					else if (thetitle.match("Dover") != null)
+						pass=true;
+					else if (thetitle.match("Airlines") != null)
+						pass=true;
+					else if (thetitle.match("airlines") != null)
+						pass=true;
+					else if (thetitle.match("Flights") != null)
+						pass=true;
+					else if (thetitle.match("flights") != null)
+						pass=true;
+					else if (thetitle.match("Backlog") != null)
+						pass=true;
+					else if (thetitle.match("backlog") != null)
+						pass=true;
+					else if (thetitle.match("Stagflation") != null)
+						pass=true;
+					else if (thetitle.match("stagflation") != null)
+						pass=true;
+					else if (thetitle.match("Sanctions") != null)
+						pass=true;
+					else if (thetitle.match("sanctions") != null)
+						pass=true;
+					else if (thetitle.match("Seafood") != null)
+						pass=true;
+					else if (thetitle.match("seafood") != null)
+						pass=true;
+					else if (thetitle.match("Environment") != null)
+						pass=true;
+					else if (thetitle.match("environment") != null)
+						pass=true;
+					else if (thetitle.match("Ammunition") != null)
+						pass=true;
+					else if (thetitle.match("ammunition") != null)
+						pass=true;
+
+					//eliminate rage bait -check the description
+					if (thedescription.match("Trans") != null)
+						pass=false;
+					else if (thedescription.match("trans") != null)
+						pass=false;
+					else if (thedescription.match("gender") != null)
+						pass=false;
+					else if (thedescription.match("Gender") != null)
+						pass=false;
+					else if (thedescription.match("single-sex") != null)
+						pass=false;
+					else if (thedescription.match("Muslim") != null)
+						pass=false;
+					else if (thedescription.match("Islamist") != null)
+						pass=false;
+					else if (thedescription.match("islamist") != null)
+						pass=false;
+					else if (thedescription.match("Stabbed") != null)
+						pass=false;
+					else if (thedescription.match("stabbed") != null)
+						pass=false;
+					else if (thedescription.match("Punched") != null)
+						pass=false;
+					else if (thedescription.match("punched") != null)
+						pass=false;
+					else if (thedescription.match("Kicked") != null)
+						pass=false;
+					else if (thedescription.match("kicked") != null)
+						pass=false;
+					else if (thedescription.match("Islamic") != null)
+						pass=false;
+					else if (thedescription.match("semitism") != null)
+						pass=false;
+					else if (thedescription.match("semitic") != null)
+						pass=false;
+					else if (thedescription.match("Farage") != null)
+						pass=false;
+					else if (thedescription.match("attack") != null)
+						pass=false;
+					else if (thedescription.match("Attack") != null)
+						pass=false;
+					else if (thedescription.match("definition of a woman") != null)
+						pass=false;
+					else if (thedescription.match("sex") != null)
+						pass=false;
+					else if (thedescription.match("Sex") != null)
+						pass=false;
+
+					//eliminate rage bait - check the title
+					if (thetitle.match("Trans") != null)
+						pass=false;
+					else if (thetitle.match("trans") != null)
+						pass=false;
+					else if (thetitle.match("gender") != null)
+						pass=false;
+					else if (thetitle.match("Gender") != null)
+						pass=false;
+					else if (thetitle.match("single-sex") != null)
+						pass=false;
+					else if (thetitle.match("Muslim") != null)
+						pass=false;
+					else if (thetitle.match("Islamist") != null)
+						pass=false;
+					else if (thetitle.match("islamist") != null)
+						pass=false;
+					else if (thetitle.match("Stabbed") != null)
+						pass=false;
+					else if (thetitle.match("stabbed") != null)
+						pass=false;
+					else if (thetitle.match("Punched") != null)
+						pass=false;
+					else if (thetitle.match("punched") != null)
+						pass=false;
+					else if (thetitle.match("Kicked") != null)
+						pass=false;
+					else if (thetitle.match("kicked") != null)
+						pass=false;
+					else if (thetitle.match("Islamic") != null)
+						pass=false;
+					else if (thetitle.match("semitism") != null)
+						pass=false;
+					else if (thetitle.match("semitic") != null)
+						pass=false;
+					else if (thetitle.match("Farage") != null)
+						pass=false;
+					else if (thetitle.match("attack") != null)
+						pass=false;
+					else if (thetitle.match("Attack") != null)
+						pass=false;
+					else if (thetitle.match("definition of a woman") != null)
+						pass=false;
+					else if (thetitle.match("sex") != null)
+						pass=false;
+					else if (thetitle.match("Sex") != null)
+						pass=false;
+
+					if (pass == true)
+						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
+					
 				}
 
 		}
