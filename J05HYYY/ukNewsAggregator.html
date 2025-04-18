@@ -171,7 +171,7 @@ var feed_names = [
 					else
 						thedescription=""
 
-					var pass=false;
+										var pass=false;
 
 					// check the description
 
@@ -496,6 +496,20 @@ var feed_names = [
 						pass=false;
 					else if (thedescription.match("Sex") != null)
 						pass=false;
+					else if (thedescription.match("mall boat") != null)
+						pass=false;
+					else if (thedescription.match("mall Boat") != null)
+						pass=false;
+					else if (thedescription.match("hit-and-run") != null)
+						pass=false;
+					else if (thedescription.match("hit and run") != null)
+						pass=false;
+					else if (thedescription.match("Hit and Run") != null)
+						pass=false;
+					else if (thedescription.match("car crash") != null)
+						pass=false;
+					else if (thedescription.match("car Crash") != null)
+						pass=false;
 
 					//eliminate rage bait - check the title
 					if (thetitle.match("Trans") != null)
@@ -544,7 +558,21 @@ var feed_names = [
 						pass=false;
 					else if (thetitle.match("Sex") != null)
 						pass=false;
-
+					else if (thetitle.match("mall boat") != null)
+						pass=false;
+					else if (thetitle.match("mall Boat") != null)
+						pass=false;
+					else if (thetitle.match("hit-and-run") != null)
+						pass=false;
+					else if (thetitle.match("hit and run") != null)
+						pass=false;
+					else if (thetitle.match("Hit and Run") != null)
+						pass=false;
+					else if (thetitle.match("car crash") != null)
+						pass=false;
+					else if (thetitle.match("Car Crash") != null)
+						pass=false;
+					
 					if (pass == true)
 						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
 					
