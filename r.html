@@ -133,6 +133,7 @@ articleLink=articleLink.replace('https://www.ft.com','https://archive.ph/https:/
 articleLink=articleLink.replace('http://www.ft.com','https://archive.ph/http://www.ft.com');
 articleLink=articleLink.replace('https://ft.com','https://archive.ph/https://ft.com');
 articleLink=articleLink.replace('http://ft.com','https://archive.ph/http://ft.com');
+articleLink=articleLink.replace('x.com/','xcancel.com/');
 theHTML = theHTML + "<a href=\"" + articleLink + "\" style=\"color:green\" \">" + xmlDoc.getElementsByTagName("entry")[index].getElementsByTagName("title")[0].childNodes[0].nodeValue + "</a>";
 
 commentLink=xmlDoc.getElementsByTagName("entry")[index].querySelector("link").getAttribute("href").replace('www.reddit.com/r/','redlib.catsarch.com/r/');
