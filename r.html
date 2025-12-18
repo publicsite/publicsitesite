@@ -118,8 +118,8 @@ var dom = parser.parseFromString(
     '<!doctype html><body>' + xmlDoc.getElementsByTagName("entry")[index].querySelector("content").innerHTML,
     'text/html');
 var articleLink = dom.body.textContent.split("<span>")[1].match(new RegExp("href=\"" + "(.*)" + "\">"))[1];
-articleLink=articleLink.replace('www.reddit.com/r/','l.opnxng.com/r/');
-articleLink=articleLink.replace('reddit.com/r/','l.opnxng.com/r/');
+articleLink=articleLink.replace('www.reddit.com/r/','redlib.catsarch.com/r/');
+articleLink=articleLink.replace('reddit.com/r/','redlib.catsarch.com/r/');
 //awoo
 articleLink=articleLink.replace('https://www.thetimes.com','https://archive.ph/https://www.thetimes.com');
 articleLink=articleLink.replace('http://www.thetimes.com','https://archive.ph/http://www.thetimes.com');
@@ -135,8 +135,8 @@ articleLink=articleLink.replace('https://ft.com','https://archive.ph/https://ft.
 articleLink=articleLink.replace('http://ft.com','https://archive.ph/http://ft.com');
 theHTML = theHTML + "<a href=\"" + articleLink + "\" style=\"color:green\" \">" + xmlDoc.getElementsByTagName("entry")[index].getElementsByTagName("title")[0].childNodes[0].nodeValue + "</a>";
 
-commentLink=xmlDoc.getElementsByTagName("entry")[index].querySelector("link").getAttribute("href").replace('www.reddit.com/r/','l.opnxng.com/r/');
-commentLink=commentLink.replace('reddit.com/r/','l.opnxng.com/r/');
+commentLink=xmlDoc.getElementsByTagName("entry")[index].querySelector("link").getAttribute("href").replace('www.reddit.com/r/','redlib.catsarch.com/r/');
+commentLink=commentLink.replace('reddit.com/r/','redlib.catsarch.com/r/');
 theHTML = theHTML + "<br><a href=\"" + commentLink + "\" style=\"color:green\"\">Comments</a>" + "<br><br>";
 }
 theHTML = theHTML + "</center></html>"
