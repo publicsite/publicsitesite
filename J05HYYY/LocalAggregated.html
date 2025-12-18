@@ -156,7 +156,7 @@ var theEntry = '<a href="' + myobj.xml.feed.entry[i].link._href + '">' + myobj.x
 }
 
 function xmlhttpPost(strURL, feed_name, index) {
-var newurl = 'https://allorigins.hexlet.app/json?url=';
+var newurl = 'https://allorigins.hexlet.app/raw?url=';
 //var newurl = 'https://api.allorigins.win/raw?url=';
     var url = newurl + encodeURIComponent(strURL + '&' + 'nocache=' + Date.now());
 
@@ -186,7 +186,7 @@ var newurl = '';
 }
 
 function xmlhttpPostYT(strURL, feed_name, index) {
-var newurl = 'https://allorigins.hexlet.app/json?' + 'nocache=' + Date.now() + '&' + 'url=';
+var newurl = 'https://allorigins.hexlet.app/raw?' + 'nocache=' + Date.now() + '&' + 'url=';
 //var newurl = 'https://api.allorigins.win/raw?url=';
     var url = newurl + strURL;
 
@@ -216,7 +216,7 @@ var newurl = '';
 }
 
 function xmlhttpPostBRIDGE(strURL, feed_name, index) {
-var newurl = 'https://allorigins.hexlet.app/json?' + 'nocache=' + Date.now() + '&' + 'url=';
+var newurl = 'https://allorigins.hexlet.app/raw?' + 'nocache=' + Date.now() + '&' + 'url=';
 //var newurl = 'https://api.allorigins.win/raw?url=';
     var url = newurl + encodeURIComponent(strURL);
 
