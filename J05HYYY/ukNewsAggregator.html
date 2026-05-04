@@ -7,8 +7,8 @@
 <title>UK News Aggregator</title>
 </head>
 <center>
-<h2>All News:</h2>
-<body onload="aggregate();">
+<h2 style="color:white">All News:</h2>
+<body onload="aggregate();" bgcolor="black">
 <div id="theNews">Loading...</div>
 </body>
 </center>
@@ -47,7 +47,8 @@ function reqonload() {
 /*
 function xmlhttpPost(strURL, feed_name, index) {
 //var newurl = 'https://api.allorigins.win/json?url=';
-var newurl = 'https://allorigins.hexlet.app/raw?url=';
+//var newurl = 'https://allorigins.hexlet.app/raw?url=';
+var newurl = 'https://cors.io/?url=';
 //var newurl = 'https://api.allorigins.win/raw?url=';
     //var url = newurl + encodeURIComponent(strURL + '&' + 'nocache=' + Date.now());
 var url = newurl + strURL;
@@ -108,9 +109,9 @@ var feed_urls = [
 "https://www.theguardian.com/uk-news/rss",
 "http://feeds.bbci.co.uk/news/world/rss.xml",
 "http://feeds.bbci.co.uk/news/uk/rss.xml",
-"http://feeds.skynews.com/feeds/rss/home.xml",
+"http://feeds.skynews.com/feeds/rss/uk.xml",
 "http://www.independent.co.uk/news/uk/rss",
-"http://www.telegraph.co.uk/rss.xml",
+"https://www.dailystar.co.uk/?service=rss",
 "https://www.standard.co.uk/news/rss"
 ]
 
@@ -121,12 +122,13 @@ var feed_names = [
 "BBC [UK]",
 "Sky",
 "The Independent",
-"The Telegraph",
+"Daily Star",
 "The Evening Standard"
 ]
 
 //Removed "The Daily Star","The Scotsman","Twitter","Trinity Mirror","Yahoo"
 //Removed "The Sun" "The Metro" "The Daily Mail" "HuffPost"
+//Removed "The Telegraph" tempoarily as we don't have a good proxy for it
 
 	x2js = new X2JS();
 
@@ -144,20 +146,41 @@ var feed_names = [
 			feed_name=feed_names[index];
 			//alert(entries.length);
 
-			newurl = 'https://allorigins.hexlet.app/raw?url=';
+			
+
+			newurl = 'https://cors.io/?url=';
+
+			if (strURL == "http://feeds.skynews.com/feeds/rss/uk.xml" || strURL == "http://www.independent.co.uk/news/uk/rss" || strURL == "https://www.telegraph.co.uk/rss.xml" || strURL == "https://www.dailystar.co.uk/?service=rss" || strURL == "https://www.standard.co.uk/news/rss")
+				newurl = 'https://allorigins.hexlet.app/raw?url=';
+
 			//newurl = 'http://www.whateverorigin.org/get?url='
 			url = newurl + encodeURIComponent(strURL) + '&' + 'nocache=' + Date.now();
 
   			copiedstr = await fetchFunction(url);
 			str = copiedstr
 			//str = JSON.parse(copiedstr).contents.toString();
-			
-				myobj = x2js.xml_str2json(str);
+
+				var myobj;
+
+				//we use 'https://allorigins.hexlet.app/raw?url=' for Sky and Independent and Telegraph
+				if (strURL == "http://feeds.skynews.com/feeds/rss/uk.xml" || strURL == "http://www.independent.co.uk/news/uk/rss" || strURL == "https://www.telegraph.co.uk/rss.xml" || strURL == "https://www.dailystar.co.uk/?service=rss" || strURL == "https://www.standard.co.uk/news/rss")
+				{
+					myobj = x2js.xml_str2json(str);
+				}
+				else
+				{
+					prework = JSON.parse(str);
+					myobj = x2js.xml_str2json(prework.body);
+				}
+
+				////convert xml to json
+
+
 				//alert(myobj.rss.channel.item.length);
 				for (i=0; i < myobj.rss.channel.item.length; i++)
 				{
 
-				theEntry = '<a href="' + myobj.rss.channel.item[i].link + '">' + myobj.rss.channel.item[i].title + '</a>' + '<br>(' + feed_name + ": " + myobj.rss.channel.item[i].pubDate +')' + "<br><br>";
+				theEntry = '<p style="color:green"><a href="' + myobj.rss.channel.item[i].link + '" style="color:green">' + myobj.rss.channel.item[i].title + '</a>' + '<br>(' + feed_name + ": " + myobj.rss.channel.item[i].pubDate +')' + "<br><br></p>";
 
 					if (typeof myobj.rss.channel.item[i].title !== 'undefined')
 						thetitle=await myobj.rss.channel.item[i].title.toString();
@@ -508,6 +531,18 @@ var feed_names = [
 						pass=false;
 					else if (thedescription.match("car Crash") != null)
 						pass=false;
+					else if (thetitle.match("Murder") != null)
+						pass=false;
+					else if (thetitle.match("murder") != null)
+						pass=false;
+					else if (thetitle.match("plane crash") != null)
+						pass=false;
+					else if (thetitle.match("Plane Crash") != null)
+						pass=false;
+					else if (thetitle.match("killing") != null)
+						pass=false;
+					else if (thetitle.match("Killing") != null)
+						pass=false;
 
 					//eliminate rage bait - check the title
 					if (thetitle.match("Trans") != null)
@@ -569,6 +604,18 @@ var feed_names = [
 					else if (thetitle.match("car crash") != null)
 						pass=false;
 					else if (thetitle.match("Car Crash") != null)
+						pass=false;
+					else if (thetitle.match("Murder") != null)
+						pass=false;
+					else if (thetitle.match("murder") != null)
+						pass=false;
+					else if (thetitle.match("plane crash") != null)
+						pass=false;
+					else if (thetitle.match("Plane Crash") != null)
+						pass=false;
+					else if (thetitle.match("killing") != null)
+						pass=false;
+					else if (thetitle.match("Killing") != null)
 						pass=false;
 					
 					if (pass == true)
