@@ -180,7 +180,7 @@ var feed_names = [
 				for (i=0; i < myobj.rss.channel.item.length; i++)
 				{
 
-				theEntry = '<p style="color:green"><a href="' + myobj.rss.channel.item[i].link + '" style="color:green">' + myobj.rss.channel.item[i].title + '</a>' + '<br>(' + feed_name + ": " + myobj.rss.channel.item[i].pubDate +')' + "<br><br></p>";
+				theEntry = '<p style="color:Gray"><a href="' + myobj.rss.channel.item[i].link + '" style="color:DarkGray">' + myobj.rss.channel.item[i].title + '</a></p>' + '<p style="color:DimGray">(' + feed_name + ": " + myobj.rss.channel.item[i].pubDate +')' + "</p><br>";
 
 					if (typeof myobj.rss.channel.item[i].title !== 'undefined')
 						thetitle=await myobj.rss.channel.item[i].title.toString();
