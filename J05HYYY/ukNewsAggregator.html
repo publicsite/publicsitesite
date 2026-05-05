@@ -807,6 +807,10 @@ var feed_names = [
 						pass=false;
 					else if (thetitle.match("Zion") != null)
 						pass=false;
+					else if (thetitle.match("Tripadvisor") != null)
+						pass=false;
+					else if (thetitle.match("strikes vehicle") != null)
+						pass=false;
 					
 					if (pass == true)
 						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
