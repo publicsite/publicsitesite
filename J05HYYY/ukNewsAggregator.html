@@ -837,6 +837,10 @@ var feed_names = [
 						pass=false;
 					else if (thetitle.match("Hacks off") != null)
 						pass=false;
+					else if (thetitle.match("rape") != null)
+						pass=false;
+					else if (thetitle.match("Rape") != null)
+						pass=false;
 					
 					if (pass == true)
 						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
