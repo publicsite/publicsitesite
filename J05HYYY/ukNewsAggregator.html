@@ -889,6 +889,25 @@ var feed_names = [
 						pass=false;
 					else if (thetitle.match("Beauty Tips") != null)
 						pass=false;
+					else if (thetitle.match("The royal") != null)
+						pass=false;
+					else if (thetitle.match("The Royal") != null)
+						pass=false;
+					else if (thetitle.match("BAFTA") != null)
+						pass=false;
+					else if (thetitle.match("nuclear weapon") != null)
+						pass=false;
+					else if (thetitle.match("Nuclear weapon") != null)
+						pass=false;
+					else if ((thetitle.match("score") != null) && (thetitle.match("team") != null))
+						pass=false;
+					else if ((thetitle.match("score") != null) && (thetitle.match("Team") != null))
+						pass=false;
+					else if (thetitle.match("King") != null)
+						pass=false;
+					else if (thetitle.match("Prince") != null)
+						pass=false;
+
 					
 					if (pass == true)
 						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
