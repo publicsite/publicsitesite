@@ -973,6 +973,18 @@ var feed_names = [
 						pass=false;
 					else if (thetitle.match("fans throw") != null)
 						pass=false;
+					else if (thetitle.match("HBO show") != null)
+						pass=false;
+					else if (thetitle.match("HBO Show") != null)
+						pass=false;
+					else if (thetitle.match("British Drama") != null)
+						pass=false;
+					else if (thetitle.match("British drama") != null)
+						pass=false;
+					else if ((thetitle.match("wind turbines") != null) && (thetitle.match("bad for") != null) && (thetitle.match("environment") != null))
+						pass=false;
+					else if ((thetitle.match("solar") != null) && (thetitle.match("bad for") != null) && (thetitle.match("environment") != null))
+						pass=false;
 
 					
 					if (pass == true)
