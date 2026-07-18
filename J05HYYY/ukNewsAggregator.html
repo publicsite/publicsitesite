@@ -1067,7 +1067,42 @@ var feed_names = [
 						pass=false;
 					else if (thetitle.match("latest Play") != null)
 						pass=false;
-
+					else if (thetitle.match("plane food") != null)
+						pass=false;
+					else if (thetitle.match("Plane Food") != null)
+						pass=false;
+					else if (thetitle.match("England v") != null)
+						pass=false;
+					else if (thetitle.match("semi-final") != null)
+						pass=false;
+					else if (thetitle.match("Semi-Final") != null)
+						pass=false;
+					else if (thetitle.match("quarter-final") != null)
+						pass=false;
+					else if (thetitle.match("Quarter-Final") != null)
+						pass=false;
+					else if ((thetitle.match("Harry") != null) && (thetitle.match("Megan") != null))
+						pass=false;
+					else if (thetitle.match("Cruising") != null)
+						pass=false;
+					else if (thetitle.match("crusing") != null)
+						pass=false;
+					else if (thetitle.match("Gourmet") != null)
+						pass=false;
+					else if (thetitle.match("gourmet") != null)
+						pass=false;
+					else if (thetitle.match("weight-loss") != null)
+						pass=false;
+					else if (thetitle.match("Weight-Loss") != null)
+						pass=false;
+					else if (thetitle.match("best clubs") != null)
+						pass=false;
+					else if (thetitle.match("Best Clubs") != null)
+						pass=false;
+					else if (thetitle.match("Taylor Swift") != null)
+						pass=false;
+					else if (thetitle.match("Jimmy Savile") != null)
+						pass=false;
 					
 					if (pass == true)
 						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
