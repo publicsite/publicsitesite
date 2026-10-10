@@ -150,7 +150,7 @@ var feed_names = [
 
 			newurl = 'https://cors.io/?url=';
 
-			if (strURL == "http://feeds.skynews.com/feeds/rss/uk.xml" || strURL == "http://www.independent.co.uk/news/uk/rss" || strURL == "https://www.telegraph.co.uk/rss.xml" || strURL == "https://www.dailystar.co.uk/?service=rss" || strURL == "https://www.standard.co.uk/news/rss")
+			if (strURL == "http://feeds.skynews.com/feeds/rss/uk.xml" || strURL == "https://www.telegraph.co.uk/rss.xml" || strURL == "https://www.dailystar.co.uk/?service=rss" || strURL == "https://www.standard.co.uk/news/rss")
 				newurl = 'https://allorigins.hexlet.app/raw?url=';
 
 			//newurl = 'http://www.whateverorigin.org/get?url='
@@ -163,7 +163,7 @@ var feed_names = [
 				var myobj;
 
 				//we use 'https://allorigins.hexlet.app/raw?url=' for Sky and Independent and Telegraph
-				if (strURL == "http://feeds.skynews.com/feeds/rss/uk.xml" || strURL == "http://www.independent.co.uk/news/uk/rss" || strURL == "https://www.telegraph.co.uk/rss.xml" || strURL == "https://www.dailystar.co.uk/?service=rss" || strURL == "https://www.standard.co.uk/news/rss")
+				if (strURL == "http://feeds.skynews.com/feeds/rss/uk.xml" || strURL == "https://www.telegraph.co.uk/rss.xml" || strURL == "https://www.dailystar.co.uk/?service=rss" || strURL == "https://www.standard.co.uk/news/rss")
 				{
 					myobj = x2js.xml_str2json(str);
 				}
@@ -418,7 +418,18 @@ var feed_names = [
 						pass=true;
 					else if (thedescription.match("recycling") != null)
 						pass=true;
-
+					else if (thedescription.match("diesel") != null)
+						pass=true;
+					else if (thedescription.match("Diesel") != null)
+						pass=true;
+					else if (thedescription.match("Petrol") != null)
+						pass=true;
+					else if (thedescription.match("Petrol") != null)
+						pass=true;
+					else if (thedescription.match("Crack Spread") != null)
+						pass=true;
+					else if (thedescription.match("Crack-Spread") != null)
+						pass=true;
 					
 
 					//check the title
@@ -638,6 +649,18 @@ var feed_names = [
 					else if (thetitle.match("recycling") != null)
 						pass=true;
 					else if (thetitle.match("Recycling") != null)
+						pass=true;
+					else if (thetitle.match("diesel") != null)
+						pass=true;
+					else if (thetitle.match("Diesel") != null)
+						pass=true;
+					else if (thetitle.match("Petrol") != null)
+						pass=true;
+					else if (thetitle.match("Petrol") != null)
+						pass=true;
+					else if (thetitle.match("Crack Spread") != null)
+						pass=true;
+					else if (thetitle.match("Crack-Spread") != null)
 						pass=true;
 
 					//eliminate rage bait - check the title
@@ -1103,6 +1126,23 @@ var feed_names = [
 						pass=false;
 					else if (thetitle.match("Jimmy Savile") != null)
 						pass=false;
+					else if (thetitle.match("rise of the far right") != null)
+						pass=false;
+					else if (thetitle.match("rise of the far-right") != null)
+						pass=false;
+					else if (thetitle.match("Rise of the Far Right") != null)
+						pass=false;
+					else if (thetitle.match("Rise of the Far-Right") != null)
+						pass=false;
+					else if (thetitle.match("anti-migrant") != null)
+						pass=false;
+					else if (thetitle.match("Anti-migrant") != null)
+						pass=false;
+					else if (thetitle.match("Anti-Migrant") != null)
+						pass=false;
+					else if (thetitle.match("Patriot Platform") != null)
+						pass=false;
+
 					
 					if (pass == true)
 						entries.push([getTime(myobj.rss.channel.item[i].pubDate), theEntry]);
